@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Web Design & Development Fully Responsive Solutions"
+title:  "Web Design and Development Fully Responsive Solutions"
 date:   2020-04-14 14:03:20 +0100
 categories: Web Design
 ---
 Web Design & Development Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results, eBusinessDev’s web developers helps brands the ever-changing digital landscape. For the design and design and development of any tailored website contact us Let's get started.
 
-
-///////
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
++You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
