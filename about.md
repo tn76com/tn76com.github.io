@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Web Design & Development Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results, eBusinessDev’s web developers helps brands the ever-changing digital landscape. For the design and design and development of any tailored website contact us Let's get started.
+
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

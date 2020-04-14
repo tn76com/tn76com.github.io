@@ -16,7 +16,7 @@
 title: eBusinessDev
 email: tn76contact@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Web Design &amp; Development
+  Web Design & Development 
   Fully Responsive Eye-Catching Solutions
   Client-focused, customer-centric, creating website solutions that deliver tangible business results,
   eBusinessDev’s web developers helps brands the ever-changing digital landscape.
@@ -24,12 +24,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Let's get started.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tounsils
+twitter_username: tn76com
 github_username:  tounsils
 
 # Build settings
 markdown: kramdown
-remote_theme: benbalter/retlab
+theme: minima
 plugins:
   - jekyll-feed
 
