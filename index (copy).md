@@ -25,19 +25,25 @@ sections:
     #background_style: bg-info
     title: At Your Service
     services:
-      - title: Responsive websites
-        text: Client-focused, customer-centric solutions.
+      - title: Bootstrap
+        text: We will provide Responsive OnePage websites (That we update regularly so they don't break.)
         icon: fa-gem text-info
-        url: '#'
+        url: '#contacts'
       - title: Ready to Deploy
-        text: Professional solutions with fast deployment.
+        text: You can use our premade solutions, or you can make changes!
         icon: fa-paper-plane
-      - title: User Experience
+      - title: Up to Date
+        text: We update dependencies to keep things fresh.
+        icon: fa-laptop-code
+      - title: Made with Love
         text: You have to make your websites with love these days!
-        icon: fa-smile
-      - title: Fast Loading
-        text: We don't make our customers wait.
-        icon: fa-skiing
+        icon: fa-heart
+      - title: Other 1
+        text: Some not-so long text here.
+        icon: fa-heart
+      - title: Other 2
+        text: Some not-so long text here.
+        icon: fa-heart
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
@@ -70,6 +76,44 @@ sections:
       - title: Project 6
         text: This is a very short project description.
         icon: 6.jpg
+        url: '#'
+
+  - type: aside.html
+    section_id: aside
+    title: Free Download at Start Bootstrap!
+    actions:
+      - title: Download Now!
+        url: https://startbootstrap.com/themes/creative/
+        class: btn-light
+
+  - type: members.html
+    section_id: members
+    title: Our Crew!
+    background_style: bg-info text-white
+    members:
+      - title: Christina M. Aponte
+        text: Singer and Songwriter
+        image: assets/img/members/person1.jpg
+        url: '#'
+      - title: Gary D. Stevens
+        text: Bass guitar.
+        image: assets/img/members/person2.jpg
+        url: '#'
+      - title: Devon J. Fletcher
+        text: Lead guitar.
+        image: assets/img/members/person3.jpg
+        url: '#'
+      - title: Todd E. Anderson
+        text: Drums, percussion.
+        image: assets/img/members/person5.jpg
+        url: '#'
+      - title: Daniel T. Riley
+        text: Musician, songwriter, producer.
+        image: assets/img/members/person6.jpg
+        url: '#'
+      - title: Ella P. Walter
+        text: PR.
+        image: assets/img/members/person7.jpg
         url: '#'
 
   - type: timeline.html

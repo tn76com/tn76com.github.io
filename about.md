@@ -1,9 +1,0 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
-Web Design & Development Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results, eBusinessDev’s web developers helps brands the ever-changing digital landscape. For the design and design and development of any tailored website contact us Let's get started.
-
-
