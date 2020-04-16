@@ -3,7 +3,7 @@ layout: home
 header:
   title: Fully Responsive Eye-Catching Solutions
   text: >
-    For the design and development of any tailored website contact us Let's get started.
+    For the design and development of any tailored website contact us <br/> Let's get started.
   action: # action button is optional
     label: Find Out More
     url: '#about'
