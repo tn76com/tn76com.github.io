@@ -42,8 +42,25 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
   - build-in-docker.sh
   - README.md
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/mmistakes
+    icon: fab fa-twitter-square
+  - title: Instagram
+    url: https://instagram.com/mmistakes
+    icon: fab fa-instagram
+  - title: GitHub
+    url: https://github.com/mmistakes
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

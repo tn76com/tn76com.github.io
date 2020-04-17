@@ -1,3 +1,15 @@
+
+# Markdown Cheatsheet
+
+[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/)
+
+# plugins
+https://planetjekyll.github.io/plugins/top
+
+## installation
+https://jekyllrb.com/docs/plugins/installation/
+
+
 # Creative Theme for Jekyll
 
 A Jekyll implementation of the [Creative Theme](https://startbootstrap.com/themes/creative/) template by [Start Bootstrap](https://startbootstrap.com).

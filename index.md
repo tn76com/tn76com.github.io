@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: Fully Responsive Eye-Catching Solutions
+  title: Fully Responsive<br/>Eye-Catching Solutions
   text: >
     For the design and development of any tailored website contact us <br/> Let's get started.
   action: # action button is optional
@@ -14,7 +14,7 @@ sections:
     section_id: about
     background_style: bg-primary
     title: We've got what you need!
-    text: Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results. eBusinessDev’s web developers helps brands the ever-changing digital landscape. For the design and development of any tailored website contact us Let's get started.
+    text: Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results. <br/>eBusinessDev’s web developers helps brands the ever-changing digital landscape. <br/>For the design and development of any tailored website contact us Let's get started.
     actions:
       - title: Get Started!
         url: '#contacts'
@@ -97,8 +97,8 @@ sections:
     section_id: contacts
     title: Let's Get In Touch!
     text: >-
-      Ready to start your next project with us? Give us a call or send us an email
-      and we will get back to you as soon as possible!
+      Ready to start your next project with us? Contact us or send us an email,<br/>
+      <b>we will get back to you as soon as possible!</b>
     actions:
     - title: E-Mail
       icon: fa-envelope
