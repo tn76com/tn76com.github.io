@@ -9,7 +9,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   For the design and design and development of any tailored website contact us
   Let's get started.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://www.tn76.com" # the base hostname & protocol for your site
 author: Copyright &copy; 2014 - 2020
 lang: en_US
 
