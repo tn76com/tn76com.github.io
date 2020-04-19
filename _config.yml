@@ -1,13 +1,15 @@
 # Site settings
-title: eBusinessDev
+title: eBusinessDev Web Design Services
 email: tn76contact@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Web Design & Development 
-  Fully Responsive Eye-Catching Solutions
-  Client-focused, customer-centric, creating website solutions that deliver tangible business results,
-  eBusinessDev’s web developers helps brands the ever-changing digital landscape.
-  For the design and design and development of any tailored website contact us
-  Let's get started.
+  Web Design and Development: The best of web design and web design inspiration - Providing new 
+  designs and web development, and offering the best web solutions for small to medium business.
+keywords: "web design, Web Design and Development, best web design, best designs, best websites, 
+  responsive design, responsive design examples, best design awards, web 
+  design awards, design awards, design inspiration, web design inspiration, 
+  web design gallery, web design resources, web designer, web designers, small business, medium business 
+  web designer directory, css gallery, wordpress themes, best wordpress themes, bootstrap, jquerry"
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.tn76.com" # the base hostname & protocol for your site updated
 author: Copyright &copy; 2014 - 2020
