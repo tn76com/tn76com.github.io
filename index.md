@@ -28,17 +28,16 @@ sections:
     #background_style: bg-info
     title: At Your Service
     services:
-      - title: Responsive websites
+      - title: Responsive Design
         text: Client-focused, customer-centric solutions.
-        icon: fa-gem text-info
-        url: '#'
-      - title: Ready to Deploy
-        text: Professional solutions with fast deployment.
-        icon: fa-paper-plane
+        icon: fa-laptop text-info
+      - title: E-Commerce
+        text: Start your business now!
+        icon: fa-shopping-cart
       - title: User Experience
-        text: You have to make your websites with love these days!
+        text: Your customer will love it!
         icon: fa-smile
-      - title: Fast Loading
+      - title: Fast Page Loading
         text: We don't make our customers wait.
         icon: fa-skiing
 
