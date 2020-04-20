@@ -110,7 +110,7 @@ sections:
     - title: Twitter
       icon: fa-twitter
       icon_type: fab
-      url: 'tn76com'
+      url: 'https://twitter.com/tn76com'
     - title: tounsi.med.ca
       icon: fa-skype
       icon_type: fab
