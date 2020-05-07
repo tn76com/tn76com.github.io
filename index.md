@@ -82,7 +82,7 @@ sections:
     actions:
       - image: assets/img/portfolio/thumbnails/1.jpg
         title: >+
-          2017-2018
+          2007-2008
           **Humble Beginnings**
         text: >-
           We begun with small group of people willing to work hard and make our
