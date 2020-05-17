@@ -106,10 +106,10 @@ sections:
     - title: E-Mail
       icon: fa-envelope
       url: mailto:tounsils@gmail.com
-    - title: Twitter
-      icon: fa-twitter
+    - title: (831) 204-5509
+      icon: fa-phone
       icon_type: fab
-      url: 'https://twitter.com/tn76com'
+      url: '#'
     - title: tounsi.med.ca
       icon: fa-skype
       icon_type: fab
