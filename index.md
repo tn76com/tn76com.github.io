@@ -108,7 +108,7 @@ sections:
       url: mailto:tounsils@gmail.com
     - title: (831) 204-5509
       icon: fa-phone
-      icon_type: fab
+      icon_type: fad
       url: '#'
     - title: tounsi.med.ca
       icon: fa-skype
