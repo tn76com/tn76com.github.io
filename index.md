@@ -110,7 +110,7 @@ sections:
       icon: fa-phone
       icon_type: fa
       url: 'tel:+18312045509'
-    - title: tounsi.med.ca
+    - title: Skype
       icon: fa-skype
       icon_type: fab
       url: 'skype:tounsi.med.ca'
