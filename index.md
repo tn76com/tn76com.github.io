@@ -113,7 +113,7 @@ sections:
     - title: tounsi.med.ca
       icon: fa-skype
       icon_type: fab
-      url: '#'
+      url: 'skype:tounsi.med.ca'
     - title: GitHub
       icon: fa-github
       icon_type: fab
