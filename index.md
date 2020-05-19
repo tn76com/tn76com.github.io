@@ -109,7 +109,7 @@ sections:
     - title: (831) 204-5509
       icon: fa-phone
       icon_type: fa
-      url: '#'
+      url: 'tel:+18312045509'
     - title: tounsi.med.ca
       icon: fa-skype
       icon_type: fab
