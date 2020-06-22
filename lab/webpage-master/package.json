@@ -1,0 +1,44 @@
+{
+  "name": "conFusion",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.0.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-usemin": "^0.3.23",
+    "jasmine-core": "^2.4.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongod": "^1.3.0",
+    "mongodb": "^2.1.21",
+    "mongoose": "^4.4.19",
+    "mongoose-currency": "^0.2.0",
+    "morgan": "^1.7.0",
+    "yargs": "^4.7.1"
+  }
+}
