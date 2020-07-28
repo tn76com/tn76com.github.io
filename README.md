@@ -98,3 +98,25 @@ in the list will simply not run.
 # Using Docker
 https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
 
+
+
+## Creating a site:
+
+cd to empty directory
+docker run -v $(pwd):/site bretfisher/jekyll new .
+
+Start a local server with sane defaults listening on port 8080:
+
+cd dir/of/your/jekyll/site
+docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve
+
+That's it!
+
+Details: it will mount your current path into the containers /site, bundle install before running jekyll serve to , serve it at http://<docker-host>:8080.
+
+To make this even easier, copy [docker-compose.yml](https://github.com/BretFisher/jekyll-serve/blob/master/docker-compose.yml) from this repo to your jekyll site root. Then you'll only need to:
+
+cd dir/of/your/jekyll/site
+
+
+sudo systemctl restart docker
