@@ -96,7 +96,7 @@ in the list will simply not run.
   * https://github.com/fedenunez/fedenunez.github.io
   
 # Using Docker
-https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
+https://github.com/BretFisher/jekyll-serve
 
 
 
