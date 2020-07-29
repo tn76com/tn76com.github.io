@@ -89,7 +89,7 @@ sections:
           teaching skills worth , in front of all others!
       - image: assets/img/portfolio/thumbnails/2.jpg
         title: >+
-          2005-2004
+          2005-2020
           **An Coaching started**
         text: >-
           We started to gather like minded people and started our stategies
