@@ -53,8 +53,8 @@ sections:
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
-      - title: Project 2
-        text: This is a very short project description.
+      - title: e-commerce
+        text: Best features to improve user experience and boost ecommerce revenue.
         icon: 2.jpg
         url: '#'
       - title: Project 3
