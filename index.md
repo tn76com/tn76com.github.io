@@ -77,7 +77,7 @@ sections:
   - type: timeline.html
     section_id: timeline
     title: Major Achievements!
-    background_style: bg-dark text-primary
+    background_style: bg-light text-primary
     last_image: assets/img/timeline-end.png
     actions:
       - image: assets/img/portfolio/thumbnails/1.jpg
