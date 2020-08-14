@@ -53,8 +53,8 @@ sections:
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
-      - title: Project 2
-        text: This is a very short project description.
+      - title: e-commerce
+        text: Best features to improve user experience and boost ecommerce revenue.
         icon: 2.jpg
         url: '#'
       - title: Project 3
@@ -77,7 +77,7 @@ sections:
   - type: timeline.html
     section_id: timeline
     title: Major Achievements!
-    background_style: bg-dark text-primary
+    background_style: bg-light text-primary
     last_image: assets/img/timeline-end.png
     actions:
       - image: assets/img/portfolio/thumbnails/1.jpg
