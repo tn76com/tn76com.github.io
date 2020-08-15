@@ -54,6 +54,7 @@ Jekyll is an active open source project that is updated frequently. If the githu
         If you don't have Bundler installed, run gem update github-pages.
     
 Update gem dependencies :
+    https://bundler.io/guides/updating_gems.html
     sudo bundle update 
 
 
