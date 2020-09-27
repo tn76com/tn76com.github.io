@@ -1,4 +1,4 @@
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";color:#002CFD;'>Money Making System!</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";color:#002CFD;'>Money Making Package!</span></strong></p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";'>Make Money Online - Money Making System!</span></strong></p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";color:#009900;'>Guide</span></strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";color:#009900;'>&nbsp;</span><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";'>with <span style="color:#FF0010;">Resell Rights!</span></span></p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";'>&nbsp;</span></p>
@@ -71,7 +71,7 @@
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:19px;line-height:115%;font-family:"Comic Sans MS";color:red;background:lime;'>Order Now!!!</span></strong></p>
 
 
-</br></br></br>
+<br><br><br>
 <div align=center>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_xclick">
@@ -100,7 +100,7 @@
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><em><span style='font-size:16px;line-height:115%;font-family:"Comic Sans MS";background:silver;'>[Please allow for 24 hours to receive your income guide]</span></em></p>
 
 
-</br></br></br>
+<br><br><br>
 
 <div align=center>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
