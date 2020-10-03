@@ -24,11 +24,16 @@ We recommend using Bundler to install and run Jekyll. Bundler manages Ruby gem d
     1- Install Ruby. For more information, see "Installing Ruby" in the Ruby documentation.
     2- Install Bundler. For more information, see "Bundler."
 
-## Building your site locally
+## Building your site locally (Testing)
 
-    Open Git Bash.
-    Navigate to the publishing source for your site. For more information about publishing sources, see "About GitHub Pages."
-    Run your Jekyll site locally.
+if required, run
+
+    bundle install
+
+Open Git Bash.
+
+Navigate to the publishing source for your site. For more information about publishing sources, see "About GitHub Pages."
+Run your Jekyll site locally.
 
     $ bundle exec jekyll serve
     > Configuration file: /Users/octocat/my-site/_config.yml
