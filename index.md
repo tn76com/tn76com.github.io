@@ -91,7 +91,7 @@ sections:
       - image: assets/img/portfolio/thumbnails/2.jpg
         title: >+
           2005-2020
-          **An Coaching started**
+          **A Coaching started**
         text: >-
           We started to gather like minded people and started our stategies
           and future plans to them. As a result , interested people joined us!
