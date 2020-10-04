@@ -31,6 +31,7 @@ sections:
       - title: Responsive Design
         text: Client-focused, customer-centric solutions.
         icon: fa-laptop text-info
+        url: 'websitedesign2020'
       - title: E-Commerce
         text: Start your business now!
         icon: fa-shopping-cart
@@ -46,13 +47,13 @@ sections:
     #section_id: portfolio
     #background_style: bg-dark
     projects:
-      - title: Project 1
-        text: This is a very short project description.
+      - title: Website design 2020
+        text: Fully Responsive Eye-Catching Solutions.
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
-        url: '#'
+        url: 'websitedesign2020'
       - title: e-commerce
         text: Best features to improve user experience and boost ecommerce revenue.
         icon: 2.jpg
