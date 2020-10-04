@@ -16,7 +16,7 @@ sections:
 
   - type: contact.html
     section_id: contacts
-    title: Lets Get Started <b>Our Project</b>
+    title: Lets Get Started <b>Making Money</b>
     text: >-
       We will help you to achieve your goals and to grow your business.<br/>
       
