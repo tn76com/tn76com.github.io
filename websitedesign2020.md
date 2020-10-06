@@ -21,10 +21,10 @@ sections:
       We will help you to achieve your goals and to grow your business.<br/>
       Web Design and Development
       
-      The best of web design and web design inspiration - Providing new designs and web development, and offering the best web solutions for small to medium business.
-      Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results.
-      eBusinessDev’s web developers helps brands the ever-changing digital landscape.
-      For the design and development of any tailored website contact us Let’s get started.
+      The best of web design and web design inspiration - Providing new designs and web development, and offering the best web solutions for small to medium business.<br/><br/>
+      Fully Responsive Eye-Catching Solutions Client-focused, customer-centric, creating website solutions that deliver tangible business results.<br/><br/>
+      eBusinessDev’s web developers helps brands the ever-changing digital landscape.<br/><br/>
+      For the design and development of any tailored website contact us Let’s get started.<br/>
 
 
 
