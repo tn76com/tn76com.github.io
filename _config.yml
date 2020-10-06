@@ -4,13 +4,13 @@ email: tn76contact@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Web Design and Development: The best of web design and web design inspiration - Providing new 
   designs and web development, and offering the best web solutions for small to medium business.
-keywords: "web design, Web Design and Development, best web design, best designs, best websites, 
+baseurl: "" # the subpath of your site, e.g. /blog/
+keywords: "eBusinessDev, tn76.com, tn76com, web design, Web Design and Development, best web design, best designs, best websites,
   responsive design, responsive design examples, best design awards, web 
   design awards, design awards, design inspiration, web design inspiration, 
   web design gallery, web design resources, web designer, web designers, small business, medium business 
   web designer directory, css gallery, wordpress themes, best wordpress themes, bootstrap, jquerry"
 
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.tn76.com" # the base hostname & protocol for your site updated
 author: Copyright &copy; 2014 - 2020
 lang: en_US
@@ -55,13 +55,13 @@ exclude:
 # Footer Links
 footer_links:
   - title: Twitter
-    url: https://twitter.com/mmistakes
+    url: https://twitter.com/tn76com
     icon: fab fa-twitter-square
   - title: Instagram
-    url: https://instagram.com/mmistakes
+    url: https://instagram.com/tn76com
     icon: fab fa-instagram
   - title: GitHub
-    url: https://github.com/mmistakes
+    url: https://github.com/tn76com
     icon: fab fa-github-square
   - title: Feed
     url: atom.xml
