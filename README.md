@@ -98,6 +98,9 @@ Note: Developing for github pages is tricky. You should alway rely on
 [safe plugins](https://pages.github.com/versions/) because any other, that's not
 in the list will simply not run.
 
+## Jekyll variables 
+https://jekyllrb.com/docs/variables/
+
 # Good Ideas
 * Contacts submit form example
   * https://github.com/Codevelopr/codevelopr.github.io/
