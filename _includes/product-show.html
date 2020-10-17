@@ -1,0 +1,20 @@
+<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mt-0">{{ section.title }}</h2>
+        <hr class="divider my-4">
+          <p class="text-muted mb-5">{{ section.text }}</p>
+      </div>
+      <div class="row justify-content-center">
+            {% for product in site.products %}
+              {% if product.identifier contains section.product_identifier %}
+                <div class="col-lg-4 col-sm-6">
+                  {% include product.html %}
+                </div>
+              {% endif %}
+            {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
