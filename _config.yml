@@ -1,5 +1,5 @@
 # Site settings
-title: eBusinessDev Web Design Services 2020
+title: eBusinessDev Web Design 2020
 email: tn76contact@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Web Design and Development: The best of web design and web design inspiration - Providing new 
@@ -10,7 +10,6 @@ keywords: "eBusinessDev, tn76.com, tn76com, web design, Web Design and Developme
   design awards, design awards, design inspiration, web design inspiration, 
   web design gallery, web design resources, web designer, web designers, small business, medium business 
   web designer directory, css gallery, wordpress themes, best wordpress themes, bootstrap, jquerry"
-
 url: "https://www.tn76.com" # the base hostname & protocol for your site updated
 author: Copyright &copy; 2014 - 2020
 lang: en_US
