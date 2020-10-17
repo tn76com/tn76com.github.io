@@ -61,11 +61,12 @@ sections:
     product_identifier: Money-Making-System
   - type: contact.html
     section_id: contacts
-    title: Contact
+    title: Contacts
     text: >-
       We will help you to achieve your goals and to grow your business.<br/>
       Contact us or send us an email,<br/>
       <b>we will get back to you as soon as possible!</b>
+      <h2>100% Satisfaction OR Money back guaranteed !</h2>
     actions:
     - title: E-Mail
       icon: fa-envelope

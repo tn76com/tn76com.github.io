@@ -98,10 +98,11 @@ sections:
 
   - type: contact.html
     section_id: contacts
-    title: Lets Get Started <b>Our Project</b>
+    title: Contacts
     text: >-
       We will help you to achieve your goals and to grow your business.<br/>
       Contact us or send us an email,<br/>
+      <h2>100% Satisfaction OR Money back guaranteed !</h2>
       <b>we will get back to you as soon as possible!</b>
     actions:
     - title: E-Mail

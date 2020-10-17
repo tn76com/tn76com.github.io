@@ -11,7 +11,7 @@ menus:
 
 sections:
   - type: contact.html
-    section_id: contacts
+    section_id: Contacts
     title: Let's Get In Touch!
     text: >-
       Ready to start your next project with us? Give us a call or send us an email
