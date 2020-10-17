@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d516719d-4ebb-490f-836f-5772bfcdfc9f" name="tn76.com_jekyll_tn76com" url="https://ftp.tn76.com">
+        <fileTransfer host="ftp.tn76.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1148c32a-cdee-4a4b-ad01-200396b485c6" name="tn76.com" url="https://ftp.tn76.com">
+        <fileTransfer host="ftp.tn76.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
