@@ -1,5 +1,5 @@
 # Site settings
-title: eBusinessDev Web Design Services
+title: eBusinessDev Web Design Services 2020
 email: tn76contact@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Web Design and Development: The best of web design and web design inspiration - Providing new 
@@ -41,6 +41,20 @@ sass:
   indentWidth: 4
   style: compact
   precision: 10
+
+#source: src
+destination: ../public_html
+
+collections:
+  - products
+
+#PAyment using paypal
+payment:
+  paypal:
+    text: Pay Now      # Button text
+    email: tn76contact@gmail.com  # PayPal button ID
+    #id:             7334HG9754  # PayPal button ID
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

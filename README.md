@@ -24,7 +24,7 @@ We recommend using Bundler to install and run Jekyll. Bundler manages Ruby gem d
     1- Install Ruby. For more information, see "Installing Ruby" in the Ruby documentation.
     2- Install Bundler. For more information, see "Bundler."
 
-## Building your site locally (Testing)
+## Building your site locally (Testing : bundle exec jekyll serve)
 
 if required, run
 

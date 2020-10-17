@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: Fully Responsive<br/>Eye-Catching Solutions
+  title: Fully Responsive<br/>Eye-Catching Solutions!
   text: >
     <h2>Web Design and Development</h2> The best of web design and web design inspiration - Providing new designs and web development, and offering the best web solutions for small to medium business.
    

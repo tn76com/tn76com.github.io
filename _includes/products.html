@@ -1,0 +1,21 @@
+<section id="products" class="{{ section.background_style }}">
+  <div class="container-fluid p-0">
+    <h2 class="text-center mt-0">{{ section.title }}</h2>
+    <hr class="divider my-4">
+    <div class="row justify-content-center">
+      <!-- {#% assign cols = section.services.size | at_most: 4 %#} -->
+      {% assign cols = site.products | size %}
+      {% if cols > 4 %}
+      {% assign cols = 4 %}
+      {% endif %}
+
+      {% assign colsL = 12 | divided_by: cols %}
+      {% assign colsM = colsL | times: 2 %}
+      {% for product in site.products %}
+      <div class="col-lg-4 col-sm-6">
+        {% include product.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
