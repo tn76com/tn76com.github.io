@@ -4,6 +4,7 @@
     <img src="{{ product.image }}" alt="{{ product.name }} product image" class="product__image">
     <p class="product__description">{{ product.description | remove: '<p>' | remove: '</p>' }}</p>
     {% include product-definition.html %}
+    <p class="product__description">{{ product.content | remove: '<p>' | remove: '</p>' }}</p>
   </div>
   <img src="{{ product.image }}" alt="{{ product.name }} product image" class="product__image">
 </div>

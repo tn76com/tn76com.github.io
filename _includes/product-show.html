@@ -10,7 +10,7 @@
             {% for product in site.products %}
               {% if product.identifier contains section.product_identifier %}
                 <div class="col-lg-4 col-sm-6">
-                  {% include product.html %}
+                  {% include product-full-description.html %}
                 </div>
               {% endif %}
             {% endfor %}
