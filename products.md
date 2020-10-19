@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: HAPPY CLIENTS.<br/>POSITIVE RESULTS.
+  title: You will be happy.<br/>POSITIVE RESULTS.
   text: >
     <h2>We strive to deliver at all times, </h2>ensuring that our customers are 100% satisfied with the results. 
     For the design and development of any tailored website contact us <br/> Let's get started.
@@ -12,15 +12,14 @@ header:
 sections:
   - type: products.html
     section_id: products
-    title: Our best products !
+    title: Your best products !
   - type: contact.html
     section_id: contacts
     title: Contacts
     text: >-
-      We will help you to achieve your goals and to grow your business.<br/>
+      You will achieve your goals and to grow your business with us.<br/>
       Contact us or send us an email,<br/>
-      <h2>100% Satisfaction OR Money back guaranteed !</h2>
-      <b>we will get back to you as soon as possible!</b>
+      <h2>You will be 100% Satisfaction OR Money back guaranteed !</h2>
     actions:
     - title: E-Mail
       icon: fa-envelope
