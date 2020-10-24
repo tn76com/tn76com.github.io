@@ -95,6 +95,9 @@ sections:
         text: >-
           We started to gather like minded people and started our stategies
           and future plans to them. As a result , interested people joined us!
+  - type: products.html
+    section_id: products
+    title: Your best products !
 
   - type: contact.html
     section_id: contacts
