@@ -14,7 +14,7 @@ url: "https://www.tn76.com" # the base hostname & protocol for your site updated
 author: Copyright &copy; 2014 - 2020
 lang: en_US
 
-# generate social links in footer
+# generate social links in footer +
 social_links:
   twitter: tn76com
   github:  tounsils
