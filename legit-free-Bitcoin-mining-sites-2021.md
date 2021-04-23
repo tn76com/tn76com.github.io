@@ -27,5 +27,5 @@ sections:
       icon: fa-github
       icon_type: fab
       url: 'https://github.com/tounsils'
-
+      
 ---
