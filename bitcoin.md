@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Legit free Bitcoin mining sites 2021
+title: Contact
 #background_style: bg-info
 background_image: url('assets/img/backgrounds/image-from-rawpixel-id-1199650-jpeg.jpg')
 # Add a link to the the top menu
