@@ -11,24 +11,30 @@ menus:
 
 sections:
   - type: contact.html
-    section_id: contacts
-    title: Contacts
+    section_id: Contacts
+    title: Let's Get In Touch!
     text: >-
-      Top 10 Best Trusted Free Bitcoin Cloud Mining Sites Without Investment of 2021.
-      <h2>Free Bitcoin Cloud Mining Sites !</h2>
+      Ready to start your next project with us? Give us a call or send us an email
+      and we will get back to you as soon as possible!
     actions:
+    - title: E-Mail
+      icon: fa-envelope
+      url: mailto:tounsils@gmail.com
+    - title: Twitter
+      icon: fa-twitter
+      icon_type: fab
+      url: 'tn76com'
+    - title: tounsi.med.ca
+      icon: fa-skype
+      icon_type: fab
+      url: '#'
     - title: GitHub
       icon: fa-github
       icon_type: fab
       url: 'https://github.com/tounsils'
-      
+    - title: Linkedin
+      icon: fa-linkedin
+      icon_type: fab
+      url: 'https://www.linkedin.com/in/mohamed-tounsi-20131085/'
 ---
-<h2>We will try to cover some of these sites in this post.</h2>
-    <h3>        Top 10 Best Trusted Free Bitcoin Cloud Mining Sites Without Investment of 2021.
-            Bitland.pro.
-            Freemining.co.
-            Miner-B.com.
-            Cryptoplace. cloud.
-            Bimine.io.
-            Citymine.cc.
-            Olion. cash.!</h3>
+Here goes some raw markdown content.
