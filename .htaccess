@@ -1,1 +1,2 @@
-ErrorDocument 404 /index.html
+DirectoryIndex index.html
+ErrorDocument 404 https://www.tn76.com
