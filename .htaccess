@@ -1,2 +1,6 @@
 DirectoryIndex index.html
 ErrorDocument 404 https://www.tn76.com
+Redirect https://www.tn76.com/ecommerce.html https://www.tn76.com/#pricing
+Redirect https://www.tn76.com/make.html https://www.tn76.com/#pricing
+Redirect https://www.tn76.com/contact.html https://www.tn76.com/#contact
+
