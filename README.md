@@ -1,5 +1,5 @@
 
-#  <img src="assets/img/logo.png" alt="tn76.com"> eBusinessDev @ <a href="https://www.tn76.com">tn76.com</a>
+#  <img src="assets/img/logo.png" alt="tn76.com"> WebWonders & CartoCraft @ <a href="https://www.tn76.com">tn76.com</a>
 
 
 
@@ -11,7 +11,7 @@ building fancy websites and web applications.
 
 We offer :
 
-1 -  Web applications development, 
+1 - Web applications development, 
 
 2 - IT solutions for small to medium business.
 
