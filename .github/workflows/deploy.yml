@@ -15,8 +15,8 @@ jobs:
 
     - name: Sync files to tn76com.github.io
       run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "you@example.com"
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
         git clone https://github.com/tn76com/tn76com.github.io.git
         rsync -av --progress ./ tn76com.github.io/ --exclude .git --exclude .github
         cd tn76com.github.io
