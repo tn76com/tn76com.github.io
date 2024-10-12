@@ -3,7 +3,7 @@ name: Deploy to tn76com.github.io
 on:
   push:
     branches:
-      - master  # Trigger on pushes to the master branch
+      - main  # Trigger on pushes to the main branch
 
 jobs:
   deploy:
@@ -22,4 +22,4 @@ jobs:
         cd tn76com.github.io
         git add .
         git commit -m "Deploy"
-        git push origin master
+        git push origin main
