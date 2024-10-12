@@ -1,0 +1,25 @@
+name: Deploy to tn76com.github.io
+
+on:
+  push:
+    branches:
+      - master  # Trigger on pushes to the master branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v2
+
+    - name: Sync files to tn76com.github.io
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "you@example.com"
+        git clone https://github.com/tn76com/tn76com.github.io.git
+        rsync -av --progress ./ tn76com.github.io/ --exclude .git --exclude .github
+        cd tn76com.github.io
+        git add .
+        git commit -m "Deploy"
+        git push origin master
