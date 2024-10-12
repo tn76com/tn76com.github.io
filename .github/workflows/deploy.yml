@@ -31,5 +31,5 @@ jobs:
         git config user.email "tounsils@gmail.com"
         git add .
         git commit -m "Auto-deploy from tn76com_dev"
-        git push origin main
+        git push
       shell: bash
