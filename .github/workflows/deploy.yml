@@ -3,7 +3,7 @@ name: Deploy to tn76com.github.io
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on pushes to the main branch
 
 jobs:
   deploy:
@@ -13,13 +13,23 @@ jobs:
     - name: Checkout the repo
       uses: actions/checkout@v2
 
-    - name: Sync files to tn76com.github.io
+    - name: Clone the target repository
       run: |
         git clone https://github.com/tn76com/tn76com.github.io.git
-        rsync -av --progress ./ tn76com.github.io/ --exclude .git --exclude .github
+        ls -alh  # List the files in the repo for debugging
+
+    - name: Sync files to tn76com.github.io
+      run: |
+        rsync -av --progress --exclude '.git' --exclude '.github' ./ tn76com.github.io/
+        ls -alh tn76com.github.io/  # List the synced files for verification
+      shell: bash
+
+    - name: Commit and push changes
+      run: |
         cd tn76com.github.io
         git config user.name "tounsils"
         git config user.email "tounsils@gmail.com"
         git add .
         git commit -m "Auto-deploy from tn76com_dev"
         git push origin main
+      shell: bash
