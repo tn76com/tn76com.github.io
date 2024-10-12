@@ -31,5 +31,5 @@ jobs:
         git config user.email "tounsils@gmail.com"
         git add .
         git commit -m "Auto-deploy from tn76com_dev" || echo "No changes to commit"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/tn76com/tn76com.github.io.git master
+        git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/tn76com/tn76com.github.io.git master
       shell: bash
