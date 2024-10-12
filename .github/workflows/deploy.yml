@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repo
+    - name: Checkout the source repo (tn76com_dev.git)
       uses: actions/checkout@v2
 
-    - name: Clone the target repository
+    - name: Clone the target repository (tn76com.github.io.git)
       run: |
         git clone https://github.com/tn76com/tn76com.github.io.git
         ls -alh  # List the files in the repo for debugging
@@ -24,12 +24,14 @@ jobs:
         ls -alh tn76com.github.io/  # List the synced files for verification
       shell: bash
 
-    - name: Commit and push changes
+    - name: Commit and push changes to tn76com.github.io
       run: |
         cd tn76com.github.io
         git config user.name "tounsils"
         git config user.email "tounsils@gmail.com"
         git add .
         git commit -m "Auto-deploy from tn76com_dev"
-        git push
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub Token for authentication
       shell: bash
