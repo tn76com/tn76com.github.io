@@ -1,5 +1,5 @@
 
-#  <img src="assets/img/logo.png" alt="tn76.com"> <b>Web</b>Wonders & <b>Carto</b>Craft @ <a href="https://www.tn76.com">tn76.com</a>
+#  <img src="assets/img/logo.png" alt="tn76.com"> <b>Web</b>Mapps @ <a href="https://www.tn76.com">tn76.com</a>
 
 
 
@@ -18,4 +18,4 @@ We offer :
 
 
 <hr>
-<p><i> &copy <a href="https://www.tn76.com">tn76.com</a>  2011 - 2023</i></p>
+<p><i> &copy <a href="https://www.tn76.com">tn76.com</a>  2011 - 2024</i></p>
