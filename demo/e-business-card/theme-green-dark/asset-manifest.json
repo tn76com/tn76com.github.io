@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/demo/e-business-card/theme-green-dark/static/css/main.985c0162.css",
+    "main.js": "/demo/e-business-card/theme-green-dark/static/js/main.6fc40715.js",
+    "static/js/453.8baf63bc.chunk.js": "/demo/e-business-card/theme-green-dark/static/js/453.8baf63bc.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/demo/e-business-card/theme-green-dark/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/demo/e-business-card/theme-green-dark/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/demo/e-business-card/theme-green-dark/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/demo/e-business-card/theme-green-dark/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/demo/e-business-card/theme-green-dark/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/ilyes.jpg": "/demo/e-business-card/theme-green-dark/static/media/ilyes.3dffcbf601b03fba5d5b.jpg",
+    "static/media/wafa.jpg": "/demo/e-business-card/theme-green-dark/static/media/wafa.6db208d6fb64cfb18335.jpg",
+    "index.html": "/demo/e-business-card/theme-green-dark/index.html",
+    "main.985c0162.css.map": "/demo/e-business-card/theme-green-dark/static/css/main.985c0162.css.map",
+    "main.6fc40715.js.map": "/demo/e-business-card/theme-green-dark/static/js/main.6fc40715.js.map",
+    "453.8baf63bc.chunk.js.map": "/demo/e-business-card/theme-green-dark/static/js/453.8baf63bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.985c0162.css",
+    "static/js/main.6fc40715.js"
+  ]
+}
