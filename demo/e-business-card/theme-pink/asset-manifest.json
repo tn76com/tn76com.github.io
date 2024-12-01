@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo/e-business-card/theme-pink/static/css/main.7a9a9b56.css",
-    "main.js": "/demo/e-business-card/theme-pink/static/js/main.5ff8c8c8.js",
+    "main.css": "/demo/e-business-card/theme-pink/static/css/main.4dff9806.css",
+    "main.js": "/demo/e-business-card/theme-pink/static/js/main.e0ec9360.js",
     "static/js/453.8ecfabbd.chunk.js": "/demo/e-business-card/theme-pink/static/js/453.8ecfabbd.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/demo/e-business-card/theme-pink/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/demo/e-business-card/theme-pink/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -9,12 +9,12 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/demo/e-business-card/theme-pink/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/demo/e-business-card/theme-pink/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/demo/e-business-card/theme-pink/index.html",
-    "main.7a9a9b56.css.map": "/demo/e-business-card/theme-pink/static/css/main.7a9a9b56.css.map",
-    "main.5ff8c8c8.js.map": "/demo/e-business-card/theme-pink/static/js/main.5ff8c8c8.js.map",
+    "main.4dff9806.css.map": "/demo/e-business-card/theme-pink/static/css/main.4dff9806.css.map",
+    "main.e0ec9360.js.map": "/demo/e-business-card/theme-pink/static/js/main.e0ec9360.js.map",
     "453.8ecfabbd.chunk.js.map": "/demo/e-business-card/theme-pink/static/js/453.8ecfabbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a9a9b56.css",
-    "static/js/main.5ff8c8c8.js"
+    "static/css/main.4dff9806.css",
+    "static/js/main.e0ec9360.js"
   ]
 }
