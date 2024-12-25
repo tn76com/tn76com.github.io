@@ -7,8 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="0; URL='https://www.tn76.com'" />
     <title>404 - redirect to tn76.com</title>
+
+    <script>
+        const pathname = window.location.pathname.substring(1);
+        console.log("pathname: " + pathname);
+
+        const redirectUrl = `/#${pathname}`;
+        console.log("redirectUrl: " + redirectUrl);
+
+        window.location.replace(redirectUrl);
+    </script>
+
+
 </head>
 
-<body></body>
+<body>
+    <h1>Redirecting...</h1>
+</body>
 
 </html>
