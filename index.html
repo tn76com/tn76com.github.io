@@ -8,7 +8,7 @@
       name="description"
       content="Done-for-you SEO content and Google Business optimization for HVAC, roofing, plumbing, and other local service businesses. $349/mo. First month $149. Cancel anytime."
     />
-    <meta name="author" content="TN76" />
+    <meta name="author" content="Ilyes Tounsi" />
     <link rel="canonical" href="https://www.tn76.com/" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -19,6 +19,93 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.tn76.com/" />
+    <meta property="og:image" content="https://www.tn76.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.tn76.com/og-image.png" />
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://www.tn76.com/#business",
+        "name": "TN76",
+        "url": "https://www.tn76.com/",
+        "description": "Done-for-you SEO content and Google Business optimization for local service businesses.",
+        "priceRange": "$149-$349",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "founder": { "@type": "Person", "name": "Ilyes Tounsi" },
+        "email": "tounsils@gmail.com"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Local SEO Autopilot",
+        "serviceType": "SEO content and local optimization",
+        "provider": { "@id": "https://www.tn76.com/#business" },
+        "description": "Monthly SEO content, local schema markup, Google Business Profile posts, and ranking reports for home service businesses (HVAC, roofing, plumbing, and similar).",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Home service business owners"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "349",
+          "priceCurrency": "USD",
+          "description": "First month $149, then $349 per month. No contract. Cancel anytime."
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does SEO Autopilot cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$349 per month, with a discounted $149 first month. No contract. Cancel any time by replying to any email."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's included every month?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 SEO-optimized blog posts (600 to 1,200 words each), local schema markup on your service pages, 4 Google Business Profile posts, and a monthly ranking report."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is this for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Home service business owners — HVAC contractors, roofers, plumbers, landscapers, electricians — with an existing website and Google Business Profile who want more calls from Google without hiring a traditional agency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you handle backlinks or paid ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. TN76 focuses on SEO content and local optimization only. Paid ads, website redesigns, and backlink schemes are not included."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reply to any email from us with 'cancel'. No sales call, no forms, no retention flow."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
 
     <style>
       *, *::before, *::after { box-sizing: border-box; }
@@ -178,6 +265,41 @@
         margin: 1rem 0 0;
       }
 
+      /* Founder section */
+      .founder-row {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+      }
+      .founder-photo {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        background: #eef2f6;
+        flex-shrink: 0;
+      }
+      .founder-bio p { margin: 0 0 0.75rem; color: #4a5a6a; }
+      .founder-bio p:last-child { margin-bottom: 0; }
+      .founder-name { font-weight: 600; color: #1a2b3c; }
+      @media (max-width: 500px) {
+        .founder-row { flex-direction: column; gap: 1rem; }
+      }
+
+      /* Latest Audits */
+      .audits-list { list-style: none; padding: 0; margin: 0; }
+      .audits-list li {
+        padding: 1rem 0;
+        border-bottom: 1px solid #eef2f6;
+      }
+      .audits-list li:last-child { border-bottom: none; }
+      .audits-empty {
+        color: #6b7a8a;
+        font-style: italic;
+        padding: 1rem 0;
+      }
+
       /* Bottom CTA */
       .bottom-cta {
         background: #f5f8fb;
@@ -284,6 +406,45 @@
             <li><strong>If it&rsquo;s a fit, we onboard.</strong> 30-minute call: your service area, top competitors, brand voice. First deliverables land the next Friday.</li>
             <li><strong>Content ships weekly. You review, publish, cancel any time.</strong> No calls, no meetings, no account manager.</li>
           </ol>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Who&rsquo;s behind this</h2>
+          <div class="founder-row">
+            <img
+              src="/founder.jpg"
+              alt="Ilyes Tounsi, founder of TN76"
+              class="founder-photo"
+              onerror="this.style.display='none'"
+            />
+            <div class="founder-bio">
+              <p><span class="founder-name">Ilyes Tounsi</span> &middot; solo founder, TN76</p>
+              <p>
+                I build and run digital products end-to-end &mdash; code, content, SEO, and operations.
+                TN76 does for you what I do for my own businesses every week: ship SEO content on a
+                schedule, keep Google Business Profiles active, and track what&rsquo;s moving.
+              </p>
+              <p>
+                No agency team, no account manager, no lock-in. If it&rsquo;s not working, you cancel.
+                That&rsquo;s the deal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="audits">
+        <div class="container">
+          <h2>Latest audits<small>Free 5-minute video breakdowns of real local businesses</small></h2>
+          <ul class="audits-list">
+            <li class="audits-empty">
+              First audits publish this month. Want yours audited free?
+              <a href="mailto:tounsils@gmail.com?subject=Free%20SEO%20audit%20for%20my%20business">Reply here</a>
+              with your business name and city.
+            </li>
+          </ul>
         </div>
       </section>
 
