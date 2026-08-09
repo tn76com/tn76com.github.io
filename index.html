@@ -2,26 +2,311 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="author" content="TN76 Digital" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TN76 — SEO Autopilot for Home Service Businesses</title>
     <meta
       name="description"
-      content="YourAppName helps you create and manage your subscription-based cards."
+      content="Done-for-you SEO content and Google Business optimization for HVAC, roofing, plumbing, and other local service businesses. $349/mo. First month $149. Cancel anytime."
     />
-    <meta
-      name="keywords"
-      content="cards, subscriptions, dashboard, profile, admin, react app"
-    />
-    <meta name="robots" content="index, follow" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="author" content="TN76" />
+    <link rel="canonical" href="https://www.tn76.com/" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TN76 Digital: AI-Powered Digital Solutions at Scale</title>
-    <script type="module" crossorigin src="/assets/index-ySC2jbHu.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-XUXCd7kd.css">
+    <meta property="og:title" content="TN76 — SEO Autopilot for Home Service Businesses" />
+    <meta
+      property="og:description"
+      content="Rank on Google for '[your service] near me' — done-for-you monthly SEO content + GMB posts for local service businesses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tn76.com/" />
+
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: #1a2b3c;
+        background: #ffffff;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+      a { color: #0066cc; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* Header */
+      header {
+        padding: 1.25rem 0;
+        border-bottom: 1px solid #eef2f6;
+      }
+      .brand {
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: #1a2b3c;
+        letter-spacing: -0.01em;
+      }
+      .brand-sub { color: #6b7a8a; font-weight: 400; }
+
+      /* Hero */
+      .hero { padding: 4rem 0 3rem; }
+      .hero h1 {
+        font-size: 2.25rem;
+        line-height: 1.15;
+        margin: 0 0 1rem;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+      }
+      .hero .lede {
+        font-size: 1.125rem;
+        color: #4a5a6a;
+        margin: 0 0 2rem;
+      }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 1.5rem;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: background 120ms ease, transform 120ms ease;
+      }
+      .btn-primary {
+        background: #0066cc;
+        color: #ffffff;
+      }
+      .btn-primary:hover {
+        background: #0052a3;
+        text-decoration: none;
+        transform: translateY(-1px);
+      }
+      .btn-secondary {
+        color: #0066cc;
+        background: transparent;
+        border: 1px solid #d1dbe4;
+      }
+      .btn-secondary:hover { background: #f5f8fb; text-decoration: none; }
+      .cta-note { color: #6b7a8a; font-size: 0.9rem; margin-left: 0.25rem; }
+
+      /* Sections */
+      section { padding: 2.5rem 0; }
+      section h2 {
+        font-size: 1.5rem;
+        margin: 0 0 1.25rem;
+        letter-spacing: -0.01em;
+        font-weight: 700;
+      }
+      section h2 small {
+        display: block;
+        font-size: 0.85rem;
+        color: #6b7a8a;
+        font-weight: 400;
+        margin-top: 0.25rem;
+        letter-spacing: 0;
+      }
+
+      /* Deliverables list */
+      .deliverables { list-style: none; padding: 0; margin: 0; }
+      .deliverables li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eef2f6;
+      }
+      .deliverables li:last-child { border-bottom: none; }
+      .deliverables strong { color: #1a2b3c; }
+      .deliverables .meta { color: #6b7a8a; font-size: 0.95rem; }
+
+      /* Pricing */
+      .price-card {
+        border: 1px solid #d1dbe4;
+        border-radius: 10px;
+        padding: 1.75rem;
+        background: #fafcfd;
+      }
+      .price-card .price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a2b3c;
+        letter-spacing: -0.02em;
+      }
+      .price-card .price small {
+        font-size: 1rem;
+        color: #6b7a8a;
+        font-weight: 400;
+      }
+      .price-card .first-month {
+        color: #0f7a3d;
+        font-weight: 600;
+        margin: 0.5rem 0 1rem;
+      }
+      .price-card ul {
+        margin: 1rem 0 0;
+        padding-left: 1.25rem;
+        color: #4a5a6a;
+      }
+      .price-card ul li { margin-bottom: 0.35rem; }
+
+      /* Steps */
+      .steps { counter-reset: step; padding: 0; list-style: none; margin: 0; }
+      .steps li {
+        counter-increment: step;
+        padding: 0.75rem 0 0.75rem 2.75rem;
+        position: relative;
+      }
+      .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 0;
+        top: 0.85rem;
+        width: 1.75rem;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        text-align: center;
+        border-radius: 50%;
+        background: #0066cc;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+
+      /* Not-included */
+      .not-included {
+        color: #6b7a8a;
+        font-size: 0.95rem;
+        border-left: 3px solid #d1dbe4;
+        padding: 0.25rem 0 0.25rem 1rem;
+        margin: 1rem 0 0;
+      }
+
+      /* Bottom CTA */
+      .bottom-cta {
+        background: #f5f8fb;
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .bottom-cta h2 { margin-top: 0; }
+      .bottom-cta p { color: #4a5a6a; margin: 0.5rem 0 1.5rem; }
+
+      /* Footer */
+      footer {
+        padding: 2rem 0 3rem;
+        border-top: 1px solid #eef2f6;
+        color: #6b7a8a;
+        font-size: 0.9rem;
+      }
+      footer a { color: #6b7a8a; }
+
+      @media (max-width: 500px) {
+        .hero { padding: 2.5rem 0 2rem; }
+        .hero h1 { font-size: 1.75rem; }
+        .hero .lede { font-size: 1rem; }
+        .btn { padding: 0.75rem 1.15rem; font-size: 0.95rem; }
+      }
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <header>
+      <div class="container">
+        <span class="brand">TN76 <span class="brand-sub">— SEO Autopilot</span></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Rank on Google for &ldquo;[your service] near me.&rdquo; Done for you.</h1>
+          <p class="lede">
+            Monthly SEO content and Google Business optimization for HVAC, roofing, plumbing,
+            and other local service businesses. No contract, no account managers, no BS.
+          </p>
+          <div class="cta-row">
+            <a href="mailto:tounsils@gmail.com?subject=Free%20SEO%20audit%20for%20my%20business" class="btn btn-primary">
+              Get a free audit
+            </a>
+            <a href="#offer" class="btn btn-secondary">See what you get</a>
+          </div>
+          <p class="cta-note">2-min free audit video of your Google presence. No sales pitch.</p>
+        </div>
+      </section>
+
+      <section id="offer">
+        <div class="container">
+          <h2>What you get every month<small>Delivered every Friday</small></h2>
+          <ul class="deliverables">
+            <li>
+              <strong>4 SEO-optimized blog posts</strong>
+              <div class="meta">600–1,200 words each, targeting local search intent for your service and city.</div>
+            </li>
+            <li>
+              <strong>Local schema markup on your service pages</strong>
+              <div class="meta">LocalBusiness, Service, and FAQ schema — the technical bits Google needs to trust you.</div>
+            </li>
+            <li>
+              <strong>4 Google Business Profile posts</strong>
+              <div class="meta">One per week, with local call-to-action so more searchers click through.</div>
+            </li>
+            <li>
+              <strong>Monthly ranking report</strong>
+              <div class="meta">Which keywords moved, where your competitors sit, what we&rsquo;ll target next month.</div>
+            </li>
+          </ul>
+          <p class="not-included">
+            <strong>Not included:</strong> paid ads, website redesigns, backlink schemes.
+            We do SEO content and local optimization. That&rsquo;s it.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Pricing<small>One plan. Transparent. Cancel anytime.</small></h2>
+          <div class="price-card">
+            <div class="price">$349<small>/month</small></div>
+            <div class="first-month">First month $149 &mdash; try it, then decide.</div>
+            <ul>
+              <li>Everything listed above</li>
+              <li>No contract, no minimums</li>
+              <li>30-minute onboarding call to learn your service, city, and voice</li>
+              <li>Cancel anytime by replying to any email</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li><strong>Book a free audit.</strong> I&rsquo;ll record a 2-minute video of your current Google presence and what would move the needle first.</li>
+            <li><strong>If it&rsquo;s a fit, we onboard.</strong> 30-minute call: your service area, top competitors, brand voice. First deliverables land the next Friday.</li>
+            <li><strong>Content ships weekly. You review, publish, cancel any time.</strong> No calls, no meetings, no account manager.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="bottom-cta">
+            <h2>Get a free audit of your Google presence</h2>
+            <p>
+              Tell me your business name and service area. You&rsquo;ll get a 2-minute video showing exactly
+              where you rank, where your competitors beat you, and what I&rsquo;d change first &mdash; no obligation, no sales call.
+            </p>
+            <a href="mailto:tounsils@gmail.com?subject=Free%20SEO%20audit%20for%20my%20business&body=Business%20name%3A%20%0AService%20area%20(city%2Fstate)%3A%20%0AWebsite%3A%20%0AWhat%20service%20you%20want%20to%20rank%20for%3A%20" class="btn btn-primary">
+              Request my free audit
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        TN76 &middot; Built by Ilyes Tounsi &middot; <a href="mailto:tounsils@gmail.com">tounsils@gmail.com</a>
+      </div>
+    </footer>
   </body>
 </html>
