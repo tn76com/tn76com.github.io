@@ -1,0 +1,1379 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>37 Apps I Build for Small Businesses | TN76</title>
+    <meta
+      name="description"
+      content="37 software builds for small businesses. Fixed price, fixed delivery window, and the arithmetic showing what each one has to save or earn to pay for itself. AI, VR, e-commerce, automation and installation. Built by Ilyes Tounsi."
+    />
+    <meta name="author" content="Ilyes Tounsi" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://www.tn76.com/apps/" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <meta property="og:title" content="37 Apps I Build for Small Businesses" />
+    <meta
+      property="og:description"
+      content="Fixed price, fixed date, and the maths showing what it has to earn to pay for itself. AI, VR, e-commerce, automation, installation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tn76.com/apps/" />
+    <meta property="og:image" content="https://www.tn76.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.tn76.com/og-image.png" />
+
+    <script>
+      // Set theme before first paint so there is no flash. Light is the default.
+      // Also mark that JS is alive: the scroll-reveal animation only hides content
+      // when this class is present, so a blocked or broken script leaves the page
+      // fully readable instead of blank.
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var t = localStorage.getItem("tn76-theme");
+          if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+
+    <style>
+      /* ============================= TOKENS ============================= */
+      :root {
+        --bg: #ffffff;
+        --bg-alt: #f6f9fc;
+        --surface: #ffffff;
+        --surface-2: #f9fbfd;
+        --text: #0f1b2a;
+        --text-2: #43566a;
+        --muted: #6b7f92;
+        --border: #e2eaf2;
+        --border-strong: #cfdbe7;
+        --accent: #0066cc;
+        --accent-2: #00a4e4;
+        --accent-ink: #ffffff;
+        --good: #0f7a3d;
+        --good-bg: #e8f5ed;
+        --shadow-sm: 0 1px 2px rgba(15, 27, 42, 0.04), 0 1px 3px rgba(15, 27, 42, 0.06);
+        --shadow-lg: 0 18px 40px -12px rgba(15, 27, 42, 0.18);
+        --glow: rgba(0, 102, 204, 0.16);
+        --mesh-1: rgba(0, 102, 204, 0.13);
+        --mesh-2: rgba(0, 164, 228, 0.12);
+        --mesh-3: rgba(124, 92, 255, 0.10);
+        --grid-line: rgba(15, 27, 42, 0.05);
+      }
+      :root[data-theme="dark"] {
+        --bg: #0a1018;
+        --bg-alt: #0e1724;
+        --surface: #111c2b;
+        --surface-2: #162334;
+        --text: #eaf1f9;
+        --text-2: #b4c4d6;
+        --muted: #8698ab;
+        --border: #22334a;
+        --border-strong: #2e4360;
+        --accent: #55a6ff;
+        --accent-2: #3fd0ff;
+        --accent-ink: #06101c;
+        --good: #45d67f;
+        --good-bg: rgba(69, 214, 127, 0.13);
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+        --shadow-lg: 0 20px 50px -14px rgba(0, 0, 0, 0.75);
+        --glow: rgba(85, 166, 255, 0.24);
+        --mesh-1: rgba(85, 166, 255, 0.18);
+        --mesh-2: rgba(63, 208, 255, 0.13);
+        --mesh-3: rgba(150, 110, 255, 0.15);
+        --grid-line: rgba(255, 255, 255, 0.045);
+      }
+
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        transition: background 220ms ease, color 220ms ease;
+      }
+      .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+      .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      h1, h2, h3 { letter-spacing: -0.022em; }
+
+      /* ============================= HEADER ============================= */
+      header {
+        position: sticky; top: 0; z-index: 50;
+        backdrop-filter: saturate(180%) blur(14px);
+        -webkit-backdrop-filter: saturate(180%) blur(14px);
+        background: color-mix(in srgb, var(--bg) 82%, transparent);
+        border-bottom: 1px solid var(--border);
+      }
+      .header-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 0; }
+      .brand { font-weight: 800; font-size: 1.05rem; color: var(--text); display: flex; align-items: center; gap: 0.55rem; }
+      .brand a { color: inherit; }
+      .brand a:hover { text-decoration: none; }
+      .brand-mark {
+        width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        display: grid; place-items: center; color: #fff; font-size: 0.72rem; font-weight: 800;
+        box-shadow: 0 4px 12px var(--glow);
+      }
+      .brand-sub { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+      .header-tools { display: flex; align-items: center; gap: 0.5rem; }
+      .ghost-link {
+        font-size: 0.9rem; color: var(--text-2); padding: 0.45rem 0.7rem;
+        border-radius: 8px; border: 1px solid transparent;
+      }
+      .ghost-link:hover { text-decoration: none; background: var(--surface-2); border-color: var(--border); }
+      .theme-btn {
+        width: 38px; height: 38px; border-radius: 10px; cursor: pointer;
+        border: 1px solid var(--border); background: var(--surface);
+        color: var(--text-2); display: grid; place-items: center;
+        transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+      .theme-btn:hover { background: var(--surface-2); border-color: var(--border-strong); transform: translateY(-1px); }
+      .theme-btn svg { width: 17px; height: 17px; }
+      :root[data-theme="dark"] .icon-sun { display: none; }
+      :root:not([data-theme="dark"]) .icon-moon { display: none; }
+
+      /* ============================= HERO ============================= */
+      .hero { position: relative; overflow: hidden; padding: 5rem 0 3rem; }
+      .hero::before {
+        content: ""; position: absolute; inset: -30% -10% auto -10%; height: 150%;
+        background:
+          radial-gradient(48% 42% at 18% 22%, var(--mesh-1) 0%, transparent 62%),
+          radial-gradient(42% 38% at 82% 12%, var(--mesh-2) 0%, transparent 60%),
+          radial-gradient(44% 40% at 62% 72%, var(--mesh-3) 0%, transparent 62%);
+        animation: drift 22s ease-in-out infinite alternate;
+        pointer-events: none;
+      }
+      .hero::after {
+        content: ""; position: absolute; inset: 0; pointer-events: none;
+        background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+                          linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+        background-size: 46px 46px;
+        mask-image: radial-gradient(70% 60% at 50% 35%, #000 0%, transparent 80%);
+        -webkit-mask-image: radial-gradient(70% 60% at 50% 35%, #000 0%, transparent 80%);
+      }
+      @keyframes drift {
+        0%   { transform: translate3d(0, 0, 0) scale(1); }
+        100% { transform: translate3d(-3%, 2%, 0) scale(1.08); }
+      }
+      .hero .container { position: relative; z-index: 1; }
+      .eyebrow {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        font-size: 0.82rem; font-weight: 600; letter-spacing: 0.01em;
+        color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent);
+        border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+        padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 1.25rem;
+      }
+      .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 var(--good); animation: pulse 2.4s infinite; }
+      @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--good) 60%, transparent); } 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+      .hero h1 { font-size: clamp(2rem, 5.2vw, 3.4rem); line-height: 1.08; margin: 0 0 1.1rem; font-weight: 800; }
+      .grad {
+        background: linear-gradient(115deg, var(--accent), var(--accent-2) 55%, var(--accent));
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+      }
+      .hero .lede { font-size: clamp(1rem, 1.6vw, 1.2rem); color: var(--text-2); margin: 0 0 2rem; max-width: 44rem; }
+
+      .btn {
+        display: inline-flex; align-items: center; gap: 0.55rem;
+        padding: 0.9rem 1.5rem; border-radius: 10px; font-weight: 650; font-size: 1rem;
+        border: 1px solid transparent; cursor: pointer; font-family: inherit;
+        transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease, border-color 150ms ease;
+      }
+      .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+      .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; box-shadow: 0 8px 22px -6px var(--glow); }
+      .btn-primary:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 14px 30px -8px var(--glow); }
+      .btn-secondary { color: var(--text); background: var(--surface); border-color: var(--border-strong); }
+      .btn-secondary:hover { text-decoration: none; background: var(--surface-2); transform: translateY(-2px); }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
+      .cta-note { color: var(--muted); font-size: 0.9rem; margin-top: 1rem; }
+
+      /* Stats */
+      .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
+      .stat {
+        border: 1px solid var(--border); border-radius: 14px; padding: 1.1rem 1.25rem;
+        background: color-mix(in srgb, var(--surface) 70%, transparent);
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      }
+      .stat .n { font-size: 1.85rem; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+      .stat .l { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+      @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+      /* ============================= HONESTY ============================= */
+      .honesty {
+        border: 1px solid var(--border); border-left: 3px solid var(--accent);
+        background: var(--surface-2); padding: 1.4rem 1.6rem; border-radius: 0 14px 14px 0;
+      }
+      .honesty p { margin: 0 0 0.7rem; color: var(--text-2); font-size: 0.97rem; }
+      .honesty p:last-child { margin-bottom: 0; }
+      .honesty strong { color: var(--text); }
+
+      /* ============================= FILTER BAR ============================= */
+      .filterbar {
+        position: sticky; top: 61px; z-index: 40; padding: 0.9rem 0;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px);
+        border-bottom: 1px solid var(--border);
+      }
+      .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+      .chip {
+        border: 1px solid var(--border-strong); border-radius: 999px; background: var(--surface);
+        padding: 0.42rem 0.95rem; font-size: 0.88rem; color: var(--text-2); cursor: pointer;
+        font-family: inherit; display: inline-flex; align-items: center; gap: 0.4rem;
+        transition: all 140ms ease; white-space: nowrap;
+      }
+      .chip:hover { border-color: var(--accent); color: var(--accent); }
+      .chip[aria-pressed="true"] {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        border-color: transparent; color: #fff; box-shadow: 0 5px 14px -4px var(--glow);
+      }
+      .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.7; }
+      .filter-count { color: var(--muted); font-size: 0.86rem; margin-left: auto; white-space: nowrap; }
+
+      /* ============================= SECTIONS ============================= */
+      section { padding: 3rem 0; }
+      .sec-head { display: flex; align-items: flex-start; gap: 1.1rem; margin-bottom: 1.6rem; }
+      .sec-art {
+        width: 60px; height: 60px; border-radius: 16px; flex-shrink: 0;
+        display: grid; place-items: center; border: 1px solid var(--border);
+        background: var(--surface-2); box-shadow: var(--shadow-sm);
+      }
+      .sec-art svg { width: 30px; height: 30px; }
+      .sec-head h2 { font-size: 1.6rem; margin: 0 0 0.3rem; font-weight: 800; }
+      .sec-head .count { color: var(--muted); font-weight: 400; font-size: 0.95rem; }
+      .sec-head p { color: var(--text-2); margin: 0; max-width: 46rem; font-size: 0.97rem; }
+
+      /* ============================= CARDS ============================= */
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 1.2rem; }
+      .card {
+        position: relative; border: 1px solid var(--border); border-radius: 16px;
+        background: var(--surface); display: flex; flex-direction: column; overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        transition: transform 220ms cubic-bezier(.2,.7,.3,1), box-shadow 220ms ease, border-color 220ms ease;
+      }
+      .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--border-strong); }
+      .card.is-hidden { display: none; }
+
+      /* generative thumbnail */
+      .thumb { position: relative; height: 104px; overflow: hidden; border-bottom: 1px solid var(--border); }
+      .thumb svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .thumb .num {
+        position: absolute; right: 0.85rem; bottom: 0.6rem; font-size: 1.6rem; font-weight: 800;
+        color: color-mix(in srgb, var(--text) 16%, transparent); font-variant-numeric: tabular-nums;
+        letter-spacing: -0.04em;
+      }
+      .card-body { padding: 1.15rem 1.3rem 1.3rem; display: flex; flex-direction: column; flex: 1; }
+      .card h3 { font-size: 1.06rem; margin: 0 0 0.5rem; font-weight: 750; line-height: 1.3; }
+      .badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.7rem; }
+      .badge {
+        font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+        padding: 0.18rem 0.5rem; border-radius: 5px; border: 1px solid transparent;
+      }
+      .b-running { background: var(--good-bg); color: var(--good); }
+      .b-revenue { background: color-mix(in srgb, #b4690e 14%, transparent); color: #b4690e; }
+      :root[data-theme="dark"] .b-revenue { color: #ffc46b; background: rgba(255, 196, 107, 0.13); }
+      .b-trending { background: color-mix(in srgb, #7c5cff 14%, transparent); color: #6a45f0; }
+      :root[data-theme="dark"] .b-trending { color: #b9a4ff; background: rgba(185, 164, 255, 0.14); }
+      .b-fast { background: color-mix(in srgb, var(--accent) 13%, transparent); color: var(--accent); }
+      .card .what { color: var(--text-2); font-size: 0.94rem; margin: 0 0 0.75rem; }
+      .card .who { color: var(--muted); font-size: 0.86rem; margin: 0 0 0.85rem; }
+      .card .who b { color: var(--text-2); font-weight: 600; }
+      .card .money {
+        font-size: 0.86rem; color: var(--text-2); background: var(--surface-2);
+        border: 1px solid var(--border); border-radius: 9px; padding: 0.65rem 0.8rem; margin: 0 0 0.9rem;
+      }
+      .card .money b { color: var(--good); font-weight: 650; }
+      .card-foot {
+        margin-top: auto; display: flex; justify-content: space-between; align-items: baseline;
+        gap: 0.75rem; padding-top: 0.85rem; border-top: 1px solid var(--border);
+      }
+      .card .price { font-size: 1.32rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+      .card .price small { font-size: 0.78rem; color: var(--muted); font-weight: 400; letter-spacing: 0; }
+      .card .time { color: var(--muted); font-size: 0.85rem; text-align: right; }
+
+      /* Reveal on scroll. Scoped to html.js on purpose: without JavaScript the
+         content is simply visible, rather than permanently transparent. */
+      .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity 520ms ease, transform 520ms cubic-bezier(.2,.7,.3,1); }
+      .js .reveal.in { opacity: 1; transform: none; }
+      @media (prefers-reduced-motion: reduce) {
+        .js .reveal { opacity: 1; transform: none; transition: none; }
+        .hero::before { animation: none; }
+        .card:hover { transform: none; }
+        html { scroll-behavior: auto; }
+      }
+
+      .empty-note { color: var(--muted); padding: 2.5rem 0; text-align: center; display: none; }
+      .empty-note.show { display: block; }
+
+      /* ============================= STEPS ============================= */
+      .steps { counter-reset: step; padding: 0; list-style: none; margin: 0; }
+      .steps li { counter-increment: step; padding: 0.8rem 0 0.8rem 3rem; position: relative; color: var(--text-2); }
+      .steps li b { color: var(--text); }
+      .steps li::before {
+        content: counter(step); position: absolute; left: 0; top: 0.9rem;
+        width: 1.9rem; height: 1.9rem; line-height: 1.9rem; text-align: center; border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; font-weight: 800; font-size: 0.85rem;
+      }
+      .not-included {
+        color: var(--muted); font-size: 0.94rem; border-left: 3px solid var(--border-strong);
+        padding: 0.3rem 0 0.3rem 1rem; margin: 1.4rem 0 0;
+      }
+
+      /* ============================= CONTACT ============================= */
+      .contact-wrap {
+        border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
+        background: var(--surface); box-shadow: var(--shadow-lg);
+        display: grid; grid-template-columns: 1.05fr 1fr;
+      }
+      @media (max-width: 860px) { .contact-wrap { grid-template-columns: 1fr; } }
+      .contact-side { padding: 2rem; background: var(--surface-2); border-right: 1px solid var(--border); }
+      @media (max-width: 860px) { .contact-side { border-right: none; border-bottom: 1px solid var(--border); } }
+      .contact-side h2 { font-size: 1.45rem; margin: 0 0 0.6rem; font-weight: 800; }
+      .contact-side p { color: var(--text-2); margin: 0 0 1.4rem; font-size: 0.96rem; }
+      .direct { display: flex; flex-direction: column; gap: 0.6rem; }
+      .direct a, .direct button {
+        display: flex; align-items: center; gap: 0.7rem; padding: 0.8rem 1rem;
+        border: 1px solid var(--border-strong); border-radius: 11px; background: var(--surface);
+        color: var(--text); font-size: 0.94rem; font-family: inherit; cursor: pointer; text-align: left;
+        transition: all 150ms ease; width: 100%;
+      }
+      .direct a:hover, .direct button:hover { text-decoration: none; border-color: var(--accent); transform: translateX(3px); }
+      .direct svg { width: 19px; height: 19px; flex-shrink: 0; }
+      .direct .sub { display: block; color: var(--muted); font-size: 0.8rem; }
+      .wa { color: #25d366; }
+
+      .contact-form { padding: 2rem; }
+      .field { margin-bottom: 1rem; }
+      .field label { display: block; font-size: 0.86rem; font-weight: 600; color: var(--text-2); margin-bottom: 0.35rem; }
+      .field input, .field select, .field textarea {
+        width: 100%; padding: 0.7rem 0.85rem; border-radius: 10px;
+        border: 1px solid var(--border-strong); background: var(--bg); color: var(--text);
+        font-size: 0.95rem; font-family: inherit; transition: border-color 150ms ease, box-shadow 150ms ease;
+      }
+      .field input:focus, .field select:focus, .field textarea:focus {
+        outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow);
+      }
+      .field textarea { resize: vertical; min-height: 84px; }
+      .field .req { color: var(--muted); font-weight: 400; }
+      .field.err input, .field.err textarea { border-color: #d92d6e; }
+      .field .msg { color: #d92d6e; font-size: 0.8rem; margin-top: 0.3rem; display: none; }
+      .field.err .msg { display: block; }
+      .form-note { color: var(--muted); font-size: 0.83rem; margin: 0.9rem 0 0; }
+      .honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+      button[disabled] { opacity: 0.6; cursor: progress; }
+      .status { margin: 0.9rem 0 0; font-size: 0.9rem; display: none; }
+      .status.show { display: block; }
+      .status.bad { color: #d92d6e; }
+      .sent {
+        display: none; text-align: center; padding: 2rem 0.5rem;
+      }
+      .sent.show { display: block; }
+      .sent .tick {
+        width: 54px; height: 54px; border-radius: 50%; margin: 0 auto 1rem;
+        display: grid; place-items: center; background: var(--good-bg); color: var(--good);
+      }
+      .sent .tick svg { width: 26px; height: 26px; }
+      .sent h3 { font-size: 1.2rem; margin: 0 0 0.5rem; font-weight: 750; }
+      .sent p { color: var(--text-2); margin: 0 0 1rem; font-size: 0.94rem; }
+
+      footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+      footer a { color: var(--muted); }
+      footer a:hover { color: var(--accent); }
+
+      @media (max-width: 520px) {
+        .hero { padding: 3rem 0 2rem; }
+        .grid { grid-template-columns: 1fr; }
+        .sec-head { gap: 0.85rem; }
+        .sec-art { width: 48px; height: 48px; border-radius: 13px; }
+        .sec-art svg { width: 24px; height: 24px; }
+        .contact-side, .contact-form { padding: 1.5rem; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Shared SVG defs used by every card thumbnail -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0066cc" stop-opacity=".9"/><stop offset="100%" stop-color="#00a4e4" stop-opacity=".55"/></linearGradient>
+        <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f7a3d" stop-opacity=".85"/><stop offset="100%" stop-color="#4fd18b" stop-opacity=".5"/></linearGradient>
+        <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b4690e" stop-opacity=".85"/><stop offset="100%" stop-color="#ffc46b" stop-opacity=".5"/></linearGradient>
+        <linearGradient id="gD" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6a45f0" stop-opacity=".85"/><stop offset="100%" stop-color="#b9a4ff" stop-opacity=".5"/></linearGradient>
+        <linearGradient id="gE" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#d92d6e" stop-opacity=".82"/><stop offset="100%" stop-color="#ff9ec4" stop-opacity=".48"/></linearGradient>
+        <linearGradient id="gF" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d7e8c" stop-opacity=".85"/><stop offset="100%" stop-color="#5fdbe8" stop-opacity=".5"/></linearGradient>
+      </defs>
+    </svg>
+
+    <header>
+      <div class="container">
+        <div class="header-row">
+          <span class="brand">
+            <span class="brand-mark">TN</span>
+            <a href="/">TN76</a> <span class="brand-sub">Custom software</span>
+          </span>
+          <span class="header-tools">
+            <a class="ghost-link" href="/">SEO Autopilot</a>
+            <a class="ghost-link" href="#contact">Contact</a>
+            <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================= HERO ============================= -->
+      <section class="hero">
+        <div class="container">
+          <span class="eyebrow"><span class="pulse"></span> 7 of these are already built and running</span>
+          <h1>37 apps I build for<br /><span class="grad">small businesses.</span></h1>
+          <p class="lede">
+            Every one is a real build with a fixed price and a delivery window. Next to each is the arithmetic
+            showing what it has to save or earn before it has paid for itself. Check the maths against your own
+            business, then come and tell me where I am wrong.
+          </p>
+          <div class="cta-row">
+            <a href="#contact" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.9-.9L3 20.5l1.6-4.9A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg>
+              Start a conversation
+            </a>
+            <a href="#catalog" class="btn btn-secondary">Browse all 37</a>
+          </div>
+          <p class="cta-note">Fixed price agreed before anything starts. No hourly, no retainer, no surprise invoice.</p>
+
+          <div class="stats">
+            <div class="stat"><div class="n" data-count="37">37</div><div class="l">apps, priced</div></div>
+            <div class="stat"><div class="n" data-count="7">7</div><div class="l">already running</div></div>
+            <div class="stat"><div class="n">$850</div><div class="l">smallest build</div></div>
+            <div class="stat"><div class="n">50<span style="font-size:1rem">%</span></div><div class="l">up front, rest on delivery</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= HONESTY ============================= -->
+      <section style="padding-top:1rem;padding-bottom:1.5rem">
+        <div class="container">
+          <div class="honesty reveal">
+            <p><strong>Read this before you read the numbers.</strong></p>
+            <p>The price is what I charge to build it. That part is firm and it does not move after we agree it.</p>
+            <p>
+              The payback line is arithmetic, not a case study. It takes the assumption printed beside it and
+              divides. If that assumption is wrong for your business then the number is wrong for your business,
+              and I would rather you told me so than believed it. I have no interest in selling you a payback
+              that never arrives.
+            </p>
+            <p>
+              Seven are marked <span class="badge b-running">Running now</span>. That means the exact thing
+              described already exists and runs today, either for a client or in my own work, so the build risk
+              is close to zero. The other twenty-nine I would build from parts I have built before. That is a
+              weaker claim and I am not dressing it up as the first one.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= FILTERS ============================= -->
+      <div class="filterbar" id="catalog">
+        <div class="container">
+          <div class="chips" role="group" aria-label="Filter apps">
+            <button class="chip" data-filter="all" aria-pressed="true">All 37</button>
+            <button class="chip" data-filter="running" aria-pressed="false"><span class="dot" style="background:#0f7a3d"></span>Running now</button>
+            <button class="chip" data-filter="revenue" aria-pressed="false"><span class="dot" style="background:#b4690e"></span>Best revenue</button>
+            <button class="chip" data-filter="trending" aria-pressed="false"><span class="dot" style="background:#6a45f0"></span>Trending 2026</button>
+            <button class="chip" data-filter="fast" aria-pressed="false"><span class="dot" style="background:#0066cc"></span>Fast payback</button>
+            <button class="chip" data-filter="cheap" aria-pressed="false">Under $3,000</button>
+            <span class="filter-count" id="filterCount">Showing all 37</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="empty-note" id="emptyNote">Nothing matches that combination. Try another filter.</p>
+
+      <!-- ============================= A. CUSTOMERS ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gA)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+            <div>
+              <h2>Get more customers <span class="count">7 apps</span></h2>
+              <p>All of these attack the same problem: people who would have bought from you never found you, or found you and were never followed up.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><circle cx="72" cy="52" r="30" fill="none" stroke="url(#gA)" stroke-width="2.4"/><path d="M94 74 L126 104" stroke="url(#gA)" stroke-width="3.4" stroke-linecap="round"/><path d="M160 66h40M160 50h70M160 34h55" stroke="url(#gA)" stroke-width="3" stroke-linecap="round" opacity=".55"/></svg><span class="num">01</span></div>
+              <div class="card-body">
+                <h3>Local Rank Audit Tool</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Type in any local business. It reads their Google profile and website, scores the gaps, and renders a branded PDF you can send them the same hour.</p>
+                <p class="who"><b>For:</b> marketing agencies and anyone who sells to local businesses.</p>
+                <p class="money">Researching one prospect by hand is roughly 3 hours. At 20 prospects a month and $50/hr that is $3,000 of time. <b>Pays for itself in month two.</b></p>
+                <div class="card-foot"><span class="price">$3,200</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="running revenue">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><path d="M40 78 L88 44 L136 60 L184 26 L232 40 L280 18" fill="none" stroke="url(#gB)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="88" cy="44" r="5" fill="url(#gB)"/><circle cx="184" cy="26" r="5" fill="url(#gB)"/><circle cx="280" cy="18" r="6" fill="url(#gB)"/><rect x="316" y="30" width="48" height="52" rx="6" fill="none" stroke="url(#gB)" stroke-width="2.2" opacity=".6"/></svg><span class="num">02</span></div>
+              <div class="card-body">
+                <h3>Lead Finder and Call List</h3>
+                <div class="badges"><span class="badge b-running">Running now</span><span class="badge b-revenue">Best revenue</span></div>
+                <p class="what">Sweeps a trade and a radius, scores every business on how badly they need what you sell, flags the fake listings, and hands you a keyboard-driven call queue with a written opener per lead.</p>
+                <p class="who"><b>For:</b> anyone whose growth is limited by not knowing who to call next.</p>
+                <p class="money">A bought list of 150 local leads runs $300 to $900 and is stale on arrival. This regenerates on demand. <b>Pays for itself after about five list purchases.</b></p>
+                <div class="card-foot"><span class="price">$3,800</span><span class="time">2 to 3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g fill="url(#gC)"><path d="M60 26l7.4 15 16.6 2.4-12 11.7 2.8 16.5L60 63.8 45.2 71.6 48 55.1 36 43.4 52.6 41z"/><path d="M130 26l7.4 15 16.6 2.4-12 11.7 2.8 16.5L130 63.8l-14.8 7.8 2.8-16.5-12-11.7 16.6-2.4z"/><path d="M200 26l7.4 15 16.6 2.4-12 11.7 2.8 16.5L200 63.8l-14.8 7.8 2.8-16.5-12-11.7 16.6-2.4z"/></g><g fill="url(#gC)" opacity=".3"><path d="M270 26l7.4 15 16.6 2.4-12 11.7 2.8 16.5L270 63.8l-14.8 7.8 2.8-16.5-12-11.7 16.6-2.4z"/></g></svg><span class="num">03</span></div>
+              <div class="card-body">
+                <h3>Review Request Autopilot</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">When a job is marked done, the customer gets a text asking for a review with the link already built. Unhappy replies get routed to you privately instead of to Google.</p>
+                <p class="who"><b>For:</b> trades, clinics, restaurants, anyone judged on a star rating.</p>
+                <p class="money">Going from 20 reviews to 60 moves you up the local pack. If that brings 2 extra jobs a month at $400, <b>it repays the build in under 3 months.</b></p>
+                <div class="card-foot"><span class="price">$1,900</span><span class="time">1 week</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><path d="M44 34c0-6 5-11 11-11h18c6 0 11 5 11 11v26c0 6-5 11-11 11H62l-14 12V71c-2.4 0-4-2-4-4z" fill="none" stroke="url(#gA)" stroke-width="2.6"/><path d="M120 40h150M120 56h110M120 72h70" stroke="url(#gA)" stroke-width="3.4" stroke-linecap="round" opacity=".45"/><circle cx="330" cy="52" r="18" fill="none" stroke="url(#gA)" stroke-width="2.4" opacity=".7"/><path d="M322 52l6 6 12-13" stroke="url(#gA)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="num">04</span></div>
+              <div class="card-body">
+                <h3>Missed Call Text Back</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Any call you do not pick up gets an automatic text within seconds, asking what they need and offering a callback slot. Every reply lands in one place.</p>
+                <p class="who"><b>For:</b> one-person and small-crew businesses who cannot answer while working.</p>
+                <p class="money">Most people who reach voicemail call your competitor instead. Recovering 1 job a month at $400 <b>repays the build in about 4 months, then it is profit.</b></p>
+                <div class="card-foot"><span class="price">$1,400</span><span class="time">1 week</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><path d="M70 20h160a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8H70a8 8 0 0 1-8-8V28a8 8 0 0 1 8-8z" fill="none" stroke="url(#gF)" stroke-width="2.4"/><path d="M84 40h60M84 54h110M84 68h40" stroke="url(#gF)" stroke-width="3.2" stroke-linecap="round" opacity=".5"/><path d="M280 52h70M330 36l20 16-20 16" fill="none" stroke="url(#gF)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="num">05</span></div>
+              <div class="card-body">
+                <h3>Quote Request Funnel</h3>
+                <div class="badges"></div>
+                <p class="what">A short guided form that asks the three questions you actually need, prices the obvious cases instantly, and books a visit for the rest. No more phone tag to discover the job is too small.</p>
+                <p class="who"><b>For:</b> service businesses drowning in unqualified enquiries.</p>
+                <p class="money">If you spend 6 hours a month qualifying jobs you end up declining, that is $300 of your time. <b>Repays in about 7 months on time alone,</b> sooner on the jobs it wins.</p>
+                <div class="card-foot"><span class="price">$2,200</span><span class="time">1 to 2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><g fill="none" stroke="url(#gA)" stroke-width="2.2"><rect x="46" y="26" width="52" height="52" rx="6"/><rect x="114" y="26" width="52" height="52" rx="6" opacity=".72"/><rect x="182" y="26" width="52" height="52" rx="6" opacity=".5"/><rect x="250" y="26" width="52" height="52" rx="6" opacity=".32"/><rect x="318" y="26" width="52" height="52" rx="6" opacity=".18"/></g><circle cx="72" cy="52" r="8" fill="url(#gA)"/></svg><span class="num">06</span></div>
+              <div class="card-body">
+                <h3>Service Area Page Builder</h3>
+                <div class="badges"></div>
+                <p class="what">Generates a proper page for every service in every town you cover, each with its own schema markup, instead of one page listing 30 towns that ranks for none of them.</p>
+                <p class="who"><b>For:</b> any business that serves more than one town.</p>
+                <p class="money">Agencies charge $150 to $400 per landing page. Thirty pages is $4,500 at the low end. <b>Cheaper than the first batch, and the next thirty are free.</b></p>
+                <div class="card-foot"><span class="price">$2,600</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g stroke="url(#gC)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M50 76v-22M86 76v-40M122 76v-14M158 76v-32"/></g><path d="M200 60 L250 34 L300 48 L352 22" fill="none" stroke="url(#gC)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="352" cy="22" r="6" fill="url(#gC)"/></svg><span class="num">07</span></div>
+              <div class="card-body">
+                <h3>Competitor Price Watch</h3>
+                <div class="badges"></div>
+                <p class="what">Checks your competitors' public prices and stock on a schedule and emails you only when something moves. No dashboard you have to remember to open.</p>
+                <p class="who"><b>For:</b> retail, e-commerce, and trades in a crowded market.</p>
+                <p class="money">Catching one underpriced line before a slow quarter is worth more than the build. <b>On $200k turnover, a 1% margin correction is $2,000 a year.</b></p>
+                <div class="card-foot"><span class="price">$2,900</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= B. SELL ONLINE ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gB)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1.4"/><circle cx="18" cy="20.5" r="1.4"/></svg></div>
+            <div>
+              <h2>Sell online <span class="count">8 apps</span></h2>
+              <p>Taking money on your own site, under your own name, without a platform sitting between you and your customer taking a cut.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="running revenue">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><path d="M200 22v40M186 50l14 14 14-14" fill="none" stroke="url(#gB)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M160 76h80" stroke="url(#gB)" stroke-width="3.4" stroke-linecap="round"/><g opacity=".4" fill="none" stroke="url(#gB)" stroke-width="2.2"><rect x="56" y="30" width="44" height="44" rx="5"/><rect x="300" y="30" width="44" height="44" rx="5"/></g></svg><span class="num">08</span></div>
+              <div class="card-body">
+                <h3>Digital Download Store</h3>
+                <div class="badges"><span class="badge b-running">Running now</span><span class="badge b-revenue">Best revenue</span></div>
+                <p class="what">Sell files. Customer pays, gets an automatic email with a secure download link, and their own account to re-download later. Card and PayPal both work.</p>
+                <p class="who"><b>For:</b> anyone selling software, templates, courses, plans, music or PDFs.</p>
+                <p class="money">A marketplace keeps 30% to 50%. On $2,000 a month of sales that is $600 to $1,000 gone. <b>Your own store repays the build in 5 to 8 months and keeps paying.</b></p>
+                <div class="card-foot"><span class="price">$4,500</span><span class="time">3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="running cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><g fill="url(#gF)"><rect x="150" y="22" width="14" height="14" rx="2"/><rect x="170" y="22" width="8" height="14" rx="2" opacity=".6"/><rect x="184" y="22" width="14" height="14" rx="2"/><rect x="150" y="42" width="8" height="14" rx="2" opacity=".6"/><rect x="164" y="42" width="14" height="14" rx="2"/><rect x="184" y="42" width="8" height="14" rx="2" opacity=".6"/><rect x="150" y="62" width="14" height="14" rx="2"/><rect x="170" y="62" width="14" height="14" rx="2" opacity=".6"/><rect x="190" y="62" width="8" height="14" rx="2"/></g><path d="M230 52h70M280 38l20 14-20 14" fill="none" stroke="url(#gF)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></svg><span class="num">09</span></div>
+              <div class="card-body">
+                <h3>Digital Business Card</h3>
+                <div class="badges"><span class="badge b-running">Running now</span></div>
+                <p class="what">One QR code that opens your profile, saves your contact straight to their phone, and shows your links. Update it any time without reprinting anything.</p>
+                <p class="who"><b>For:</b> sales teams, trades, realtors, anyone who hands out cards at events.</p>
+                <p class="money">Printing 500 cards is $80 and they are wrong the moment a number changes. For a team of 10 reprinting twice a year, <b>this removes about $1,600 a year of print.</b></p>
+                <div class="card-foot"><span class="price">$2,100</span><span class="time">1 to 2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><rect x="128" y="20" width="144" height="64" rx="8" fill="none" stroke="url(#gA)" stroke-width="2.4"/><path d="M128 40h144" stroke="url(#gA)" stroke-width="2.4"/><g fill="url(#gA)" opacity=".55"><rect x="144" y="52" width="16" height="16" rx="3"/><rect x="170" y="52" width="16" height="16" rx="3"/><rect x="196" y="52" width="16" height="16" rx="3"/></g><rect x="222" y="52" width="16" height="16" rx="3" fill="url(#gA)"/></svg><span class="num">10</span></div>
+              <div class="card-body">
+                <h3>Booking and Deposit Taker</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Customers pick a slot from your real availability and pay a deposit to hold it. Confirmation and reminder texts go out on their own.</p>
+                <p class="who"><b>For:</b> clinics, salons, tradespeople, consultants, anyone with a calendar and no-shows.</p>
+                <p class="money">No-shows typically run 10% to 20%. A deposit cuts that hard. <b>On 40 bookings a month at $120, halving a 15% no-show rate recovers $360 a month.</b></p>
+                <div class="card-foot"><span class="price">$3,600</span><span class="time">2 to 3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="revenue trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g fill="none" stroke="url(#gC)" stroke-width="2.6"><circle cx="200" cy="52" r="30"/><path d="M200 34v36M186 44h20a7 7 0 0 1 0 14h-12a7 7 0 0 0 0 14h20" stroke-linecap="round"/></g><g stroke="url(#gC)" stroke-width="2.4" opacity=".4" fill="none"><circle cx="200" cy="52" r="44"/></g></svg><span class="num">11</span></div>
+              <div class="card-body">
+                <h3>Subscription and Membership Manager</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Recurring billing, member-only content, automatic dunning when a card fails, and a page where members manage themselves instead of emailing you.</p>
+                <p class="who"><b>For:</b> anyone turning a one-off product into monthly revenue.</p>
+                <p class="money">Failed-card dunning alone usually recovers 20% to 40% of involuntary churn. <b>On 100 members at $30, that is $180 to $360 a month you were losing silently.</b></p>
+                <div class="card-foot"><span class="price">$5,200</span><span class="time">3 to 4 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><g fill="none" stroke="url(#gF)" stroke-width="3" stroke-linecap="round"><path d="M60 52h280"/></g><g fill="url(#gF)"><circle cx="60" cy="52" r="9"/><circle cx="153" cy="52" r="9"/><circle cx="246" cy="52" r="9" opacity=".4"/><circle cx="340" cy="52" r="9" opacity=".2"/></g></svg><span class="num">12</span></div>
+              <div class="card-body">
+                <h3>Order Status Portal</h3>
+                <div class="badges"></div>
+                <p class="what">A link the customer can check any time to see exactly where their order or job is, instead of calling you to ask.</p>
+                <p class="who"><b>For:</b> custom manufacturing, repairs, print shops, anyone with a lead time.</p>
+                <p class="money">If "where is my order" takes 5 hours a month at $25/hr, that is $125 a month. <b>Repays in about 19 months on time alone,</b> and it is really a complaints fix.</p>
+                <div class="card-foot"><span class="price">$2,400</span><span class="time">1 to 2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><path d="M140 32h120l-12 48H152z" fill="none" stroke="url(#gB)" stroke-width="2.6" stroke-linejoin="round"/><path d="M170 32V22a30 30 0 0 1 60 0v10" fill="none" stroke="url(#gB)" stroke-width="2.6"/><path d="M290 44l22 22M312 44l-22 22" stroke="url(#gB)" stroke-width="3.2" stroke-linecap="round" opacity=".5"/></svg><span class="num">13</span></div>
+              <div class="card-body">
+                <h3>Abandoned Cart Recovery</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Someone fills a cart and leaves. Three messages go out on a schedule you set, the last one with a discount you control.</p>
+                <p class="who"><b>For:</b> any store already taking orders.</p>
+                <p class="money">Recovery sequences typically bring back 5% to 10% of abandoned carts. <b>On $5,000 a month of abandonment that is $250 to $500 a month.</b> Repays in 4 to 7 months.</p>
+                <div class="card-foot"><span class="price">$1,800</span><span class="time">1 week</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="revenue">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gD)" opacity=".12"/><g fill="none" stroke="url(#gD)" stroke-width="2.4"><rect x="100" y="30" width="46" height="46" rx="6"/><rect x="164" y="18" width="46" height="46" rx="6"/><rect x="164" y="76" width="46" height="24" rx="6"/><rect x="228" y="30" width="46" height="46" rx="6"/></g><path d="M146 53h18M210 41h18M210 84h18" stroke="url(#gD)" stroke-width="2.6" opacity=".55"/></svg><span class="num">14</span></div>
+              <div class="card-body">
+                <h3>Multi-Vendor Marketplace</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span></div>
+                <p class="what">Other sellers list their own products on your site. You take a cut of every sale automatically, and they manage their own listings and payouts.</p>
+                <p class="who"><b>For:</b> trade associations, local co-ops, anyone with a community and no product of their own.</p>
+                <p class="money">At a 10% cut, <b>$10,000 a month of vendor sales is $1,000 a month to you</b> for inventory you never buy. Repays in about a year at that volume.</p>
+                <div class="card-foot"><span class="price">$12,000</span><span class="time">8 to 10 weeks</span></div>
+              </div>
+            </article>
+            <article class="card reveal" data-tags="revenue">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><g fill="none" stroke="url(#gB)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="56" y="30" width="42" height="52" rx="6"/><path d="M68 46h18M68 58h18"/><path d="M108 40h14a8 8 0 0 1 8 8v22a7 7 0 0 0 7 7 7 7 0 0 0 7-7V52"/><path d="M186 30l-14 24h16l-12 22" stroke-width="3.4"/></g><path d="M232 66h56M232 50h86M232 34h68" stroke="url(#gB)" stroke-width="3" stroke-linecap="round" opacity=".55"/></svg><span class="num">37</span></div>
+              <div class="card-body">
+                <h3>EV Charger Booking and Billing</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span></div>
+                <p class="what">A booking page for the chargers you already own. Drivers reserve a slot, pay by card, and you get a monthly statement showing who used what. Works with the hardware you have.</p>
+                <p class="who"><b>For:</b> hotels, gyms, restaurants and small property owners with two to eight chargers.</p>
+                <p class="money">Four chargers at three paid sessions a day at $8 a session is about $2,880 a month. Most small sites lose a chunk of that to drivers who cannot tell whether a bay is free. <b>Recovering a third of those sessions pays for the build in month two.</b></p>
+                <div class="card-foot"><span class="price">$4,800</span><span class="time">3 weeks</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= C. ADMIN ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gC)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <div>
+              <h2>Cut admin time <span class="count">6 apps</span></h2>
+              <p>The least glamorous category and usually the highest return, because those hours are already being spent and nobody is billing anyone for them.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g fill="none" stroke="url(#gC)" stroke-width="2.4"><rect x="80" y="22" width="56" height="60" rx="5"/><rect x="172" y="22" width="56" height="60" rx="5" opacity=".7"/><rect x="264" y="22" width="56" height="60" rx="5" opacity=".45"/></g><path d="M142 52h24M234 52h24" stroke="url(#gC)" stroke-width="2.8" stroke-linecap="round"/><path d="M92 38h32M92 50h32M92 62h20" stroke="url(#gC)" stroke-width="2.4" stroke-linecap="round" opacity=".55"/></svg><span class="num">15</span></div>
+              <div class="card-body">
+                <h3>Quote to Invoice Pipeline</h3>
+                <div class="badges"></div>
+                <p class="what">One record moves from quote to accepted to scheduled to invoiced to paid. Nothing is retyped, and nothing sits in the accepted column with no invoice against it.</p>
+                <p class="who"><b>For:</b> any business that quotes before it bills.</p>
+                <p class="money">Retyping a quote into an invoice is 10 minutes. At 60 jobs a month that is 10 hours. <b>At $50/hr that is $500 a month, repaying in about 7 months,</b> before counting invoices that never got sent.</p>
+                <div class="card-foot"><span class="price">$3,400</span><span class="time">2 to 3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><g fill="none" stroke="url(#gA)" stroke-width="2.4"><rect x="120" y="26" width="76" height="56" rx="6"/><circle cx="158" cy="54" r="15"/><rect x="214" y="26" width="76" height="56" rx="6" opacity=".55"/><circle cx="252" cy="54" r="15" opacity=".55"/></g><path d="M196 54h18" stroke="url(#gA)" stroke-width="3" stroke-linecap="round"/></svg><span class="num">16</span></div>
+              <div class="card-body">
+                <h3>Job Photo Report Generator</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Crew takes before and after photos on their phone. A branded PDF report is waiting in the customer's inbox before the van has left the street.</p>
+                <p class="who"><b>For:</b> restoration, roofing, pest control, landscaping, anything an insurer or landlord needs proof of.</p>
+                <p class="money">Assembling one report by hand is 20 to 30 minutes. At 40 jobs a month that is 16 hours. <b>At $30/hr that is $480 a month, repaying in under 6 months.</b></p>
+                <div class="card-foot"><span class="price">$2,700</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><circle cx="200" cy="52" r="32" fill="none" stroke="url(#gF)" stroke-width="2.6"/><path d="M200 32v20l14 9" fill="none" stroke="url(#gF)" stroke-width="3.2" stroke-linecap="round"/><g stroke="url(#gF)" stroke-width="3" stroke-linecap="round" opacity=".45"><path d="M96 40h44M96 52h58M96 64h30M260 40h44M260 52h58M260 64h30"/></g></svg><span class="num">17</span></div>
+              <div class="card-body">
+                <h3>Timesheet and Payroll Export</h3>
+                <div class="badges"></div>
+                <p class="what">Staff clock in from their phone with location. At period end it produces the exact file your payroll provider wants, with overtime already worked out.</p>
+                <p class="who"><b>For:</b> any business with hourly staff and a spreadsheet.</p>
+                <p class="money">Manual payroll prep is commonly 4 to 6 hours a period. At 24 periods and $40/hr that is <b>$3,840 to $5,760 a year, so it repays inside the first year</b> and ends the arguments about hours.</p>
+                <div class="card-foot"><span class="price">$2,900</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gD)" opacity=".12"/><path d="M120 20h70l26 26v38a6 6 0 0 1-6 6h-90a6 6 0 0 1-6-6V26a6 6 0 0 1 6-6z" fill="none" stroke="url(#gD)" stroke-width="2.4"/><path d="M190 20v26h26" fill="none" stroke="url(#gD)" stroke-width="2.4"/><path d="M252 52h76M306 38l22 14-22 14" fill="none" stroke="url(#gD)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g fill="url(#gD)" opacity=".5"><rect x="136" y="56" width="42" height="4" rx="2"/><rect x="136" y="66" width="30" height="4" rx="2"/></g></svg><span class="num">18</span></div>
+              <div class="card-body">
+                <h3>Document Intake and Extract</h3>
+                <div class="badges"><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Forward a supplier invoice, a receipt or a signed form to one address. The numbers come out as clean rows in your system, with anything uncertain flagged for a human rather than guessed.</p>
+                <p class="who"><b>For:</b> bookkeepers, property managers, clinics, anyone retyping paper.</p>
+                <p class="money">Keying 300 documents a month at 3 minutes each is 15 hours. <b>At $30/hr that is $450 a month, repaying in about 11 months,</b> and the error rate drops at the same time.</p>
+                <div class="card-foot"><span class="price">$4,800</span><span class="time">3 to 4 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><g fill="none" stroke="url(#gB)" stroke-width="2.4"><rect x="130" y="38" width="36" height="44" rx="4"/><rect x="174" y="24" width="36" height="58" rx="4"/><rect x="218" y="50" width="36" height="32" rx="4" opacity=".55"/></g><path d="M100 88h200" stroke="url(#gB)" stroke-width="2.8" stroke-linecap="round" opacity=".5"/><circle cx="236" cy="34" r="9" fill="url(#gB)" opacity=".8"/><path d="M236 30v5M236 39v1" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg><span class="num">19</span></div>
+              <div class="card-body">
+                <h3>Inventory Reorder Alerts</h3>
+                <div class="badges"></div>
+                <p class="what">Watches stock against how fast each line actually moves and tells you what to order this week, before you find out by running out.</p>
+                <p class="who"><b>For:</b> retail, workshops, clinics, kitchens.</p>
+                <p class="money">One stockout on a fast line costs a weekend of sales. <b>If that is $800 and it happens three times a year, the build repays in year one</b> on prevented stockouts alone.</p>
+                <div class="card-foot"><span class="price">$2,300</span><span class="time">1 to 2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="revenue">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><g fill="none" stroke="url(#gA)" stroke-width="2.4"><rect x="128" y="24" width="144" height="58" rx="7"/><path d="M128 42h144"/></g><g fill="url(#gA)" opacity=".5"><rect x="142" y="52" width="14" height="14" rx="3"/><rect x="166" y="52" width="14" height="14" rx="3"/><rect x="214" y="52" width="14" height="14" rx="3"/><rect x="238" y="52" width="14" height="14" rx="3"/></g><rect x="190" y="52" width="14" height="14" rx="3" fill="url(#gA)"/><path d="M164 18v10M236 18v10" stroke="url(#gA)" stroke-width="3" stroke-linecap="round"/></svg><span class="num">20</span></div>
+              <div class="card-body">
+                <h3>Recurring Service Scheduler</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span></div>
+                <p class="what">Every contract customer gets rebooked automatically on their own cycle, routed sensibly by geography, with the reminder already sent.</p>
+                <p class="who"><b>For:</b> maintenance contracts, cleaning, inspections, lawn care, HVAC servicing.</p>
+                <p class="money">Contracts that lapse because nobody rebooked them are the quietest revenue loss there is. <b>Saving 5 contracts a year at $600 is $3,000, repaying inside 16 months</b> and compounding after.</p>
+                <div class="card-foot"><span class="price">$3,900</span><span class="time">3 weeks</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= D. AI ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gD)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="7.5" width="15" height="12" rx="3"/><path d="M12 7.5V4M9.5 13h.01M14.5 13h.01M9 17h6"/><circle cx="12" cy="3" r="1.4"/></svg></div>
+            <div>
+              <h2>AI that does real work <span class="count">7 apps</span></h2>
+              <p>Not a chatbot bolted onto your website. These are jobs a person does today that a model can do with a human checking the output, built so that when it is unsure it says so instead of inventing.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="revenue trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gD)" opacity=".12"/><g fill="none" stroke="url(#gD)" stroke-width="2.2"><circle cx="200" cy="52" r="13"/><circle cx="126" cy="28" r="9"/><circle cx="126" cy="76" r="9"/><circle cx="274" cy="28" r="9"/><circle cx="274" cy="76" r="9"/><path d="M135 32l53 14M135 72l53-14M265 32l-53 14M265 72l-53-14"/></g><circle cx="200" cy="52" r="5" fill="url(#gD)"/></svg><span class="num">21</span></div>
+              <div class="card-body">
+                <h3>Company Knowledge Assistant</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Ask questions of your own manuals, contracts, price lists and past jobs, and get an answer that cites the document it came from. If the answer is not in your documents, it says so.</p>
+                <p class="who"><b>For:</b> firms where one or two people are the only ones who know things.</p>
+                <p class="money">If five staff each lose 30 minutes a day hunting for information, that is 10 hours a week. <b>At $35/hr that is $1,400 a month, repaying in about 5 months.</b></p>
+                <div class="card-foot"><span class="price">$6,500</span><span class="time">4 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="trending fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><g fill="none" stroke="url(#gA)" stroke-width="2.4"><rect x="110" y="26" width="90" height="56" rx="6"/><path d="M110 34l45 30 45-30"/></g><g stroke="url(#gA)" stroke-width="3" stroke-linecap="round"><path d="M238 36h70" opacity=".8"/><path d="M238 54h50" opacity=".5"/><path d="M238 72h30" opacity=".3"/></g></svg><span class="num">22</span></div>
+              <div class="card-body">
+                <h3>Inbox Triage Agent</h3>
+                <div class="badges"><span class="badge b-trending">Trending 2026</span><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Reads the shared mailbox, sorts what is a new enquiry, a complaint, a supplier or noise, drafts the routine replies, and leaves the rest for you with the context already gathered.</p>
+                <p class="who"><b>For:</b> any business where a shared inbox is the real bottleneck.</p>
+                <p class="money">Two hours a day of triage at $35/hr is $1,540 a month. <b>Removing even half of that repays the build in under 6 months.</b></p>
+                <div class="card-foot"><span class="price">$4,200</span><span class="time">3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="trending fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><g stroke="url(#gF)" stroke-width="3.4" stroke-linecap="round"><path d="M110 52v0M126 40v24M142 30v44M158 38v28M174 46v12M190 34v36M206 44v16"/></g><path d="M240 52h70M288 38l22 14-22 14" fill="none" stroke="url(#gF)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></svg><span class="num">23</span></div>
+              <div class="card-body">
+                <h3>Call Notes to CRM</h3>
+                <div class="badges"><span class="badge b-trending">Trending 2026</span><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Recorded calls become a written summary, the agreed next step, and a dated follow-up task in your CRM. Nobody types notes after a call ever again.</p>
+                <p class="who"><b>For:</b> sales teams and anyone whose CRM is full of blank activity fields.</p>
+                <p class="money">Post-call notes are 5 minutes a call. At 25 calls a day across 3 people that is 31 hours a month. <b>At $40/hr that is $1,250 a month, repaying in 3 months.</b></p>
+                <div class="card-foot"><span class="price">$3,700</span><span class="time">2 to 3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g fill="none" stroke="url(#gC)" stroke-width="2.4"><rect x="140" y="18" width="94" height="68" rx="6"/></g><g stroke="url(#gC)" stroke-width="3" stroke-linecap="round" opacity=".55"><path d="M156 36h62M156 48h62M156 60h40"/></g><path d="M250 70l14-14 20 20" fill="none" stroke="url(#gC)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="286" cy="38" r="10" fill="none" stroke="url(#gC)" stroke-width="2.6"/></svg><span class="num">24</span></div>
+              <div class="card-body">
+                <h3>Proposal Draft Generator</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Feed it the notes from a discovery call plus your past winning proposals. It returns a first draft in your format with your pricing, ready to edit rather than ready to send.</p>
+                <p class="who"><b>For:</b> consultants, agencies, contractors bidding regularly.</p>
+                <p class="money">A serious proposal is 3 to 4 hours. At 8 a month and $75/hr that is $1,800 to $2,400. <b>Cutting each to one hour repays the build in about 2 months.</b></p>
+                <div class="card-foot"><span class="price">$3,300</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="running trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><g fill="none" stroke="url(#gB)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M120 52l12 12 24-26M180 52l12 12 24-26"/></g><g fill="none" stroke="#d92d6e" stroke-width="2.8" stroke-linecap="round" opacity=".75"><path d="M252 42l22 22M274 42l-22 22"/></g><path d="M100 84h200" stroke="url(#gB)" stroke-width="2.4" stroke-linecap="round" opacity=".35"/></svg><span class="num">25</span></div>
+              <div class="card-body">
+                <h3>AI Output Test Harness</h3>
+                <div class="badges"><span class="badge b-running">Running now</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">A test suite for the AI features you already shipped. It proves they still behave after every change, and it is built so that it can actually fail. A suite that cannot go red is not a suite.</p>
+                <p class="who"><b>For:</b> companies who have put a model in front of customers and cannot tell when it drifts.</p>
+                <p class="money">One confidently wrong answer to a customer costs more than this build. <b>It is insurance, priced at roughly one bad incident.</b></p>
+                <div class="card-foot"><span class="price">$5,500</span><span class="time">3 to 4 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><g fill="none" stroke="url(#gF)" stroke-width="2.2"><rect x="110" y="24" width="180" height="56" rx="5"/><path d="M110 42h180M170 24v56M230 24v56"/></g><g fill="url(#gF)" opacity=".45"><rect x="120" y="50" width="40" height="5" rx="2.5"/><rect x="180" y="50" width="40" height="5" rx="2.5"/><rect x="240" y="50" width="40" height="5" rx="2.5"/><rect x="120" y="64" width="40" height="5" rx="2.5"/><rect x="240" y="64" width="40" height="5" rx="2.5"/></g><rect x="180" y="64" width="40" height="5" rx="2.5" fill="#d92d6e" opacity=".7"/></svg><span class="num">26</span></div>
+              <div class="card-body">
+                <h3>Spreadsheet Cleanup Agent</h3>
+                <div class="badges"></div>
+                <p class="what">Takes the messy export, matches duplicates, fixes formats, flags what it is not sure about, and never silently deletes a row. Everything it changed is listed for you.</p>
+                <p class="who"><b>For:</b> anyone merging lists, migrating systems, or living in a CRM full of duplicates.</p>
+                <p class="money">A one-off cleanup quoted out is $1,500 to $4,000 and you pay it again next year. <b>This repays on the second cleanup and then runs whenever you want.</b></p>
+                <div class="card-foot"><span class="price">$2,800</span><span class="time">2 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="running trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gD)" opacity=".12"/><g fill="none" stroke="url(#gD)" stroke-width="2.4"><rect x="120" y="30" width="60" height="44" rx="6"/><rect x="220" y="30" width="60" height="44" rx="6"/><path d="M180 52h40"/></g><g fill="url(#gD)"><circle cx="150" cy="52" r="6"/><circle cx="250" cy="52" r="6"/></g><path d="M300 40l14 12-14 12" fill="none" stroke="url(#gD)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/><path d="M100 40L86 52l14 12" fill="none" stroke="url(#gD)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg><span class="num">27</span></div>
+              <div class="card-body">
+                <h3>Private Tool Server for AI</h3>
+                <div class="badges"><span class="badge b-running">Running now</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Lets Claude or ChatGPT safely read and act on your own systems through a small set of tools you define, with hard limits on what it may touch and what it may say.</p>
+                <p class="who"><b>For:</b> firms who want AI on their real data without handing over the keys.</p>
+                <p class="money">The alternative is staff pasting company data into a public chat window, which is a breach waiting to be discovered. <b>Priced well below what that costs to explain.</b></p>
+                <div class="card-foot"><span class="price">$5,900</span><span class="time">3 to 4 weeks</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= E. VR / AR ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gE)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5h17a1.5 1.5 0 0 1 1.5 1.5v3.5a1.5 1.5 0 0 1-1.5 1.5h-4.2a2 2 0 0 1-1.6-.8L13 13.4a1.3 1.3 0 0 0-2 0l-1.7 2.3a2 2 0 0 1-1.6.8H3.5A1.5 1.5 0 0 1 2 15V11a1.5 1.5 0 0 1 1.5-1.5z"/></svg></div>
+            <div>
+              <h2>Virtual and augmented reality <span class="count">5 apps</span></h2>
+              <p>The headset is no longer the hard part. These all run in a browser on a phone as well as in a headset, so your customer does not have to own hardware to see the value.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="revenue trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gE)" opacity=".12"/><g fill="none" stroke="url(#gE)" stroke-width="2.4"><path d="M200 18l62 34-62 34-62-34z"/><path d="M138 52v22l62 34 62-34V52"/><path d="M200 86V52"/></g><g fill="url(#gE)" opacity=".35"><circle cx="86" cy="36" r="5"/><circle cx="318" cy="70" r="5"/><circle cx="100" cy="78" r="4"/><circle cx="304" cy="30" r="4"/></g></svg><span class="num">28</span></div>
+              <div class="card-body">
+                <h3>VR Showroom</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Customers walk through your full product range at real scale, in a headset or straight in the browser on their phone. No warehouse, no floor space, no travel.</p>
+                <p class="who"><b>For:</b> furniture, kitchens, cars, boats, machinery, modular buildings.</p>
+                <p class="money">A physical showroom is rent, staff and stock. <b>If it replaces one 400 sq ft showroom at $2,200 a month, it repays in under 5 months</b> and it is open at 2am to a buyer in another state.</p>
+                <div class="card-foot"><span class="price">$9,800</span><span class="time">6 to 8 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="revenue trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gE)" opacity=".12"/><path d="M200 22l34 14v22c0 16-14 27-34 32-20-5-34-16-34-32V36z" fill="none" stroke="url(#gE)" stroke-width="2.6"/><path d="M186 54l10 10 20-22" fill="none" stroke="url(#gE)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g stroke="url(#gE)" stroke-width="2.6" stroke-linecap="round" opacity=".4"><path d="M100 36h40M100 52h56M100 68h30M260 36h40M244 52h56M270 68h30"/></g></svg><span class="num">29</span></div>
+              <div class="card-body">
+                <h3>VR Safety Training</h3>
+                <div class="badges"><span class="badge b-revenue">Best revenue</span><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Staff practise the dangerous procedure without the danger, as many times as they need, and every attempt is scored and recorded for your compliance file.</p>
+                <p class="who"><b>For:</b> construction, manufacturing, utilities, warehousing, anyone with a safety record to defend.</p>
+                <p class="money">One recordable injury costs an employer tens of thousands before insurance moves. <b>Taking a single incident out of a year pays for this several times over,</b> and the training record is the evidence.</p>
+                <div class="card-foot"><span class="price">$11,500</span><span class="time">8 to 10 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gE)" opacity=".12"/><rect x="168" y="14" width="64" height="76" rx="9" fill="none" stroke="url(#gE)" stroke-width="2.4"/><rect x="180" y="34" width="40" height="34" rx="4" fill="none" stroke="url(#gE)" stroke-width="2.2" opacity=".65"/><path d="M180 60l12-12 10 10 8-8 10 10" fill="none" stroke="url(#gE)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><g stroke="url(#gE)" stroke-width="2.4" opacity=".45" fill="none"><path d="M120 30v-8h8M120 74v8h8M280 30v-8h-8M280 74v8h-8"/></g></svg><span class="num">30</span></div>
+              <div class="card-body">
+                <h3>AR Try Before You Buy</h3>
+                <div class="badges"><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">Customer points their phone at the room and sees your product sitting in it at the right size, in the right colour, before they order.</p>
+                <p class="who"><b>For:</b> furniture, paint, flooring, signage, blinds, appliances.</p>
+                <p class="money">Returns on furniture and decor commonly run 15% to 25%, and "it did not fit the space" is the top reason. <b>On $120k of annual sales, cutting returns by a third keeps roughly $6,000 of margin.</b></p>
+                <div class="card-foot"><span class="price">$7,400</span><span class="time">5 to 6 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><circle cx="200" cy="52" r="34" fill="none" stroke="url(#gF)" stroke-width="2.6"/><ellipse cx="200" cy="52" rx="14" ry="34" fill="none" stroke="url(#gF)" stroke-width="2.2" opacity=".65"/><path d="M167 40h66M167 64h66" stroke="url(#gF)" stroke-width="2.2" opacity=".65"/><g fill="url(#gF)"><circle cx="248" cy="30" r="6"/><circle cx="152" cy="74" r="6"/></g></svg><span class="num">31</span></div>
+              <div class="card-body">
+                <h3>360 Virtual Tour</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">A walkthrough of your property, venue or workshop with clickable hotspots that explain what the visitor is looking at. Works on any phone, no app to install.</p>
+                <p class="who"><b>For:</b> real estate, hotels, venues, schools, care homes, gyms.</p>
+                <p class="money">Photographers charge $400 to $900 per property tour. <b>At six properties a year you are past the build cost,</b> and you own the tool rather than rebooking the shoot.</p>
+                <div class="card-foot"><span class="price">$3,900</span><span class="time">2 to 3 weeks</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="trending">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gE)" opacity=".12"/><g fill="none" stroke="url(#gE)" stroke-width="2.4"><circle cx="150" cy="38" r="12"/><path d="M128 76a22 22 0 0 1 44 0"/><rect x="206" y="24" width="66" height="52" rx="6"/></g><path d="M186 50h14M278 50h16" stroke="url(#gE)" stroke-width="2.8" stroke-linecap="round" opacity=".6"/><g stroke="url(#gE)" stroke-width="2.4" opacity=".5"><path d="M220 40h38M220 52h38M220 64h22"/></g></svg><span class="num">32</span></div>
+              <div class="card-body">
+                <h3>VR Site Induction</h3>
+                <div class="badges"><span class="badge b-trending">Trending 2026</span></div>
+                <p class="what">A new hire or visiting contractor walks your actual site in VR before they ever set foot on it, and arrives knowing the layout, the hazards and the rules.</p>
+                <p class="who"><b>For:</b> anyone inducting contractors, seasonal staff or high-turnover crews.</p>
+                <p class="money">A supervisor walking each new starter round is 2 hours. <b>At 60 starters a year and $45/hr that is $5,400 of supervisor time, repaying in under two years</b> and the induction never varies by who gave it.</p>
+                <div class="card-foot"><span class="price">$8,600</span><span class="time">6 weeks</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= F. SETUP ============================= -->
+      <section data-group>
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gF)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5a3.8 3.8 0 0 0 5 5L15 15l-6 6-3-3 6-6z"/><circle cx="7.5" cy="7.5" r="2.6"/></svg></div>
+            <div>
+              <h2>Setup, installation and rescue <span class="count">4 jobs</span></h2>
+              <p>Smaller, faster, and priced by the job. You already own the software or the site. You just need someone to make it work properly and then get out of your way.</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-tags="running fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gF)" opacity=".12"/><g fill="none" stroke="url(#gF)" stroke-width="2.4"><rect x="140" y="20" width="120" height="26" rx="5"/><rect x="140" y="56" width="120" height="26" rx="5"/></g><g fill="url(#gF)"><circle cx="158" cy="33" r="4"/><circle cx="158" cy="69" r="4"/></g><path d="M300 42l12 12 24-26" fill="none" stroke="url(#gF)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M86 33h30M86 69h30" stroke="url(#gF)" stroke-width="2.6" stroke-linecap="round" opacity=".45"/></svg><span class="num">33</span></div>
+              <div class="card-body">
+                <h3>Software Installation and Setup</h3>
+                <div class="badges"><span class="badge b-running">Running now</span><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">You bought the software and it is sitting in a folder. I install it on your server, configure it, connect your payment and email, test it end to end with a real transaction, and show you how to run it.</p>
+                <p class="who"><b>For:</b> anyone holding a licence, a bundle or a plugin they have never managed to get working.</p>
+                <p class="money">Software you own and cannot run is worth nothing. <b>If the bundle cost you $500 and it is still in a folder, this is the cheapest way to make that $500 real.</b></p>
+                <div class="card-foot"><span class="price">$850 <small>from</small></span><span class="time">2 to 5 days</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gA)" opacity=".12"/><g fill="none" stroke="url(#gA)" stroke-width="2.4"><rect x="90" y="30" width="70" height="46" rx="6"/><rect x="240" y="30" width="70" height="46" rx="6"/></g><path d="M170 53h60M212 40l20 13-20 13" fill="none" stroke="url(#gA)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><g fill="url(#gA)" opacity=".5"><rect x="102" y="44" width="46" height="5" rx="2.5"/><rect x="102" y="56" width="30" height="5" rx="2.5"/><rect x="252" y="44" width="46" height="5" rx="2.5"/><rect x="252" y="56" width="30" height="5" rx="2.5"/></g></svg><span class="num">34</span></div>
+              <div class="card-body">
+                <h3>Website Migration and Rescue</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Move a site to hosting that actually works, or recover one that broke, without losing your products, orders, customers or search rankings. Full backup taken before anything is touched.</p>
+                <p class="who"><b>For:</b> anyone on hosting that keeps falling over, or who has lost files and does not know why.</p>
+                <p class="money">A store that is down or broken is making nothing. <b>If you take $150 a day online, eleven days of downtime costs more than this job.</b></p>
+                <div class="card-foot"><span class="price">$1,600 <small>from</small></span><span class="time">3 to 5 days</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="fast cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gB)" opacity=".12"/><g fill="none" stroke="url(#gB)" stroke-width="2.4"><rect x="140" y="28" width="120" height="48" rx="7"/><path d="M140 44h120"/></g><g fill="url(#gB)" opacity=".55"><rect x="152" y="56" width="26" height="6" rx="3"/><rect x="186" y="56" width="26" height="6" rx="3"/></g><path d="M300 52h40M320 38l20 14-20 14" fill="none" stroke="url(#gB)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><circle cx="86" cy="52" r="16" fill="none" stroke="url(#gB)" stroke-width="2.6"/><path d="M79 52l5 5 10-11" fill="none" stroke="url(#gB)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="num">35</span></div>
+              <div class="card-body">
+                <h3>Payment Gateway Integration</h3>
+                <div class="badges"><span class="badge b-fast">Fast payback</span></div>
+                <p class="what">Get card and PayPal payments working properly on the site you already have, including the receipt email, the refund path and a real test transaction before you go live.</p>
+                <p class="who"><b>For:</b> anyone taking payment by bank transfer, cash, or a link they paste into a message.</p>
+                <p class="money">Card checkout converts far better than "message me to pay". <b>Two extra sales a month at $60 repays this inside a year,</b> and you stop chasing transfers.</p>
+                <div class="card-foot"><span class="price">$1,200 <small>from</small></span><span class="time">3 to 5 days</span></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="running cheap">
+              <div class="thumb"><svg viewBox="0 0 400 104" preserveAspectRatio="none"><rect width="400" height="104" fill="url(#gC)" opacity=".12"/><g fill="none" stroke="url(#gC)" stroke-width="2.2"><rect x="96" y="24" width="30" height="24" rx="3"/><rect x="134" y="24" width="30" height="24" rx="3"/><rect x="172" y="24" width="30" height="24" rx="3"/><rect x="96" y="56" width="30" height="24" rx="3"/><rect x="134" y="56" width="30" height="24" rx="3"/><rect x="172" y="56" width="30" height="24" rx="3"/></g><path d="M226 52h48M256 38l20 14-20 14" fill="none" stroke="url(#gC)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="296" y="24" width="56" height="56" rx="6" fill="none" stroke="url(#gC)" stroke-width="2.4"/><path d="M310 52l10 10 18-20" fill="none" stroke="url(#gC)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="num">36</span></div>
+              <div class="card-body">
+                <h3>Bulk Product Upload</h3>
+                <div class="badges"><span class="badge b-running">Running now</span></div>
+                <p class="what">Hundreds or thousands of products onto your store in one pass, with images, prices, categories, descriptions and download files, generated from whatever list you already have.</p>
+                <p class="who"><b>For:</b> anyone facing a catalogue too big to type in by hand.</p>
+                <p class="money">Adding a product by hand is 4 to 6 minutes. <b>For 500 products that is 40 hours, so at $25/hr you are $1,000 ahead</b> and it can be re-run when prices change.</p>
+                <div class="card-foot"><span class="price">$1,400 <small>from</small></span><span class="time">1 week</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= HOW ============================= -->
+      <section>
+        <div class="container-narrow">
+          <h2 style="font-size:1.6rem;font-weight:800;margin:0 0 1rem">How I work</h2>
+          <ol class="steps reveal">
+            <li><b>You tell me which one, and what you do today instead.</b> That second half is the important one. If what you do today already works, I will tell you not to buy it.</li>
+            <li><b>I send a fixed price and a date.</b> Not a range, not an estimate that moves. If it turns out to be more work than I judged, that is my problem and my cost.</li>
+            <li><b>Half up front, half when it works.</b> The second half is due when it is doing the job on your real data, not when I say it is finished.</li>
+            <li><b>You own it.</b> Source code, accounts, data, all yours. Hosting stays on your accounts in your name, never mine. There is no monthly fee to keep it running and nothing switches off if we stop talking.</li>
+          </ol>
+          <p class="not-included">
+            Not included on purpose: ongoing retainers, app store mobile apps, and anything where I would end up
+            the only person who understands it afterwards. If your idea is not on this list, ask anyway. If it is
+            a bad fit I will say so, and it costs you one message.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================= CONTACT ============================= -->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-wrap reveal">
+            <div class="contact-side">
+              <h2>Tell me which one</h2>
+              <p>Send it and it lands in my inbox. I read every one myself and reply, usually the same day. If the payback maths does not hold for your business I will tell you that rather than quote you.</p>
+              <div class="direct">
+                <a href="https://wa.me/17604814120?text=Hi%20Ilyes%2C%20I%20saw%20the%2036%20apps%20page%20on%20tn76.com" target="_blank" rel="noopener">
+                  <svg class="wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5L9.3 7c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                  <span><b>WhatsApp</b><span class="sub">Fastest. Message me now.</span></span>
+                </a>
+                <button type="button" id="crispBtn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.9-.9L3 20.5l1.6-4.9A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg>
+                  <span><b>Live chat</b><span class="sub">Opens right here on the page.</span></span>
+                </button>
+                <a href="tel:+17604814120">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg>
+                  <span><b>760-481-4120</b><span class="sub">Call or text.</span></span>
+                </a>
+              </div>
+              <p class="form-note">Prefer to talk instead of type? Any of these reaches me directly.</p>
+            </div>
+
+            <div class="contact-form">
+              <form id="briefForm" novalidate>
+                <div class="field" id="wrap-name">
+                  <label for="f-name">Your name <span class="req">(required)</span></label>
+                  <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Your name" />
+                  <span class="msg">Please add your name.</span>
+                </div>
+                <div class="field" id="wrap-email">
+                  <label for="f-email">Your email <span class="req">(required, so I can reply)</span></label>
+                  <input type="email" id="f-email" name="email" autocomplete="email" placeholder="you@yourbusiness.com" />
+                  <span class="msg">Please add an email I can reply to.</span>
+                </div>
+                <div class="field">
+                  <label for="f-business">Your business</label>
+                  <input type="text" id="f-business" name="business" autocomplete="organization" placeholder="What you do, and where" />
+                </div>
+                <div class="field">
+                  <label for="f-app">Which app</label>
+                  <select id="f-app" name="app">
+                    <option value="">Pick one, or Not sure yet</option>
+                    <option>Not sure yet</option>
+                    <optgroup label="Get more customers">
+                      <option>01 Local Rank Audit Tool</option><option>02 Lead Finder and Call List</option>
+                      <option>03 Review Request Autopilot</option><option>04 Missed Call Text Back</option>
+                      <option>05 Quote Request Funnel</option><option>06 Service Area Page Builder</option>
+                      <option>07 Competitor Price Watch</option>
+                    </optgroup>
+                    <optgroup label="Sell online">
+                      <option>08 Digital Download Store</option><option>09 Digital Business Card</option>
+                      <option>10 Booking and Deposit Taker</option><option>11 Subscription Manager</option>
+                      <option>12 Order Status Portal</option><option>13 Abandoned Cart Recovery</option>
+                      <option>14 Multi-Vendor Marketplace</option>
+                    </optgroup>
+                    <optgroup label="Cut admin time">
+                      <option>15 Quote to Invoice Pipeline</option><option>16 Job Photo Report Generator</option>
+                      <option>17 Timesheet and Payroll Export</option><option>18 Document Intake and Extract</option>
+                      <option>19 Inventory Reorder Alerts</option><option>20 Recurring Service Scheduler</option>
+                    </optgroup>
+                    <optgroup label="AI that does real work">
+                      <option>21 Company Knowledge Assistant</option><option>22 Inbox Triage Agent</option>
+                      <option>23 Call Notes to CRM</option><option>24 Proposal Draft Generator</option>
+                      <option>25 AI Output Test Harness</option><option>26 Spreadsheet Cleanup Agent</option>
+                      <option>27 Private Tool Server for AI</option>
+                    </optgroup>
+                    <optgroup label="Virtual and augmented reality">
+                      <option>28 VR Showroom</option><option>29 VR Safety Training</option>
+                      <option>30 AR Try Before You Buy</option><option>31 360 Virtual Tour</option>
+                      <option>32 VR Site Induction</option>
+                    </optgroup>
+                    <optgroup label="Setup, installation and rescue">
+                      <option>33 Software Installation and Setup</option><option>34 Website Migration and Rescue</option>
+                      <option>35 Payment Gateway Integration</option><option>36 Bulk Product Upload</option><option>37 EV Charger Booking and Billing</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-today">What you do today instead</label>
+                  <textarea id="f-today" name="today" placeholder="Right now we do this by hand and it takes about..."></textarea>
+                </div>
+                <div class="honeypot" aria-hidden="true">
+                  <label>Leave this empty<input type="text" id="f-hp" name="_honey" tabindex="-1" autocomplete="off" /></label>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%;justify-content:center">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+                  <span id="submitLabel">Send to my inbox</span>
+                </button>
+                <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+                <p class="form-note">
+                  This goes straight to my email. No newsletter, no list, no passing your details to anyone.
+                </p>
+              </form>
+
+              <div class="sent" id="sentPanel" role="status" aria-live="polite">
+                <div class="tick">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l5 5L19 7"/></svg>
+                </div>
+                <h3>Got it, thank you.</h3>
+                <p>It is in my inbox. I will read it myself and reply, usually the same day.</p>
+                <p class="form-note">
+                  In a hurry? <a href="https://wa.me/17604814120" target="_blank" rel="noopener">WhatsApp</a>
+                  or <a href="tel:+17604814120">760-481-4120</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        TN76 &middot; Built by Ilyes Tounsi &middot;
+        <a href="https://wa.me/17604814120" target="_blank" rel="noopener">WhatsApp</a> &middot;
+        <a href="tel:+17604814120">760-481-4120</a> &middot;
+        <a href="/">SEO Autopilot</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+
+        /* ---------- theme ---------- */
+        var root = document.documentElement;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        function paintMeta() {
+          if (meta) meta.setAttribute("content", root.dataset.theme === "dark" ? "#0a1018" : "#ffffff");
+        }
+        paintMeta();
+        document.getElementById("themeBtn").addEventListener("click", function () {
+          var next = root.dataset.theme === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          paintMeta();
+          try { localStorage.setItem("tn76-theme", next); } catch (e) {}
+        });
+
+        /* ---------- reveal on scroll ---------- */
+        var revealables = document.querySelectorAll(".reveal");
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+            });
+          }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+          revealables.forEach(function (el, i) {
+            el.style.transitionDelay = Math.min(i % 6, 5) * 55 + "ms";
+            io.observe(el);
+          });
+        } else {
+          revealables.forEach(function (el) { el.classList.add("in"); });
+        }
+        // Safety net. The animation is decoration; the content is the point. If the
+        // observer is slow, throttled, or never delivers, everything becomes visible
+        // anyway. A visitor must never be shown a blank page because a nicety failed.
+        setTimeout(function () {
+          revealables.forEach(function (el) { el.classList.add("in"); });
+        }, 1200);
+
+        /* ---------- count up ---------- */
+        var counters = document.querySelectorAll("[data-count]");
+        if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          var co = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (!en.isIntersecting) return;
+              var el = en.target, target = parseInt(el.dataset.count, 10);
+              co.unobserve(el);
+              // Wall clock, not the rAF timestamp. If that timestamp does not advance
+              // the loop never terminates and keeps writing 0 over the final value,
+              // which is exactly what happened the first time this was built.
+              var clock = function () {
+                return window.performance && performance.now ? performance.now() : Date.now();
+              };
+              var t0 = clock();
+              var settle = setTimeout(function () { el.textContent = target; }, 1400);
+              (function step() {
+                var p = Math.min((clock() - t0) / 900, 1);
+                el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) { requestAnimationFrame(step); }
+                else { clearTimeout(settle); el.textContent = target; }
+              })();
+            });
+          }, { threshold: 0.4 });
+          counters.forEach(function (el) { co.observe(el); });
+        }
+
+        /* ---------- filters ---------- */
+        var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+        var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+        var groups = Array.prototype.slice.call(document.querySelectorAll("[data-group]"));
+        var countEl = document.getElementById("filterCount");
+        var emptyEl = document.getElementById("emptyNote");
+        var active = "all";
+
+        function priceOf(card) {
+          var m = (card.querySelector(".price") || {}).textContent || "";
+          var n = m.replace(/[^0-9]/g, "");
+          return n ? parseInt(n, 10) : Infinity;
+        }
+        function matches(card) {
+          if (active === "all") return true;
+          if (active === "cheap") return priceOf(card) < 3000;
+          return (card.dataset.tags || "").split(/\s+/).indexOf(active) !== -1;
+        }
+        function apply() {
+          var shown = 0;
+          cards.forEach(function (c) {
+            var ok = matches(c);
+            c.classList.toggle("is-hidden", !ok);
+            if (ok) { shown++; c.classList.add("in"); }
+          });
+          groups.forEach(function (g) {
+            var any = g.querySelectorAll(".card:not(.is-hidden)").length;
+            g.style.display = any ? "" : "none";
+          });
+          countEl.textContent = active === "all" ? "Showing all 37" : "Showing " + shown + " of 37";
+          emptyEl.classList.toggle("show", shown === 0);
+        }
+        chips.forEach(function (chip) {
+          chip.addEventListener("click", function () {
+            active = chip.dataset.filter;
+            chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c === chip)); });
+            apply();
+          });
+        });
+
+        /* ---------- crisp live chat, loaded only on demand ---------- */
+        var crispReady = false;
+        document.getElementById("crispBtn").addEventListener("click", function () {
+          if (crispReady) { if (window.$crisp) window.$crisp.push(["do", "chat:open"]); return; }
+          crispReady = true;
+          window.$crisp = [];
+          window.CRISP_WEBSITE_ID = "e12ef420-979e-4563-977d-3b0701612e6f";
+          var s = document.createElement("script");
+          s.src = "https://client.crisp.chat/l.js";
+          s.async = 1;
+          s.onload = function () { if (window.$crisp) window.$crisp.push(["do", "chat:open"]); };
+          s.onerror = function () { window.open("https://wa.me/17604814120", "_blank", "noopener"); };
+          document.head.appendChild(s);
+        });
+
+        /* ---------- brief form posts to the inbox ---------- */
+
+        // The one line to change if the form service ever moves. Everything else
+        // below is transport-agnostic: it POSTs JSON and expects JSON back.
+        var FORM_ENDPOINT = "https://formsubmit.co/ajax/tounsils@gmail.com";
+
+        var form = document.getElementById("briefForm");
+        var statusEl = document.getElementById("formStatus");
+        var btn = document.getElementById("submitBtn");
+        var btnLabel = document.getElementById("submitLabel");
+        var sentPanel = document.getElementById("sentPanel");
+
+        function setErr(wrapId, bad) {
+          document.getElementById(wrapId).classList.toggle("err", bad);
+        }
+        function say(msg, bad) {
+          statusEl.textContent = msg;
+          statusEl.classList.toggle("bad", !!bad);
+          statusEl.classList.add("show");
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          var name = document.getElementById("f-name").value.trim();
+          var email = document.getElementById("f-email").value.trim();
+          var business = document.getElementById("f-business").value.trim();
+          var app = document.getElementById("f-app").value.trim();
+          var today = document.getElementById("f-today").value.trim();
+
+          // Silently drop bots. A real person never fills a hidden field.
+          if (document.getElementById("f-hp").value) return;
+
+          var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          setErr("wrap-name", !name);
+          setErr("wrap-email", !emailOk);
+          if (!name || !emailOk) {
+            say("Add your name and an email I can reply to.", true);
+            (!name ? document.getElementById("f-name") : document.getElementById("f-email")).focus();
+            return;
+          }
+
+          btn.disabled = true;
+          btnLabel.textContent = "Sending...";
+          say("");
+          statusEl.classList.remove("show");
+
+          fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              business: business || "(not given)",
+              app: app || "(not chosen)",
+              what_they_do_today: today || "(not given)",
+              _subject: "tn76.com apps page: " + (app || "enquiry") + " from " + name,
+              _template: "table",
+              _captcha: "false"
+            })
+          })
+            .then(function (r) {
+              if (!r.ok) throw new Error("HTTP " + r.status);
+              return r.json();
+            })
+            .then(function () {
+              form.style.display = "none";
+              sentPanel.classList.add("show");
+            })
+            .catch(function () {
+              // Never strand someone who took the time to write it out.
+              btn.disabled = false;
+              btnLabel.textContent = "Send to my inbox";
+              say(
+                "That did not go through. Please message me on WhatsApp at 760-481-4120 and I will pick it up there.",
+                true
+              );
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>

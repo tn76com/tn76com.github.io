@@ -134,6 +134,14 @@
         letter-spacing: -0.01em;
       }
       .brand-sub { color: #6b7a8a; font-weight: 400; }
+      .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .header-nav { font-size: 0.95rem; color: #6b7a8a; }
 
       /* Hero */
       .hero { padding: 4rem 0 3rem; }
@@ -332,7 +340,10 @@
   <body>
     <header>
       <div class="container">
-        <span class="brand">TN76 <span class="brand-sub">— SEO Autopilot</span></span>
+        <div class="header-row">
+          <span class="brand">TN76 <span class="brand-sub">— SEO Autopilot</span></span>
+          <span class="header-nav"><a href="/apps/">37 apps I build &rarr;</a></span>
+        </div>
       </div>
     </header>
 
