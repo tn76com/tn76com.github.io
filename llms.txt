@@ -1,0 +1,24 @@
+# TN76
+
+> TN76 is a one-person software and SEO practice run by Ilyes Tounsi. It sells three things: a monthly
+> SEO content service for local home-service businesses, a catalog of 41 small-business apps built to a
+> fixed price, and a fixed-fee measurement of revenue leakage for businesses between $10M and $50M.
+> Prices are published on each page and are not repeated here so this file cannot go stale.
+
+## SEO Autopilot
+
+- [SEO Autopilot for home service businesses](https://www.tn76.com/): monthly SEO blog posts, local schema markup on service pages, weekly Google Business Profile posts and a monthly ranking report for HVAC, roofing, plumbing and similar trades. No contract. Excludes paid ads, website redesigns and backlink schemes.
+
+## The app catalog
+
+- [41 small business apps with fixed prices](https://www.tn76.com/apps/): each app has a price, a delivery window and the arithmetic for how it pays back. The page says which apps are already running and which would be built from parts the author has built before.
+- [Spanish](https://www.tn76.com/apps/es/), [French](https://www.tn76.com/apps/fr/) and [Arabic](https://www.tn76.com/apps/ar/) versions of the catalog.
+
+## Revenue-leak measurement
+
+- [Find the money you are already losing](https://www.tn76.com/recover/): a fixed-fee measurement for businesses between $10M and $50M in revenue, covering four leak types: under-billing and missed contract escalators, freight invoices, margin between list and invoice, and denied claims. The page states plainly that none of the four has been built as a product yet and that the industry percentages it quotes are published figures about other companies.
+
+## Contact
+
+- Email: ilyes@tn76.com
+- [Sitemap](https://www.tn76.com/sitemap.xml)
