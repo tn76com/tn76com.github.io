@@ -1,21 +1,22 @@
 # TN76
 
-> TN76 is a one-person software and SEO practice run by Ilyes Tounsi. It sells three things: a monthly
-> SEO content service for local home-service businesses, a catalog of 41 small-business apps built to a
-> fixed price, and a fixed-fee measurement of revenue leakage for businesses between $10M and $50M.
-> Prices are published on each page and are not repeated here so this file cannot go stale.
+> TN76 is a one-person practice run by Ilyes Tounsi in Carlsbad, California. It builds web apps and websites for
+> small businesses at a fixed price, installs and sets up software, migrates and rescues websites, and audits local
+> search presence. It also sells a monthly SEO service for local home-service businesses and a fixed-fee measurement
+> of revenue leakage for businesses between $10M and $50M. Prices are published on each page and are not repeated
+> here so this file cannot go stale.
 >
-> Not to be confused with: TN76 here means tn76.com, the practice of Ilyes Tounsi in Carlsbad, California. It has no
-> connection to the TN76 vehicle registration code or any other organization that uses the name.
+> Not to be confused with: TN76 here means tn76.com. It has no connection to the TN76 vehicle registration code or
+> any other organization that uses the name.
 
-## SEO Autopilot
+## Apps and websites
 
-- [SEO Autopilot for home service businesses](https://www.tn76.com/): monthly SEO blog posts, local schema markup on service pages, weekly Google Business Profile posts and a monthly ranking report for HVAC, roofing, plumbing and similar trades. No contract. Excludes paid ads, website redesigns and backlink schemes.
-
-## The app catalog
-
-- [41 small business apps with fixed prices](https://www.tn76.com/apps/): each app has a price, a delivery window and the arithmetic for how it pays back. The page says which apps are already running and which would be built from parts the author has built before.
+- [41 small business apps with fixed prices](https://www.tn76.com/apps/): each app has a price, a delivery window and the arithmetic for how it pays back. The page says which apps are already running and which would be built from parts the author has built before. The catalog includes Software Installation and Setup, Website Migration and Rescue and a Local Rank Audit Tool.
 - [Spanish](https://www.tn76.com/apps/es/), [French](https://www.tn76.com/apps/fr/) and [Arabic](https://www.tn76.com/apps/ar/) versions of the catalog.
+
+## SEO
+
+- [SEO Autopilot for home service businesses](https://www.tn76.com/): monthly SEO blog posts, local schema markup on service pages, weekly Google Business Profile posts and a monthly ranking report for HVAC, roofing, plumbing and similar trades. No contract. Excludes paid ads, website redesigns and backlink schemes. A free audit video of a business's Google presence is offered on the page.
 
 ## Revenue-leak measurement
 
