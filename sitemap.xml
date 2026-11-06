@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.tn76.com/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tn76.com/es/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tn76.com/fr/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tn76.com/ar/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/"/>
+  </url>
+  <url>
+    <loc>https://www.tn76.com/seo-autopilot/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.tn76.com/recover/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.tn76.com/apps/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/apps/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/apps/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/apps/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/apps/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/apps/"/>
-  </url>
-  <url>
-    <loc>https://www.tn76.com/apps/es/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/apps/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/apps/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/apps/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/apps/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/apps/"/>
-  </url>
-  <url>
-    <loc>https://www.tn76.com/apps/fr/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/apps/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/apps/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/apps/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/apps/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/apps/"/>
-  </url>
-  <url>
-    <loc>https://www.tn76.com/apps/ar/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tn76.com/apps/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.tn76.com/apps/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tn76.com/apps/fr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tn76.com/apps/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tn76.com/apps/"/>
   </url>
 </urlset>
