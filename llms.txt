@@ -11,12 +11,12 @@
 
 ## Apps and websites
 
-- [41 small business apps with fixed prices](https://www.tn76.com/apps/): each app has a price, a delivery window and the arithmetic for how it pays back. The page says which apps are already running and which would be built from parts the author has built before. The catalog includes Software Installation and Setup, Website Migration and Rescue and a Local Rank Audit Tool.
-- [Spanish](https://www.tn76.com/apps/es/), [French](https://www.tn76.com/apps/fr/) and [Arabic](https://www.tn76.com/apps/ar/) versions of the catalog.
+- [76 small business apps with fixed prices](https://www.tn76.com/): each app has a price, a delivery window and the arithmetic for how it pays back. The page says which apps are already running and which would be built from parts the author has built before. The catalog includes Software Installation and Setup, Website Migration and Rescue and a Local Rank Audit Tool.
+- [Spanish](https://www.tn76.com/es/), [French](https://www.tn76.com/fr/) and [Arabic](https://www.tn76.com/ar/) versions of the catalog.
 
 ## SEO
 
-- [SEO Autopilot for home service businesses](https://www.tn76.com/): monthly SEO blog posts, local schema markup on service pages, weekly Google Business Profile posts and a monthly ranking report for HVAC, roofing, plumbing and similar trades. No contract. Excludes paid ads, website redesigns and backlink schemes. A free audit video of a business's Google presence is offered on the page.
+- [SEO Autopilot for home service businesses](https://www.tn76.com/seo-autopilot/): monthly SEO blog posts, local schema markup on service pages, weekly Google Business Profile posts and a monthly ranking report for HVAC, roofing, plumbing and similar trades. No contract. Excludes paid ads, website redesigns and backlink schemes. A free audit video of a business's Google presence is offered on the page.
 
 ## Revenue-leak measurement
 
