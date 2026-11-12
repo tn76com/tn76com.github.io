@@ -28,7 +28,7 @@
 
 ## Free tools
 
-- [Free tools](https://www.tn76.com/tools/): 20 free calculators and generators, no sign-up, nothing saved server-side. English only. Covers invoicing, quoting, pricing (markup/margin, break-even, day rate), a QR code generator, a business name generator, an email signature generator, and everyday utilities (password generator, unit converter, BMI, loan payment, age, percentage, tip splitting) and developer utilities (JSON formatter, text case converter, timestamp converter, lorem ipsum).
+- [Free tools](https://www.tn76.com/free-tools/): 20 free calculators and generators, no sign-up, nothing saved server-side. English only. Covers invoicing, quoting, pricing (markup/margin, break-even, day rate), a QR code generator, a business name generator, an email signature generator, and everyday utilities (password generator, unit converter, BMI, loan payment, age, percentage, tip splitting) and developer utilities (JSON formatter, text case converter, timestamp converter, lorem ipsum).
 
 ## Contact
 
