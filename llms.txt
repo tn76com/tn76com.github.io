@@ -22,6 +22,10 @@
 
 - [Find the money you are already losing](https://www.tn76.com/recover/): a fixed-fee measurement for businesses between $10M and $50M in revenue, covering four leak types: under-billing and missed contract escalators, freight invoices, margin between list and invoice, and denied claims. The page states plainly that none of the four has been built as a product yet and that the industry percentages it quotes are published figures about other companies.
 
+## Blog
+
+- [Blog](https://www.tn76.com/blog/): notes that back up the catalog, written by Ilyes Tounsi. English only. Starts with [What to check in a local SEO audit before you pitch a business](https://www.tn76.com/blog/local-rank-audit-tool/).
+
 ## Contact
 
 - Email: ilyes@tn76.com

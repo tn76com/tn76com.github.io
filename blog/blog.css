@@ -1,0 +1,83 @@
+/* Shares token names and values with index.html's :root so the blog matches
+   the homepage's light/dark theme without duplicating its stylesheet. */
+:root {
+  --bg: #ffffff;
+  --text: #0f1b2a;
+  --text-2: #43566a;
+  --muted: #6b7f92;
+  --border: #e2eaf2;
+  --accent: #0066cc;
+  --surface: #ffffff;
+  --shadow-sm: 0 1px 2px rgba(15, 27, 42, 0.04), 0 1px 3px rgba(15, 27, 42, 0.06);
+}
+:root[data-theme="dark"] {
+  --bg: #0a1018;
+  --text: #eaf1f9;
+  --text-2: #b4c4d6;
+  --muted: #8698ab;
+  --border: #22334a;
+  --accent: #55a6ff;
+  --surface: #111c2b;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.blog-home { font-weight: 800; color: var(--text); font-size: 1.05rem; }
+.blog-header nav a { color: var(--text-2); font-weight: 600; font-size: 0.92rem; }
+
+.blog-index, .blog-article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.blog-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 0.4rem;
+}
+
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1.5rem; }
+.blog-article h1 { margin-bottom: 0.5rem; }
+.blog-article h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; }
+.blog-article p { color: var(--text-2); margin: 0 0 1.1rem; }
+.blog-article ul { color: var(--text-2); margin: 0 0 1.1rem; padding-left: 1.3rem; }
+.blog-article li { margin-bottom: 0.5rem; }
+
+.blog-intro { color: var(--text-2); max-width: 54ch; margin-bottom: 2rem; }
+
+.blog-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.blog-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.blog-card a { display: block; padding: 1.25rem 1.4rem; color: var(--text); }
+.blog-card h2 { font-size: 1.1rem; margin: 0.2rem 0 0.4rem; }
+.blog-card p:not(.blog-meta) { color: var(--text-2); margin: 0; font-size: 0.95rem; }
+
+.blog-back { margin-top: 2.5rem; }
