@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2507708786892986" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZWJC468T4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-0ZWJC468T4');
+      (function () {
+        try {
+          var t = localStorage.getItem("tn76-theme");
+          if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator | TN76</title>
+    <meta name="description" content="Three calculators in one: what X% of a number is, what percent one number is of another, and percentage change between two numbers." />
+    <meta name="author" content="Ilyes Tounsi" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.tn76.com/tools/percentage-calculator/" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/tools/tools.css" />
+    <meta property="og:site_name" content="TN76" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Percentage Calculator | TN76" />
+    <meta property="og:description" content="Three calculators in one: what X% of a number is, what percent one number is of another, and percentage change between two numbers." />
+    <meta property="og:url" content="https://www.tn76.com/tools/percentage-calculator/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Percentage Calculator | TN76" />
+    <meta name="twitter:description" content="Three calculators in one: what X% of a number is, what percent one number is of another, and percentage change between two numbers." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Percentage Calculator","description":"Three calculators in one: what X% of a number is, what percent one number is of another, and percentage change between two numbers.","url":"https://www.tn76.com/tools/percentage-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-row">
+          <span class="brand">
+            <span class="brand-mark">TN</span>
+            <a href="/">TN76</a> <span class="brand-sub">Custom software</span>
+          </span>
+          <span class="header-tools">
+            <a class="ghost-link" href="/seo-autopilot/">SEO Autopilot</a>
+            <a class="ghost-link" href="/blog/">Blog</a>
+            <a class="ghost-link" href="/tools/">Tools</a>
+            <a class="ghost-link" href="/#contact">Contact</a>
+            <a class="saved-btn" href="/#my-list" id="savedBtn" aria-haspopup="dialog">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <span class="lbl">My list</span><span class="n" id="savedCount">0</span>
+            </a>
+            <span class="langs"><span class="lang on" aria-current="true" lang="en">EN</span><a class="lang" href="/es/" hreflang="es" title="Español">ES</a><a class="lang" href="/fr/" hreflang="fr" title="Français">FR</a><a class="lang" href="/ar/" hreflang="ar" title="العربية">AR</a></span>
+            <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+          </span>
+        </div>
+      </div>
+    </header>
+    <script>
+      document.getElementById("themeBtn").addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("tn76-theme", next); } catch (e) {}
+      });
+      (function () {
+        try {
+          var saved = JSON.parse(localStorage.getItem("tn76-saved") || "[]");
+          if (saved.length) {
+            document.getElementById("savedCount").textContent = saved.length;
+            document.getElementById("savedBtn").classList.add("has");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <main class="container-narrow tool-page">
+      <p class="tool-meta">Everyday tools</p>
+      <h1>Percentage Calculator</h1>
+      <p class="tool-excerpt">Three calculators in one: what X% of a number is, what percent one number is of another, and percentage change between two numbers.</p>
+      
+      <div class="calc">
+        <h2>What is X% of Y?</h2>
+        <div class="calc-grid">
+          <div class="calc-field"><label for="pcX1">Percent</label><input type="number" id="pcX1" placeholder="e.g. 15" /></div>
+          <div class="calc-field"><label for="pcY1">Of this number</label><input type="number" id="pcY1" placeholder="e.g. 200" /></div>
+        </div>
+        <div class="calc-result" id="pcResult1" hidden>
+          <div class="calc-row calc-main"><span>Result</span><span id="pcOut1"></span></div>
+        </div>
+        <p class="calc-hint" id="pcHint1">Fill in both to see the result.</p>
+      </div>
+
+      <div class="calc">
+        <h2>X is what percent of Y?</h2>
+        <div class="calc-grid">
+          <div class="calc-field"><label for="pcX2">This number</label><input type="number" id="pcX2" placeholder="e.g. 30" /></div>
+          <div class="calc-field"><label for="pcY2">Out of this number</label><input type="number" id="pcY2" placeholder="e.g. 200" /></div>
+        </div>
+        <div class="calc-result" id="pcResult2" hidden>
+          <div class="calc-row calc-main"><span>Result</span><span id="pcOut2"></span></div>
+        </div>
+        <p class="calc-hint" id="pcHint2">Fill in both to see the result.</p>
+      </div>
+
+      <div class="calc">
+        <h2>Percentage change from X to Y</h2>
+        <div class="calc-grid">
+          <div class="calc-field"><label for="pcX3">From</label><input type="number" id="pcX3" placeholder="e.g. 80" /></div>
+          <div class="calc-field"><label for="pcY3">To</label><input type="number" id="pcY3" placeholder="e.g. 100" /></div>
+        </div>
+        <div class="calc-result" id="pcResult3" hidden>
+          <div class="calc-row calc-main"><span id="pcLabel3">Change</span><span id="pcOut3"></span></div>
+        </div>
+        <p class="calc-hint" id="pcHint3">Fill in both to see the result.</p>
+      </div>
+  
+      <p class="tool-back"><a href="/tools/">&larr; All tools</a></p>
+    </main>
+    <script>
+
+    (function () {
+      function wire(xId, yId, resultId, hintId, outId, compute) {
+        var x = document.getElementById(xId), y = document.getElementById(yId);
+        var result = document.getElementById(resultId), hint = document.getElementById(hintId), out = document.getElementById(outId);
+        function recompute() {
+          var xv = parseFloat(x.value), yv = parseFloat(y.value);
+          if (isNaN(xv) || isNaN(yv)) { result.hidden = true; hint.hidden = false; return; }
+          compute(xv, yv, out);
+          result.hidden = false; hint.hidden = true;
+        }
+        x.addEventListener("input", recompute);
+        y.addEventListener("input", recompute);
+      }
+      wire("pcX1", "pcY1", "pcResult1", "pcHint1", "pcOut1", function (p, base, out) {
+        out.textContent = (base * p / 100).toLocaleString("en-US", { maximumFractionDigits: 4 });
+      });
+      wire("pcX2", "pcY2", "pcResult2", "pcHint2", "pcOut2", function (part, whole, out) {
+        if (whole === 0) { out.textContent = "n/a"; return; }
+        out.textContent = (part / whole * 100).toLocaleString("en-US", { maximumFractionDigits: 4 }) + "%";
+      });
+      wire("pcX3", "pcY3", "pcResult3", "pcHint3", "pcOut3", function (from, to, out) {
+        var label = document.getElementById("pcLabel3");
+        if (from === 0) { out.textContent = "n/a"; return; }
+        var change = (to - from) / from * 100;
+        label.textContent = change >= 0 ? "Increase" : "Decrease";
+        out.textContent = Math.abs(change).toLocaleString("en-US", { maximumFractionDigits: 4 }) + "%";
+      });
+    })();
+  
+    </script>
+  </body>
+</html>
