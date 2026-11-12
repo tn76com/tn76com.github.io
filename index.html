@@ -2840,6 +2840,33 @@
       .honesty p:last-child { margin-bottom: 0; }
       .honesty strong { color: var(--text); }
 
+      /* ============================= PAYBACK CALCULATOR ============================= */
+      .calc {
+        border: 1px solid var(--border); background: var(--surface);
+        padding: 1.6rem; border-radius: 14px; box-shadow: var(--shadow-sm);
+      }
+      .calc h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+      .calc-sub { color: var(--text-2); margin: 0 0 1.2rem; font-size: 0.95rem; max-width: 56ch; }
+      .calc-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: end;
+      }
+      .calc-field label { display: block; font-size: 0.85rem; color: var(--text-2); margin-bottom: 0.4rem; }
+      .calc-field select, .calc-field input {
+        width: 100%; padding: 0.6rem 0.75rem; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text); font-family: inherit; font-size: 0.95rem;
+      }
+      .calc-result {
+        margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid var(--border);
+        display: grid; gap: 0.5rem;
+      }
+      .calc-row { display: flex; justify-content: space-between; color: var(--text-2); font-size: 0.92rem; }
+      .calc-row.calc-main { color: var(--text); font-weight: 800; font-size: 1.15rem; }
+      .calc-note { color: var(--muted); font-size: 0.88rem; margin: 0.4rem 0 0; }
+      .calc-hint { color: var(--muted); font-size: 0.85rem; margin: 1rem 0 0; }
+      @media (max-width: 720px) {
+        .calc-grid { grid-template-columns: 1fr; }
+      }
+
       /* ============================= FILTER BAR ============================= */
       .filterbar {
         position: sticky; top: 61px; z-index: 40; padding: 0.9rem 0;
@@ -3509,6 +3536,71 @@
               is close to zero. The other thirty-four I would build from parts I have built before. That is a
               weaker claim and I am not dressing it up as the first one.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= PAYBACK CALCULATOR ============================= -->
+      <section style="padding-top:0;padding-bottom:1.5rem">
+        <div class="container">
+          <div class="calc reveal">
+            <h2>Check the maths yourself</h2>
+            <p class="calc-sub">Pick any of the 76, put in your own numbers instead of the example on the card, and see your own payback.</p>
+            <div class="calc-grid">
+              <div class="calc-field calc-field-wide">
+                <label for="calcApp">Which app</label>
+                <select id="calcApp">
+                  <option>Pick one</option>
+                  <optgroup label="Get more customers">
+                    <option>01 Local Rank Audit Tool</option><option>02 Lead Finder and Call List</option>
+                    <option>03 Review Request Autopilot</option><option>04 Missed Call Text Back</option>
+                    <option>05 Quote Request Funnel</option><option>06 Service Area Page Builder</option>
+                    <option>07 Competitor Price Watch</option><option>42 Google Ads Landing Page Pack</option><option>43 Referral Program Tracker</option><option>44 Local Citation Builder</option><option>45 Local Partnership Referral Network Page</option><option>46 Estimate Follow-Up Sequence</option><option>47 Birthday and Anniversary Offer Sender</option><option>48 Win-Back Campaign for Lapsed Customers</option><option>53 Price Quote Calculator Widget</option><option>76 Interactive Service Area Map</option><option>38 Voice Receptionist, After Hours</option>
+                  </optgroup>
+                  <optgroup label="Sell online">
+                    <option>08 Digital Download Store</option><option>09 Digital Business Card</option>
+                    <option>10 Booking and Deposit Taker</option><option>11 Subscription and Membership Manager</option>
+                    <option>12 Order Status Portal</option><option>13 Abandoned Cart Recovery</option>
+                    <option>14 Multi-Vendor Marketplace</option><option>37 EV Charger Booking and Billing</option><option>51 Gift Card and Loyalty Points System</option><option>52 Equipment Rental Booking and Deposit</option><option>54 Waitlist and Standby Booking Manager</option><option>55 Financing Application Widget</option><option>56 Tiered Service Package Builder</option>
+                  </optgroup>
+                  <optgroup label="Cut admin time">
+                    <option>15 Quote to Invoice Pipeline</option><option>16 Job Photo Report Generator</option>
+                    <option>17 Timesheet and Payroll Export</option><option>18 Document Intake and Extract</option>
+                    <option>19 Inventory Reorder Alerts</option><option>20 Recurring Service Scheduler</option><option>49 No-Show Deposit Enforcer</option><option>50 Local Delivery Route Optimizer</option><option>57 Employee Scheduling and Shift Swap Board</option><option>58 Vehicle and Equipment Maintenance Tracker</option><option>59 Digital Job Site Checklist and Sign-off</option><option>60 Expense Receipt Capture and Categorizer</option><option>61 Multi-Location Reporting Dashboard</option><option>62 Contract and Warranty Expiry Tracker</option><option>63 Permit and Inspection Tracker</option><option>64 Compliance Document Vault</option><option>65 Safety Incident and Near-Miss Reporting</option><option>39 Appointment Confirmation Caller</option>
+                  </optgroup>
+                  <optgroup label="AI that does real work">
+                    <option>21 Company Knowledge Assistant</option><option>22 Inbox Triage Agent</option>
+                    <option>23 Call Notes to CRM</option><option>24 Proposal Draft Generator</option>
+                    <option>25 AI Output Test Harness</option><option>26 Spreadsheet Cleanup Agent</option>
+                    <option>27 Private Tool Server for AI</option><option>66 AI Appointment Scheduling Assistant</option><option>67 Review Response Drafting Agent</option><option>68 AI Meeting Notes and Action Items</option><option>69 Price List and Catalog Sync Agent</option><option>70 Competitor Ad Monitoring Agent</option><option>71 AI-Drafted Job Descriptions and Postings</option><option>72 Call Transcription and Sentiment Flagging</option><option>40 AI Interview Screener</option><option>41 Interview Practice Coach</option>
+                  </optgroup>
+                  <optgroup label="Virtual and augmented reality">
+                    <option>28 VR Showroom</option><option>29 VR Safety Training</option>
+                    <option>30 AR Try Before You Buy</option><option>31 360 Virtual Tour</option>
+                    <option>32 VR Site Induction</option><option>73 Before/After Photo Gallery Builder</option><option>74 3D Product Configurator</option><option>75 Drone Job-Progress Timelapse Site</option>
+                  </optgroup>
+                  <optgroup label="Setup, installation and rescue">
+                    <option>33 Software Installation and Setup</option><option>34 Website Migration and Rescue</option>
+                    <option>35 Payment Gateway Integration</option><option>36 Bulk Product Upload</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="calc-field">
+                <label for="calcHours">Hours this saves or frees up, per month</label>
+                <input type="number" id="calcHours" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 10" />
+              </div>
+              <div class="calc-field">
+                <label for="calcRate">What an hour of that is worth to you ($)</label>
+                <input type="number" id="calcRate" min="0" step="1" inputmode="decimal" placeholder="e.g. 50" />
+              </div>
+            </div>
+            <div class="calc-result" id="calcResult" hidden>
+              <div class="calc-row"><span>Price</span><span id="calcPrice"></span></div>
+              <div class="calc-row"><span>What you said this is worth, per month</span><span id="calcMonthly"></span></div>
+              <div class="calc-row calc-main"><span>Your payback</span><span id="calcPayback"></span></div>
+              <p class="calc-note" id="calcNote"></p>
+            </div>
+            <p class="calc-hint" id="calcHint">Pick an app and fill in both numbers to see your payback.</p>
           </div>
         </div>
       </section>
@@ -5699,6 +5791,58 @@
           var c = cardOf(num);
           return c ? /from/i.test(c.dataset.price || "") : false;
         }
+
+        /* ---------- payback calculator ---------- */
+        (function () {
+          var appSel = document.getElementById("calcApp");
+          var hoursInp = document.getElementById("calcHours");
+          var rateInp = document.getElementById("calcRate");
+          var result = document.getElementById("calcResult");
+          var hint = document.getElementById("calcHint");
+          var priceOut = document.getElementById("calcPrice");
+          var monthlyOut = document.getElementById("calcMonthly");
+          var paybackOut = document.getElementById("calcPayback");
+          var noteOut = document.getElementById("calcNote");
+          if (!appSel) return;
+
+          function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+          function recompute() {
+            var num = (/^(\d+)/.exec(appSel.value) || [])[1];
+            var hours = parseFloat(hoursInp.value);
+            var rate = parseFloat(rateInp.value);
+            if (!num || !(hours > 0) || !(rate > 0)) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var price = priceOfNum(num);
+            var monthly = hours * rate;
+            if (!price || !monthly) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var months = price / monthly;
+            priceOut.textContent = (isFrom(num) ? "From " : "") + money(price);
+            monthlyOut.textContent = money(monthly) + "/mo";
+            paybackOut.textContent = months < 1
+              ? "Under a month"
+              : months.toFixed(months < 10 ? 1 : 0) + " month" + (months >= 1.05 ? "s" : "");
+            noteOut.textContent =
+              months <= 12
+                ? "Pays for itself within a year on these numbers."
+                : months <= 24
+                  ? "Pays for itself within two years on these numbers."
+                  : "A longer payback than most of the examples on the cards. Not wrong, just slower for your numbers as entered.";
+            result.hidden = false;
+            hint.hidden = true;
+          }
+
+          appSel.addEventListener("change", recompute);
+          hoursInp.addEventListener("input", recompute);
+          rateInp.addEventListener("input", recompute);
+        })();
 
         function paintButtons() {
           Array.prototype.slice.call(document.querySelectorAll("[data-save]")).forEach(function (b) {

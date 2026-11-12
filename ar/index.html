@@ -2867,6 +2867,33 @@
       .honesty p:last-child { margin-bottom: 0; }
       .honesty strong { color: var(--text); }
 
+      /* ============================= PAYBACK CALCULATOR ============================= */
+      .calc {
+        border: 1px solid var(--border); background: var(--surface);
+        padding: 1.6rem; border-radius: 14px; box-shadow: var(--shadow-sm);
+      }
+      .calc h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+      .calc-sub { color: var(--text-2); margin: 0 0 1.2rem; font-size: 0.95rem; max-width: 56ch; }
+      .calc-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: end;
+      }
+      .calc-field label { display: block; font-size: 0.85rem; color: var(--text-2); margin-bottom: 0.4rem; }
+      .calc-field select, .calc-field input {
+        width: 100%; padding: 0.6rem 0.75rem; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text); font-family: inherit; font-size: 0.95rem;
+      }
+      .calc-result {
+        margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid var(--border);
+        display: grid; gap: 0.5rem;
+      }
+      .calc-row { display: flex; justify-content: space-between; color: var(--text-2); font-size: 0.92rem; }
+      .calc-row.calc-main { color: var(--text); font-weight: 800; font-size: 1.15rem; }
+      .calc-note { color: var(--muted); font-size: 0.88rem; margin: 0.4rem 0 0; }
+      .calc-hint { color: var(--muted); font-size: 0.85rem; margin: 1rem 0 0; }
+      @media (max-width: 720px) {
+        .calc-grid { grid-template-columns: 1fr; }
+      }
+
       /* ============================= FILTER BAR ============================= */
       .filterbar {
         position: sticky; top: 61px; z-index: 40; padding: 0.9rem 0;
@@ -3557,6 +3584,71 @@
             <p>
               سبعة منها موسومة بـ <span class="badge b-running">يعمل الآن</span>. أي أن الشيء الموصوف موجود فعلًا ويعمل اليوم، إما عند عميل أو في عملي الخاص، فمخاطرة البناء تكاد تكون معدومة. أما الأربعة والثلاثون الباقية فسأبنيها من قطع سبق أن بنيتها. هذا ادعاء أضعف ولن أُلبسه ثوب الأول.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= PAYBACK CALCULATOR ============================= -->
+      <section style="padding-top:0;padding-bottom:1.5rem">
+        <div class="container">
+          <div class="calc reveal">
+            <h2>تحقق بنفسك من الحساب</h2>
+            <p class="calc-sub">اختر أي واحد من الـ76، أدخل أرقامك الخاصة بدل المثال الموجود على البطاقة، وشاهد مدة استرداد التكلفة الخاصة بك.</p>
+            <div class="calc-grid">
+              <div class="calc-field calc-field-wide">
+                <label for="calcApp">أي تطبيق</label>
+                <select id="calcApp">
+                  <option>اختر واحدًا</option>
+                  <optgroup label="Get more customers">
+                    <option>01 أداة تدقيق الترتيب المحلي</option><option>02 باحث العملاء وقائمة الاتصال</option>
+                    <option>03 الطيار الآلي لطلب التقييمات</option><option>04 رد نصي تلقائي على المكالمات الفائتة</option>
+                    <option>05 مسار طلب عروض الأسعار</option><option>06 مولّد صفحات مناطق الخدمة</option>
+                    <option>07 مراقب أسعار المنافسين</option><option>42 حزمة صفحات هبوط لإعلانات جوجل</option><option>43 متتبّع برنامج الإحالات</option><option>44 بناء الاستشهادات المحلية</option><option>45 صفحة شبكة إحالات بين الأنشطة المحلية</option><option>46 سلسلة متابعة عروض الأسعار</option><option>47 إرسال عروض أعياد الميلاد والذكرى السنوية</option><option>48 حملة استرجاع العملاء المتوقفين</option><option>53 حاسبة عرض سعر قابلة للتضمين</option><option>76 خريطة تفاعلية لمنطقة الخدمة</option><option>38 موظف استقبال صوتي خارج أوقات الدوام</option>
+                  </optgroup>
+                  <optgroup label="Sell online">
+                    <option>08 متجر التنزيلات الرقمية</option><option>09 بطاقة العمل الرقمية</option>
+                    <option>10 الحجز مع عربون</option><option>11 إدارة الاشتراكات والعضويات</option>
+                    <option>12 بوابة حالة الطلب</option><option>13 استرجاع السلات المتروكة</option>
+                    <option>14 سوق متعدد البائعين</option><option>37 حجز شواحن السيارات الكهربائية وفوترتها</option><option>51 نظام بطاقات الهدايا ونقاط الولاء</option><option>52 حجز وديعة تأجير المعدات</option><option>54 إدارة قائمة الانتظار والحجوزات الاحتياطية</option><option>55 أداة طلب التمويل</option><option>56 بناء باقات خدمة متدرّجة</option>
+                  </optgroup>
+                  <optgroup label="Cut admin time">
+                    <option>15 من عرض السعر إلى الفاتورة</option><option>16 مولّد تقارير صور العمل</option>
+                    <option>17 تسجيل الدوام وتصدير الرواتب</option><option>18 استخراج البيانات من المستندات</option>
+                    <option>19 تنبيهات إعادة الطلب للمخزون</option><option>20 مجدول الخدمات المتكررة</option><option>49 تحصيل تلقائي لوديعة التغيّب</option><option>50 محسِّن مسارات التوصيل المحلي</option><option>57 لوحة جدولة الموظفين وتبادل المناوبات</option><option>58 متتبّع صيانة المركبات والمعدات</option><option>59 قائمة تحقق رقمية وتوقيع موقع العمل</option><option>60 التقاط وتصنيف إيصالات المصاريف</option><option>61 لوحة تقارير متعددة الفروع</option><option>62 متتبّع انتهاء العقود والضمانات</option><option>63 متتبّع التصاريح والتفتيشات</option><option>64 خزنة مستندات الامتثال</option><option>65 الإبلاغ عن حوادث السلامة وحالات الاقتراب من الحادث</option><option>39 متصل تأكيد المواعيد</option>
+                  </optgroup>
+                  <optgroup label="AI that does real work">
+                    <option>21 مساعد معرفة الشركة</option><option>22 وكيل فرز البريد الوارد</option>
+                    <option>23 من ملاحظات المكالمة إلى نظام العملاء</option><option>24 مولّد مسودات العروض</option>
+                    <option>25 منصة اختبار مخرجات الذكاء الاصطناعي</option><option>26 وكيل تنظيف جداول البيانات</option>
+                    <option>27 خادم أدوات خاص للذكاء الاصطناعي</option><option>66 مساعد جدولة المواعيد بالذكاء الاصطناعي</option><option>67 وكيل صياغة الردود على التقييمات</option><option>68 ملاحظات الاجتماعات والمهام بالذكاء الاصطناعي</option><option>69 وكيل مزامنة الأسعار والكتالوج</option><option>70 وكيل مراقبة إعلانات المنافسين</option><option>71 صياغة أوصاف ووظائف التوظيف بالذكاء الاصطناعي</option><option>72 تفريغ المكالمات وتعليم النبرة</option><option>40 مقابلات الفرز الأولي بالذكاء الاصطناعي</option><option>41 مدرّب التدرب على المقابلات</option>
+                  </optgroup>
+                  <optgroup label="Virtual and augmented reality">
+                    <option>28 صالة عرض بالواقع الافتراضي</option><option>29 تدريب السلامة بالواقع الافتراضي</option>
+                    <option>30 جرّب قبل أن تشتري بالواقع المعزز</option><option>31 جولة افتراضية 360 درجة</option>
+                    <option>32 تعريف بالموقع عبر الواقع الافتراضي</option><option>73 بناء معرض صور قبل وبعد</option><option>74 أداة تهيئة منتج ثلاثي الأبعاد</option><option>75 موقع متابعة تقدّم العمل بتصوير جوي سريع</option>
+                  </optgroup>
+                  <optgroup label="Setup, installation and rescue">
+                    <option>33 تركيب البرامج وتجهيزها</option><option>34 نقل المواقع وإنقاذها</option>
+                    <option>35 ربط بوابة الدفع</option><option>36 الرفع الجماعي للمنتجات</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="calc-field">
+                <label for="calcHours">الساعات التي يوفّرها هذا أو يحرّرها، شهريًا</label>
+                <input type="number" id="calcHours" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 10" />
+              </div>
+              <div class="calc-field">
+                <label for="calcRate">كم تساوي لك ساعة من ذلك ($)</label>
+                <input type="number" id="calcRate" min="0" step="1" inputmode="decimal" placeholder="e.g. 50" />
+              </div>
+            </div>
+            <div class="calc-result" id="calcResult" hidden>
+              <div class="calc-row"><span>السعر</span><span id="calcPrice"></span></div>
+              <div class="calc-row"><span>ما قلت إن هذا يساويه، شهريًا</span><span id="calcMonthly"></span></div>
+              <div class="calc-row calc-main"><span>عائدك</span><span id="calcPayback"></span></div>
+              <p class="calc-note" id="calcNote"></p>
+            </div>
+            <p class="calc-hint" id="calcHint">اختر تطبيقًا واملأ الرقمين لترى عائدك.</p>
           </div>
         </div>
       </section>
@@ -5718,6 +5810,58 @@
           var c = cardOf(num);
           return c ? /from/i.test(c.dataset.price || "") : false;
         }
+
+        /* ---------- payback calculator ---------- */
+        (function () {
+          var appSel = document.getElementById("calcApp");
+          var hoursInp = document.getElementById("calcHours");
+          var rateInp = document.getElementById("calcRate");
+          var result = document.getElementById("calcResult");
+          var hint = document.getElementById("calcHint");
+          var priceOut = document.getElementById("calcPrice");
+          var monthlyOut = document.getElementById("calcMonthly");
+          var paybackOut = document.getElementById("calcPayback");
+          var noteOut = document.getElementById("calcNote");
+          if (!appSel) return;
+
+          function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+          function recompute() {
+            var num = (/^(\d+)/.exec(appSel.value) || [])[1];
+            var hours = parseFloat(hoursInp.value);
+            var rate = parseFloat(rateInp.value);
+            if (!num || !(hours > 0) || !(rate > 0)) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var price = priceOfNum(num);
+            var monthly = hours * rate;
+            if (!price || !monthly) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var months = price / monthly;
+            priceOut.textContent = (isFrom(num) ? "From " : "") + money(price);
+            monthlyOut.textContent = money(monthly) + "/mo";
+            paybackOut.textContent = months < 1
+              ? "Under a month"
+              : months.toFixed(months < 10 ? 1 : 0) + " month" + (months >= 1.05 ? "s" : "");
+            noteOut.textContent =
+              months <= 12
+                ? "Pays for itself within a year on these numbers."
+                : months <= 24
+                  ? "Pays for itself within two years on these numbers."
+                  : "A longer payback than most of the examples on the cards. Not wrong, just slower for your numbers as entered.";
+            result.hidden = false;
+            hint.hidden = true;
+          }
+
+          appSel.addEventListener("change", recompute);
+          hoursInp.addEventListener("input", recompute);
+          rateInp.addEventListener("input", recompute);
+        })();
 
         function paintButtons() {
           Array.prototype.slice.call(document.querySelectorAll("[data-save]")).forEach(function (b) {

@@ -2867,6 +2867,33 @@
       .honesty p:last-child { margin-bottom: 0; }
       .honesty strong { color: var(--text); }
 
+      /* ============================= PAYBACK CALCULATOR ============================= */
+      .calc {
+        border: 1px solid var(--border); background: var(--surface);
+        padding: 1.6rem; border-radius: 14px; box-shadow: var(--shadow-sm);
+      }
+      .calc h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+      .calc-sub { color: var(--text-2); margin: 0 0 1.2rem; font-size: 0.95rem; max-width: 56ch; }
+      .calc-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: end;
+      }
+      .calc-field label { display: block; font-size: 0.85rem; color: var(--text-2); margin-bottom: 0.4rem; }
+      .calc-field select, .calc-field input {
+        width: 100%; padding: 0.6rem 0.75rem; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text); font-family: inherit; font-size: 0.95rem;
+      }
+      .calc-result {
+        margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid var(--border);
+        display: grid; gap: 0.5rem;
+      }
+      .calc-row { display: flex; justify-content: space-between; color: var(--text-2); font-size: 0.92rem; }
+      .calc-row.calc-main { color: var(--text); font-weight: 800; font-size: 1.15rem; }
+      .calc-note { color: var(--muted); font-size: 0.88rem; margin: 0.4rem 0 0; }
+      .calc-hint { color: var(--muted); font-size: 0.85rem; margin: 1rem 0 0; }
+      @media (max-width: 720px) {
+        .calc-grid { grid-template-columns: 1fr; }
+      }
+
       /* ============================= FILTER BAR ============================= */
       .filterbar {
         position: sticky; top: 61px; z-index: 40; padding: 0.9rem 0;
@@ -3528,6 +3555,71 @@
             <p>
               Siete están marcadas como <span class="badge b-running">Funcionando ya</span>. Eso significa que lo descrito ya existe y funciona hoy, sea para un cliente o en mi propio trabajo, así que el riesgo de construcción es casi cero. Las otras treinta y cuatro las construiría con piezas que ya he construido antes. Esa es una afirmación más débil y no la voy a disfrazar de la primera.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= PAYBACK CALCULATOR ============================= -->
+      <section style="padding-top:0;padding-bottom:1.5rem">
+        <div class="container">
+          <div class="calc reveal">
+            <h2>Compruebe usted mismo las cuentas</h2>
+            <p class="calc-sub">Elija cualquiera de las 76, introduzca sus propios números en lugar del ejemplo de la tarjeta, y vea su propio retorno.</p>
+            <div class="calc-grid">
+              <div class="calc-field calc-field-wide">
+                <label for="calcApp">Qué aplicación</label>
+                <select id="calcApp">
+                  <option>Elija una</option>
+                  <optgroup label="Get more customers">
+                    <option>01 Auditoría de posicionamiento local</option><option>02 Buscador de clientes y lista de llamadas</option>
+                    <option>03 Piloto automático de reseñas</option><option>04 Respuesta automática a llamadas perdidas</option>
+                    <option>05 Embudo de solicitud de presupuesto</option><option>06 Generador de páginas por zona de servicio</option>
+                    <option>07 Vigilante de precios de la competencia</option><option>42 Paquete de páginas de aterrizaje para Google Ads</option><option>43 Rastreador de programa de referidos</option><option>44 Constructor de citaciones locales</option><option>45 Página de red de referidos entre negocios locales</option><option>46 Secuencia de seguimiento de presupuestos</option><option>47 Envío de ofertas por cumpleaños y aniversario</option><option>48 Campaña de recuperación de clientes inactivos</option><option>53 Calculadora de presupuesto incrustable</option><option>76 Mapa interactivo de área de servicio</option><option>38 Recepcionista por voz fuera de horario</option>
+                  </optgroup>
+                  <optgroup label="Sell online">
+                    <option>08 Tienda de descargas digitales</option><option>09 Tarjeta de visita digital</option>
+                    <option>10 Reservas con señal por adelantado</option><option>11 Gestor de suscripciones y socios</option>
+                    <option>12 Portal de estado del pedido</option><option>13 Recuperación de carritos abandonados</option>
+                    <option>14 Marketplace de varios vendedores</option><option>37 Reserva y cobro de cargadores eléctricos</option><option>51 Sistema de tarjetas de regalo y puntos de fidelidad</option><option>52 Reserva y depósito para alquiler de equipos</option><option>54 Gestor de lista de espera y reservas de guardia</option><option>55 Widget de solicitud de financiamiento</option><option>56 Constructor de paquetes de servicio por niveles</option>
+                  </optgroup>
+                  <optgroup label="Cut admin time">
+                    <option>15 Del presupuesto a la factura</option><option>16 Generador de informes con fotos de obra</option>
+                    <option>17 Control horario y exportación a nóminas</option><option>18 Lectura automática de documentos</option>
+                    <option>19 Avisos de reposición de stock</option><option>20 Agenda de servicios recurrentes</option><option>49 Cobro automático de depósito por inasistencia</option><option>50 Optimizador de rutas de reparto local</option><option>57 Pizarra de horarios y cambios de turno de empleados</option><option>58 Rastreador de mantenimiento de vehículos y equipos</option><option>59 Lista de verificación digital y firma de obra</option><option>60 Captura y categorización de recibos de gastos</option><option>61 Panel de reportes multi-ubicación</option><option>62 Rastreador de vencimiento de contratos y garantías</option><option>63 Rastreador de permisos e inspecciones</option><option>64 Bodega de documentos de cumplimiento</option><option>65 Reporte de incidentes y casi accidentes de seguridad</option><option>39 Llamadas de confirmación de citas</option>
+                  </optgroup>
+                  <optgroup label="AI that does real work">
+                    <option>21 Asistente del conocimiento de la empresa</option><option>22 Agente de triaje del buzón</option>
+                    <option>23 De las notas de llamada al CRM</option><option>24 Generador de borradores de propuesta</option>
+                    <option>25 Banco de pruebas para salidas de IA</option><option>26 Agente de limpieza de hojas de cálculo</option>
+                    <option>27 Servidor privado de herramientas para IA</option><option>66 Asistente de agenda de citas con IA</option><option>67 Agente redactor de respuestas a reseñas</option><option>68 Notas de reunión y tareas con IA</option><option>69 Agente de sincronización de precios y catálogo</option><option>70 Agente de vigilancia de anuncios de la competencia</option><option>71 Descripciones y publicaciones de empleo con IA</option><option>72 Transcripción de llamadas y detección de tono</option><option>40 Entrevistador de preselección con IA</option><option>41 Entrenador de entrevistas</option>
+                  </optgroup>
+                  <optgroup label="Virtual and augmented reality">
+                    <option>28 Sala de exposición en realidad virtual</option><option>29 Formación en seguridad con realidad virtual</option>
+                    <option>30 Probar antes de comprar con realidad aumentada</option><option>31 Visita virtual en 360</option>
+                    <option>32 Acogida a obra en realidad virtual</option><option>73 Constructor de galería de antes y después</option><option>74 Configurador de productos en 3D</option><option>75 Sitio de progreso de obra con dron en lapso de tiempo</option>
+                  </optgroup>
+                  <optgroup label="Setup, installation and rescue">
+                    <option>33 Instalación y puesta en marcha de software</option><option>34 Migración y rescate de webs</option>
+                    <option>35 Integración de pasarela de pago</option><option>36 Carga masiva de productos</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="calc-field">
+                <label for="calcHours">Horas que esto ahorra o libera, al mes</label>
+                <input type="number" id="calcHours" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 10" />
+              </div>
+              <div class="calc-field">
+                <label for="calcRate">Cuánto vale para usted una hora de eso ($)</label>
+                <input type="number" id="calcRate" min="0" step="1" inputmode="decimal" placeholder="e.g. 50" />
+              </div>
+            </div>
+            <div class="calc-result" id="calcResult" hidden>
+              <div class="calc-row"><span>Precio</span><span id="calcPrice"></span></div>
+              <div class="calc-row"><span>Lo que dijo que esto vale, al mes</span><span id="calcMonthly"></span></div>
+              <div class="calc-row calc-main"><span>Su retorno</span><span id="calcPayback"></span></div>
+              <p class="calc-note" id="calcNote"></p>
+            </div>
+            <p class="calc-hint" id="calcHint">Elija una aplicación y complete ambos números para ver su retorno.</p>
           </div>
         </div>
       </section>
@@ -5689,6 +5781,58 @@
           var c = cardOf(num);
           return c ? /from/i.test(c.dataset.price || "") : false;
         }
+
+        /* ---------- payback calculator ---------- */
+        (function () {
+          var appSel = document.getElementById("calcApp");
+          var hoursInp = document.getElementById("calcHours");
+          var rateInp = document.getElementById("calcRate");
+          var result = document.getElementById("calcResult");
+          var hint = document.getElementById("calcHint");
+          var priceOut = document.getElementById("calcPrice");
+          var monthlyOut = document.getElementById("calcMonthly");
+          var paybackOut = document.getElementById("calcPayback");
+          var noteOut = document.getElementById("calcNote");
+          if (!appSel) return;
+
+          function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+          function recompute() {
+            var num = (/^(\d+)/.exec(appSel.value) || [])[1];
+            var hours = parseFloat(hoursInp.value);
+            var rate = parseFloat(rateInp.value);
+            if (!num || !(hours > 0) || !(rate > 0)) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var price = priceOfNum(num);
+            var monthly = hours * rate;
+            if (!price || !monthly) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var months = price / monthly;
+            priceOut.textContent = (isFrom(num) ? "From " : "") + money(price);
+            monthlyOut.textContent = money(monthly) + "/mo";
+            paybackOut.textContent = months < 1
+              ? "Under a month"
+              : months.toFixed(months < 10 ? 1 : 0) + " month" + (months >= 1.05 ? "s" : "");
+            noteOut.textContent =
+              months <= 12
+                ? "Pays for itself within a year on these numbers."
+                : months <= 24
+                  ? "Pays for itself within two years on these numbers."
+                  : "A longer payback than most of the examples on the cards. Not wrong, just slower for your numbers as entered.";
+            result.hidden = false;
+            hint.hidden = true;
+          }
+
+          appSel.addEventListener("change", recompute);
+          hoursInp.addEventListener("input", recompute);
+          rateInp.addEventListener("input", recompute);
+        })();
 
         function paintButtons() {
           Array.prototype.slice.call(document.querySelectorAll("[data-save]")).forEach(function (b) {
