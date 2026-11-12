@@ -1,25 +1,40 @@
-/* Shares token names and values with index.html's :root so the blog matches
-   the homepage's light/dark theme without duplicating its stylesheet. */
+/* Shares token names and values with index.html's :root, and copies its
+   header rules verbatim (container, header, brand, ghost-link, theme-btn,
+   langs), so the blog header is the same header, not a lookalike. */
 :root {
   --bg: #ffffff;
+  --bg-alt: #f6f9fc;
+  --surface: #ffffff;
+  --surface-2: #f9fbfd;
   --text: #0f1b2a;
   --text-2: #43566a;
   --muted: #6b7f92;
   --border: #e2eaf2;
+  --border-strong: #cfdbe7;
   --accent: #0066cc;
-  --surface: #ffffff;
+  --accent-2: #00a4e4;
+  --accent-ink: #ffffff;
   --shadow-sm: 0 1px 2px rgba(15, 27, 42, 0.04), 0 1px 3px rgba(15, 27, 42, 0.06);
+  --glow: rgba(0, 102, 204, 0.16);
 }
 :root[data-theme="dark"] {
   --bg: #0a1018;
+  --bg-alt: #0e1724;
+  --surface: #111c2b;
+  --surface-2: #162334;
   --text: #eaf1f9;
   --text-2: #b4c4d6;
   --muted: #8698ab;
   --border: #22334a;
+  --border-strong: #2e4360;
   --accent: #55a6ff;
-  --surface: #111c2b;
+  --accent-2: #3fd0ff;
+  --accent-ink: #06101c;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --glow: rgba(85, 166, 255, 0.24);
 }
+:root[data-theme="dark"] .icon-sun { display: none; }
+:root:not([data-theme="dark"]) .icon-moon { display: none; }
 
 * { box-sizing: border-box; }
 
@@ -34,23 +49,56 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.blog-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--border);
-  max-width: 760px;
-  margin: 0 auto;
-}
-.blog-home { font-weight: 800; color: var(--text); font-size: 1.05rem; }
-.blog-header nav a { color: var(--text-2); font-weight: 600; font-size: 0.92rem; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+.container-narrow { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
 
-.blog-index, .blog-article {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+/* ---- header, copied from index.html's own rules ---- */
+header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  border-bottom: 1px solid var(--border);
 }
+.header-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 0; }
+.brand { font-weight: 800; font-size: 1.05rem; color: var(--text); display: flex; align-items: center; gap: 0.55rem; }
+.brand a { color: inherit; }
+.brand a:hover { text-decoration: none; }
+.brand-mark {
+  width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: grid; place-items: center; color: #fff; font-size: 0.72rem; font-weight: 800;
+  box-shadow: 0 4px 12px var(--glow);
+}
+.brand-sub { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+.header-tools { display: flex; align-items: center; gap: 0.5rem; }
+.ghost-link {
+  font-size: 0.9rem; color: var(--text-2); padding: 0.45rem 0.7rem;
+  border-radius: 8px; border: 1px solid transparent;
+}
+.ghost-link:hover { text-decoration: none; background: var(--surface-2); border-color: var(--border); }
+.theme-btn {
+  width: 38px; height: 38px; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text-2); display: grid; place-items: center;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+.theme-btn:hover { background: var(--surface-2); border-color: var(--border-strong); transform: translateY(-1px); }
+.theme-btn svg { width: 17px; height: 17px; }
+.langs { display: inline-flex; gap: 1px; margin-inline-start: 0.2rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.lang { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.02em; padding: 0.38rem 0.44rem; color: var(--muted); background: var(--surface); }
+.lang:hover { text-decoration: none; color: var(--accent); background: var(--surface-2); }
+.lang.on { color: var(--accent-ink); background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+@media (max-width: 400px) { .langs { display: none; } }
+@media (max-width: 480px) {
+  .brand-sub { display: none; }
+}
+@media (max-width: 360px) {
+  .header-tools .ghost-link { display: none; }
+}
+
+/* ---- blog content ---- */
+.blog-index, .blog-article { padding-top: 2.5rem; padding-bottom: 4rem; }
 
 .blog-meta {
   color: var(--muted);
