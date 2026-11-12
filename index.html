@@ -2845,11 +2845,13 @@
         border: 1px solid var(--border); background: var(--surface);
         padding: 1.6rem; border-radius: 14px; box-shadow: var(--shadow-sm);
       }
-      .calc h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+      .calc h2, .calc h3 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+      .calc-admin { margin: 1.5rem 0 2rem; }
       .calc-sub { color: var(--text-2); margin: 0 0 1.2rem; font-size: 0.95rem; max-width: 56ch; }
       .calc-grid {
         display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: end;
       }
+      .calc-grid-even { grid-template-columns: 1fr 1fr 1fr; }
       .calc-field label { display: block; font-size: 0.85rem; color: var(--text-2); margin-bottom: 0.4rem; }
       .calc-field select, .calc-field input {
         width: 100%; padding: 0.6rem 0.75rem; border-radius: 8px; border: 1px solid var(--border);
@@ -2859,6 +2861,7 @@
         margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid var(--border);
         display: grid; gap: 0.5rem;
       }
+      .calc-result[hidden] { display: none; }
       .calc-row { display: flex; justify-content: space-between; color: var(--text-2); font-size: 0.92rem; }
       .calc-row.calc-main { color: var(--text); font-weight: 800; font-size: 1.15rem; }
       .calc-note { color: var(--muted); font-size: 0.88rem; margin: 0.4rem 0 0; }
@@ -3545,7 +3548,7 @@
         <div class="container">
           <div class="calc reveal">
             <h2>Check the maths yourself</h2>
-            <p class="calc-sub">Pick any of the 76, put in your own numbers instead of the example on the card, and see your own payback.</p>
+            <p class="calc-sub" id="calcSub">Pick any of the 76, put in your own numbers instead of the example on the card, and see your own payback.</p>
             <div class="calc-grid">
               <div class="calc-field calc-field-wide">
                 <label for="calcApp">Which app</label>
@@ -4121,7 +4124,7 @@
       </section>
 
       <!-- ============================= C. ADMIN ============================= -->
-      <section data-group>
+      <section data-group id="cut-admin">
         <div class="container">
           <div class="sec-head reveal">
             <div class="sec-art"><svg viewBox="0 0 24 24" fill="none" stroke="url(#gC)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
@@ -4129,6 +4132,32 @@
               <h2>Cut admin time <span class="count">18 apps</span></h2>
               <p>The least glamorous category and usually the highest return, because those hours are already being spent and nobody is billing anyone for them.</p>
             </div>
+          </div>
+
+          <div class="calc calc-admin reveal">
+            <h3>What is this costing you right now?</h3>
+            <p class="calc-sub" id="admSub">Work out your own number before you look at the 18 ways below to cut it.</p>
+            <div class="calc-grid calc-grid-even">
+              <div class="calc-field">
+                <label for="admHours">Hours per week this takes, across everyone who does it</label>
+                <input type="number" id="admHours" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 6" />
+              </div>
+              <div class="calc-field">
+                <label for="admPeople">How many people do this</label>
+                <input type="number" id="admPeople" min="1" step="1" inputmode="numeric" placeholder="e.g. 2" />
+              </div>
+              <div class="calc-field">
+                <label for="admRate">Fully loaded cost per hour ($)</label>
+                <input type="number" id="admRate" min="0" step="1" inputmode="decimal" placeholder="e.g. 35" />
+              </div>
+            </div>
+            <div class="calc-result" id="admResult" hidden>
+              <div class="calc-row"><span>Per week</span><span id="admWeekly"></span></div>
+              <div class="calc-row"><span>Per month</span><span id="admMonthly"></span></div>
+              <div class="calc-row calc-main"><span>Per year</span><span id="admYearly"></span></div>
+              <p class="calc-note" id="admNote">That is the hours the 18 apps below already know how to take back. Picked one? Plug these same numbers into the payback calculator near the top of the page to see when it pays for itself.</p>
+            </div>
+            <p class="calc-hint" id="admHint">Fill in all three to see what this actually costs you.</p>
           </div>
 
           <div class="grid">
@@ -5841,6 +5870,42 @@
 
           appSel.addEventListener("change", recompute);
           hoursInp.addEventListener("input", recompute);
+          rateInp.addEventListener("input", recompute);
+        })();
+
+        /* ---------- admin time cost calculator ---------- */
+        (function () {
+          var hoursInp = document.getElementById("admHours");
+          var peopleInp = document.getElementById("admPeople");
+          var rateInp = document.getElementById("admRate");
+          var result = document.getElementById("admResult");
+          var hint = document.getElementById("admHint");
+          var weeklyOut = document.getElementById("admWeekly");
+          var monthlyOut = document.getElementById("admMonthly");
+          var yearlyOut = document.getElementById("admYearly");
+          if (!hoursInp) return;
+
+          function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+          function recompute() {
+            var hours = parseFloat(hoursInp.value);
+            var people = parseFloat(peopleInp.value);
+            var rate = parseFloat(rateInp.value);
+            if (!(hours > 0) || !(people > 0) || !(rate > 0)) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var weekly = hours * people * rate;
+            weeklyOut.textContent = money(weekly) + "/wk";
+            monthlyOut.textContent = money(weekly * 4.33) + "/mo";
+            yearlyOut.textContent = money(weekly * 52) + "/yr";
+            result.hidden = false;
+            hint.hidden = true;
+          }
+
+          hoursInp.addEventListener("input", recompute);
+          peopleInp.addEventListener("input", recompute);
           rateInp.addEventListener("input", recompute);
         })();
 
