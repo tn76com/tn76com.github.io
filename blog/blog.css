@@ -77,6 +77,21 @@ header {
   border-radius: 8px; border: 1px solid transparent;
 }
 .ghost-link:hover { text-decoration: none; background: var(--surface-2); border-color: var(--border); }
+.saved-btn {
+  position: relative; display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.9rem; font-family: inherit; color: var(--text-2); cursor: pointer;
+  padding: 0.45rem 0.7rem; border-radius: 8px; border: 1px solid transparent; background: transparent;
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+  text-decoration: none;
+}
+.saved-btn:hover { background: var(--surface-2); border-color: var(--border); color: var(--text); text-decoration: none; }
+.saved-btn svg { width: 16px; height: 16px; }
+.saved-btn .n {
+  min-width: 19px; height: 19px; padding: 0 5px; border-radius: 999px; font-size: 0.7rem;
+  font-weight: 800; display: none; place-items: center; color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+.saved-btn.has .n { display: grid; }
 .theme-btn {
   width: 38px; height: 38px; border-radius: 10px; cursor: pointer;
   border: 1px solid var(--border); background: var(--surface);
@@ -92,6 +107,8 @@ header {
 @media (max-width: 400px) { .langs { display: none; } }
 @media (max-width: 480px) {
   .brand-sub { display: none; }
+  .saved-btn .lbl { display: none; }
+  .saved-btn { padding: 0.45rem 0.5rem; }
 }
 @media (max-width: 360px) {
   .header-tools .ghost-link { display: none; }

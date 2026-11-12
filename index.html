@@ -5845,6 +5845,13 @@
           }
           paintButtons();
           renderList();
+
+          // Arriving from the blog's own "My list" link, which has no app
+          // cards of its own to read saved titles and prices from.
+          if (location.hash === "#my-list") {
+            history.replaceState(null, "", location.pathname + location.search);
+            window.addEventListener("load", function () { setTimeout(openList, 400); });
+          }
         })();
 
         document.getElementById("wlForm").addEventListener("submit", function (e) {
