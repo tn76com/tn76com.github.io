@@ -3562,6 +3562,41 @@
         </div>
       </section>
 
+      <!-- ============================= HOURLY RATE WORKSHEET ============================= -->
+      <section style="padding-top:0;padding-bottom:1.5rem">
+        <div class="container">
+          <div class="calc reveal">
+            <h2>Calculez ce que vous devriez vraiment facturer de l'heure</h2>
+            <p class="calc-sub" id="rateSub">Tout le reste sur cette page vous demande votre taux horaire. Si vous n'en avez pas encore un, commencez ici.</p>
+            <div class="calc-grid calc-grid-even">
+              <div class="calc-field">
+                <label for="rateIncome">Ce que vous voulez gagner cette année ($)</label>
+                <input type="number" id="rateIncome" min="0" step="1000" inputmode="decimal" placeholder="e.g. 80000" />
+              </div>
+              <div class="calc-field">
+                <label for="rateOverhead">Les coûts de l'entreprise cette année, tout sauf votre propre rémunération ($)</label>
+                <input type="number" id="rateOverhead" min="0" step="500" inputmode="decimal" placeholder="e.g. 15000" />
+              </div>
+              <div class="calc-field">
+                <label for="rateHours">Heures facturables par semaine, uniquement le travail payé réel</label>
+                <input type="number" id="rateHours" min="0" step="1" inputmode="decimal" placeholder="e.g. 25" />
+              </div>
+              <div class="calc-field">
+                <label for="rateWeeks">Semaines que vous travaillez réellement par an</label>
+                <input type="number" id="rateWeeks" min="1" max="52" step="1" inputmode="numeric" placeholder="e.g. 48" />
+              </div>
+            </div>
+            <div class="calc-result" id="rateResult" hidden>
+              <div class="calc-row"><span>Chiffre d'affaires dont vous avez besoin cette année</span><span id="rateRevenue"></span></div>
+              <div class="calc-row"><span>Heures facturables cette année</span><span id="rateAnnualHours"></span></div>
+              <div class="calc-row calc-main"><span>Ce que vous devriez facturer de l'heure</span><span id="rateHourly"></span></div>
+              <p class="calc-note" id="rateNote">Utilisez ce chiffre comme taux horaire ci-dessous et dans la calculatrice de temps administratif plus bas sur la page.</p>
+            </div>
+            <p class="calc-hint" id="rateHint">Remplissez les quatre champs pour obtenir votre chiffre.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- ============================= PAYBACK CALCULATOR ============================= -->
       <section style="padding-top:0;padding-bottom:1.5rem">
         <div class="container">
@@ -5897,6 +5932,61 @@
           hoursInp.addEventListener("input", recompute);
           peopleInp.addEventListener("input", recompute);
           rateInp.addEventListener("input", recompute);
+        })();
+
+        /* ---------- hourly rate worksheet ---------- */
+        (function () {
+          var incomeInp = document.getElementById("rateIncome");
+          var overheadInp = document.getElementById("rateOverhead");
+          var hoursInp = document.getElementById("rateHours");
+          var weeksInp = document.getElementById("rateWeeks");
+          var result = document.getElementById("rateResult");
+          var hint = document.getElementById("rateHint");
+          var revenueOut = document.getElementById("rateRevenue");
+          var annualHoursOut = document.getElementById("rateAnnualHours");
+          var hourlyOut = document.getElementById("rateHourly");
+          if (!incomeInp) return;
+
+          function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+          // Filling the other two calculators' rate fields with this result is
+          // a convenience, not a requirement: each still works fine on its own
+          // if a visitor only fills in this one, or only the others.
+          function fillOtherCalculators(rate) {
+            ["calcRate", "admRate"].forEach(function (id) {
+              var el = document.getElementById(id);
+              if (el && !el.value) {
+                el.value = rate;
+                el.dispatchEvent(new Event("input"));
+              }
+            });
+          }
+
+          function recompute() {
+            var income = parseFloat(incomeInp.value);
+            var overhead = parseFloat(overheadInp.value);
+            var hours = parseFloat(hoursInp.value);
+            var weeks = parseFloat(weeksInp.value);
+            if (!(income > 0) || !(overhead >= 0) || !(hours > 0) || !(weeks > 0)) {
+              result.hidden = true;
+              hint.hidden = false;
+              return;
+            }
+            var revenue = income + overhead;
+            var annualHours = hours * weeks;
+            var hourly = revenue / annualHours;
+            revenueOut.textContent = money(revenue) + "/yr";
+            annualHoursOut.textContent = Math.round(annualHours).toLocaleString("en-US") + " hrs/yr";
+            hourlyOut.textContent = money(hourly) + "/hr";
+            result.hidden = false;
+            hint.hidden = true;
+            fillOtherCalculators(Math.round(hourly));
+          }
+
+          incomeInp.addEventListener("input", recompute);
+          overheadInp.addEventListener("input", recompute);
+          hoursInp.addEventListener("input", recompute);
+          weeksInp.addEventListener("input", recompute);
         })();
 
         function paintButtons() {
