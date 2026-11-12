@@ -316,6 +316,53 @@
         font-size: 0.85rem;
       }
 
+      /* Free checklist tool */
+      .quiz {
+        border: 1px solid #d1dbe4;
+        border-radius: 10px;
+        padding: 1.75rem;
+        background: #fafcfd;
+      }
+      .quiz-q { padding: 1.1rem 0; border-bottom: 1px solid #eef2f6; }
+      .quiz-q:first-child { padding-top: 0; }
+      .quiz-q:last-of-type { border-bottom: none; }
+      .quiz-q p { margin: 0 0 0.6rem; font-weight: 600; color: #1a2b3c; }
+      .quiz-opts { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+      .quiz-opts label {
+        display: inline-flex; align-items: center; gap: 0.4rem;
+        padding: 0.5rem 0.9rem; border-radius: 999px; border: 1px solid #d1dbe4;
+        font-size: 0.92rem; color: #4a5a6a; cursor: pointer;
+        transition: background 120ms ease, border-color 120ms ease;
+      }
+      .quiz-opts label:has(input:checked) {
+        background: #0066cc; border-color: #0066cc; color: #ffffff;
+      }
+      .quiz-opts input { position: absolute; opacity: 0; width: 0; height: 0; }
+      .quiz-submit { margin-top: 1.5rem; }
+      .quiz-result { display: none; }
+      .quiz-result.show { display: block; }
+      .quiz-score {
+        font-size: 2.25rem; font-weight: 700; letter-spacing: -0.02em; color: #1a2b3c;
+      }
+      .quiz-score small { font-size: 1rem; font-weight: 400; color: #6b7a8a; }
+      .quiz-band { font-weight: 600; margin: 0.35rem 0 1rem; }
+      .quiz-band.good { color: #0f7a3d; }
+      .quiz-band.mid { color: #b4650a; }
+      .quiz-band.weak { color: #b42318; }
+      .quiz-gaps { padding-left: 1.25rem; color: #4a5a6a; margin: 0 0 1.5rem; }
+      .quiz-gaps li { margin-bottom: 0.4rem; }
+      .quiz-lead { border-top: 1px solid #eef2f6; padding-top: 1.25rem; }
+      .quiz-lead p { color: #4a5a6a; margin: 0 0 0.75rem; }
+      .quiz-lead-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+      .quiz-lead-row input[type="email"] {
+        flex: 1 1 220px; padding: 0.7rem 0.9rem; border: 1px solid #d1dbe4; border-radius: 6px;
+        font-size: 0.95rem; font-family: inherit;
+      }
+      .quiz-msg { font-size: 0.9rem; margin-top: 0.6rem; }
+      .quiz-msg.err { color: #b42318; }
+      .quiz-msg.ok { color: #0f7a3d; }
+      .quiz-restart { font-size: 0.9rem; margin-top: 1rem; }
+
       /* Not-included */
       .not-included {
         color: #6b7a8a;
@@ -393,7 +440,7 @@
       <div class="container">
         <div class="header-row">
           <span class="brand">TN76 <span class="brand-sub">— SEO Autopilot</span></span>
-          <span class="header-nav"><a href="/">41 apps I build &rarr;</a></span>
+          <span class="header-nav"><a href="/">76 apps I build &rarr;</a></span>
         </div>
       </div>
     </header>
@@ -407,12 +454,76 @@
             and other local service businesses. No contract, no account managers, no BS.
           </p>
           <div class="cta-row">
-            <a href="mailto:ilyes@tn76.com?subject=Free%20SEO%20audit%20for%20my%20business" class="btn btn-primary">
-              Get a free audit
-            </a>
+            <a href="#checklist" class="btn btn-primary">Score your Google presence free</a>
             <a href="#offer" class="btn btn-secondary">See what you get</a>
           </div>
-          <p class="cta-note">2-min free audit video of your Google presence. No sales pitch.</p>
+          <p class="cta-note">5-question self-check, instant score, no email needed to see it.</p>
+        </div>
+      </section>
+
+      <section id="checklist">
+        <div class="container">
+          <h2>Score your own Google presence<small>5 questions, no email required to see your score</small></h2>
+          <div class="quiz">
+            <form id="quizForm">
+              <div class="quiz-q">
+                <p>1. Is your Google Business Profile fully filled in (categories, service area, hours including holidays), with a photo added in the last 30 days?</p>
+                <div class="quiz-opts">
+                  <label><input type="radio" name="q1" value="2" /> Yes</label>
+                  <label><input type="radio" name="q1" value="1" /> Mostly</label>
+                  <label><input type="radio" name="q1" value="0" /> No / not sure</label>
+                </div>
+              </div>
+              <div class="quiz-q">
+                <p>2. Do you reply to reviews, including the negative ones, within a few days?</p>
+                <div class="quiz-opts">
+                  <label><input type="radio" name="q2" value="2" /> Yes</label>
+                  <label><input type="radio" name="q2" value="1" /> Sometimes</label>
+                  <label><input type="radio" name="q2" value="0" /> No</label>
+                </div>
+              </div>
+              <div class="quiz-q">
+                <p>3. Does your name, address and phone number match exactly across your website footer, Google profile, and the directories your trade is listed on?</p>
+                <div class="quiz-opts">
+                  <label><input type="radio" name="q3" value="2" /> Yes</label>
+                  <label><input type="radio" name="q3" value="1" /> Not sure</label>
+                  <label><input type="radio" name="q3" value="0" /> No</label>
+                </div>
+              </div>
+              <div class="quiz-q">
+                <p>4. Does your site name your actual service area, and does the title tag say what a customer would search for, not just your business name?</p>
+                <div class="quiz-opts">
+                  <label><input type="radio" name="q4" value="2" /> Yes</label>
+                  <label><input type="radio" name="q4" value="1" /> Partly</label>
+                  <label><input type="radio" name="q4" value="0" /> No</label>
+                </div>
+              </div>
+              <div class="quiz-q">
+                <p>5. Do you know whether your reviews are actually concentrated in the area your Google profile claims to serve?</p>
+                <div class="quiz-opts">
+                  <label><input type="radio" name="q5" value="2" /> Yes, checked it</label>
+                  <label><input type="radio" name="q5" value="0" /> Never checked</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary quiz-submit">See my score</button>
+              <p class="quiz-msg err" id="quizValidation"></p>
+            </form>
+
+            <div class="quiz-result" id="quizResult">
+              <div class="quiz-score"><span id="quizScoreNum">0</span><small>/10</small></div>
+              <p class="quiz-band" id="quizBand"></p>
+              <ul class="quiz-gaps" id="quizGaps"></ul>
+              <div class="quiz-lead">
+                <p>Want the full written version, the same four checks plus the service-area-versus-reviews cross-check, with the specific gaps for your business and a fixed price if you want it fixed?</p>
+                <form id="quizLeadForm" class="quiz-lead-row">
+                  <input type="email" id="quizEmail" placeholder="you@yourbusiness.com" required />
+                  <button type="submit" class="btn btn-primary">Email me the full audit</button>
+                </form>
+                <p class="quiz-msg" id="quizMsg"></p>
+              </div>
+              <p class="quiz-restart"><a href="#" id="quizRestart">Retake the quiz</a></p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -535,5 +646,113 @@
         TN76 &middot; Built by Ilyes Tounsi &middot; <a href="mailto:ilyes@tn76.com">ilyes@tn76.com</a>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        var FORM_ENDPOINT = "https://formsubmit.co/ajax/1f6ddd01befe2c0da26df1bf83350163";
+        var GAPS = {
+          q1: "Google Business Profile isn't fully filled in or hasn't had a recent photo.",
+          q2: "Reviews aren't getting replies, including the negative ones.",
+          q3: "Name, address or phone number don't match everywhere they're listed.",
+          q4: "The site doesn't clearly name the service area or what a customer searches for.",
+          q5: "No check yet on whether reviews actually match the claimed service area.",
+        };
+        var form = document.getElementById("quizForm");
+        var result = document.getElementById("quizResult");
+        var scoreNum = document.getElementById("quizScoreNum");
+        var band = document.getElementById("quizBand");
+        var gapsList = document.getElementById("quizGaps");
+        var answers = {};
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var ids = ["q1", "q2", "q3", "q4", "q5"];
+          var missing = ids.filter(function (id) { return !form.elements[id] || !form.elements[id].value; });
+          var validationMsg = document.getElementById("quizValidation");
+          if (missing.length) {
+            validationMsg.textContent = "Answer all 5 to see your score.";
+            return;
+          }
+          validationMsg.textContent = "";
+          var score = 0;
+          answers = {};
+          ids.forEach(function (id) {
+            var v = parseInt(form.elements[id].value, 10);
+            answers[id] = v;
+            score += v;
+          });
+
+          scoreNum.textContent = score;
+          band.className = "quiz-band " + (score >= 8 ? "good" : score >= 4 ? "mid" : "weak");
+          band.textContent =
+            score >= 8
+              ? "In good shape. The gaps left are specific, not fundamental."
+              : score >= 4
+                ? "Solid foundation, real gaps worth fixing."
+                : "Worth starting here before spending on anything else.";
+
+          gapsList.innerHTML = "";
+          ids.forEach(function (id) {
+            if (answers[id] < 2) {
+              var li = document.createElement("li");
+              li.textContent = GAPS[id];
+              gapsList.appendChild(li);
+            }
+          });
+          if (!gapsList.children.length) {
+            var li = document.createElement("li");
+            li.textContent = "Nothing obvious left on these five. The full audit checks further than a 5-question quiz can.";
+            gapsList.appendChild(li);
+          }
+
+          form.style.display = "none";
+          result.classList.add("show");
+        });
+
+        document.getElementById("quizRestart").addEventListener("click", function (e) {
+          e.preventDefault();
+          form.reset();
+          document.getElementById("quizValidation").textContent = "";
+          form.style.display = "";
+          result.classList.remove("show");
+        });
+
+        document.getElementById("quizLeadForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var email = document.getElementById("quizEmail").value.trim();
+          var msg = document.getElementById("quizMsg");
+          var btn = e.target.querySelector("button");
+          var score = scoreNum.textContent;
+          var gaps = Array.prototype.map.call(gapsList.children, function (li) { return li.textContent; });
+
+          btn.disabled = true;
+          btn.textContent = "Sending...";
+          fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              email: email,
+              quiz_score: score + "/10",
+              quiz_gaps: gaps.join("\n") || "(none flagged)",
+              _subject: "SEO Autopilot free checklist: " + email + " scored " + score + "/10",
+              _template: "table",
+              _captcha: "false",
+            }),
+          })
+            .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+            .then(function () {
+              msg.textContent = "Sent. I'll reply with the full written audit.";
+              msg.className = "quiz-msg ok";
+              btn.textContent = "Sent";
+            })
+            .catch(function () {
+              btn.disabled = false;
+              btn.textContent = "Email me the full audit";
+              msg.textContent = "That didn't send. Email ilyes@tn76.com directly instead.";
+              msg.className = "quiz-msg err";
+            });
+        });
+      })();
+    </script>
   </body>
 </html>
